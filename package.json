@@ -1,0 +1,32 @@
+{
+  "name": "sankalan-2018",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "async": "^2.6.0",
+    "chokidar": "^2.0.0",
+    "eslint": "^4.16.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "fs-extra": "^5.0.0",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-babel": "^7.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-hash": "^4.2.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^1.12.1",
+    "gulp-uglify": "^3.0.0",
+    "pug": "^2.0.0-rc.4"
+  },
+  "scripts": {
+    "build:watch": "./node_modules/.bin/gulp watch & node ./scripts/build/index.js --watch",
+    "build:assets": "./node_modules/.bin/gulp",
+    "build:pages": "node ./scripts/build/index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
