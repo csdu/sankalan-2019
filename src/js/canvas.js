@@ -164,6 +164,7 @@ class Background {
     }
 
     if (this.frameCount % this.RESET_FACTOR === 0) {
+      this.frameCount = 0;
       for (const line of this.polylines) {
         this.shiftPoint(line);
       }
