@@ -57,6 +57,7 @@ li.nav-item
       top: 0
       background-size: 100% auto
       background-image: url("/assets/images/one.svg")
+      background-repeat: no-repeat
 
     &:hover
       letter-spacing: 0.1em
@@ -119,6 +120,26 @@ li.nav-item
     &:after
       left: auto
       right: 75px
+
+
+@media only screen and (max-width: 640px)
+  li.nav-item
+    margin: 25px
+    a
+      font-size: 16px
+      padding: 2px 10px 2px 36px
+
+      &:after
+        left: 36px
+      &:hover
+        &:after
+          width: calc(100% - 36px - 10px)
+
+      &:before
+        height: 32px
+        width: 32px
+        background-size: 24px
+
 
 .is-front-page
   .nav

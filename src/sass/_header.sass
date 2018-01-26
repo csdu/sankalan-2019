@@ -8,6 +8,32 @@
   background: #fff
   align-items: center
 
+  .menu-toggle
+    display: none
+    border: 0
+    font-size: 16px
+    font-family: $font-bold
+    letter-spacing: 2px
+    font-weight: 500
+    margin: 0 18px 0 0
+    padding: 10px
+    padding-right: 36px
+    margin-left: auto
+    position: relative
+    text-decoration: none
+    text-transform: uppercase
+
+    &:after
+      content: ""
+      display: block
+      position: absolute
+      right: 0
+      top: 5px
+      width: 32px
+      height: 32px
+      background: url("/assets/images/nav-icon.svg") center no-repeat
+      background-size: 32px
+
   .logo
     font-family: $font-bold
     letter-spacing: 3px
@@ -15,21 +41,30 @@
     padding: 0.8em
     position: relative
     text-transform: uppercase
+
     &:after
-      content: '2018'
+      content: "2018"
       position: absolute
       right: 1.4em
       top: 0.8em
       font-family: $font-monospace
       font-size: 14px
+    @media screen and (max-width: 640px)
+      font-size: 1em
+      &:after
+        top: 0.4em
+        right: 1em
   nav
     margin-left: auto
+
     ul
       display: flex
+
       li.nav-item
         position: relative
         right: 0
         margin: 5px
+
         a
           font-family: $font-bold
           font-size: 1.2em
@@ -38,6 +73,7 @@
           text-transform: uppercase
           top: 0
           left: 0
+
           &:hover
             &:after
               left: 45px
@@ -50,6 +86,14 @@
             background-repeat: no-repeat
             height: 40px
             width: 40px
+
+@media screen and (max-width: 1000px)
+  .site-header
+    .menu-toggle
+      display: block
+
+    nav
+      display: none
 
 .is-front-page
   .site-header

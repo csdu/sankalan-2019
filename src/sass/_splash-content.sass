@@ -14,9 +14,11 @@
   .title
     font-weight: 900
     text-transform: uppercase
-    font-size: 36px
+    font-size: 24px
     font-family: $font-bold
     letter-spacing: 5px
+    @media only screen and (min-width: 641px)
+      font-size: 36px
 
   .text
     font-size: 16px
@@ -59,7 +61,7 @@
       color: $color-border-br
 
     a
-      font-size: 24px
+      font-size: 16px
       font-weight: 900
       display: inline-block
       transition: transform 0.2s
