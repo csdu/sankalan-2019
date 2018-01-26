@@ -198,3 +198,4 @@ class Background {
 const $canvas = document.getElementById('canvas');
 const bg = new Background($canvas);
 bg.init();
+if (!isFrontPage()) bg.changeBackground('#000');

@@ -25,91 +25,100 @@
     transition: all 0.7s ease
     width: 100%
 
-  li.nav-item
-    transition-delay: 0.8s
-    margin: 50px
-    transition: transform 0.4s
-    z-index: 1000
-    position: absolute
+li.nav-item
+  transition-delay: 0.8s
+  margin: 50px
+  transition: transform 0.4s
+  z-index: 1000
+  position: absolute
 
-    a
+  a
+    display: block
+    font-size: 20px
+    padding: 15px 10px 15px 75px
+    transition: color 0.5s 0.8s, letter-spacing 0.2s
+
+    &:after
+      bottom: calc(50% - 2px - .5em)
+      content: ""
+      height: 3px
+      left: 75px
+      position: absolute
+      transition: width 0.2s cubic-bezier(0.58, 0.3, 0.005, 1)
+      width: 0
+
+    &:before
       display: block
-      font-size: 20px
-      padding: 15px 10px 15px 75px
-      transition: color 0.5s 0.8s, letter-spacing 0.2s
+      height: 65px
+      width: 65px
+      content: ""
+      position: absolute
+      left: 0
+      top: 0
+      background-size: 100% auto
+      background-image: url("/assets/images/one.svg")
 
-      &:after
-        background: #000
-        bottom: calc(50% - 2px - .5em)
-        content: ""
-        height: 3px
-        left: 75px
-        position: absolute
-        transition: width 0.2s cubic-bezier(0.58, 0.3, 0.005, 1)
-        width: 0
+    &:hover
+      letter-spacing: 0.1em
 
       &:before
-        display: block
-        height: 65px
-        width: 65px
-        content: ""
-        position: absolute
-        left: 0
-        top: 0
-        background-size: 100% auto
-        background-image: url("/assets/images/one.svg")
+        transform: rotate(-10deg)
+        transition: transform 0.2s
 
-      &:hover
-        letter-spacing: 0.1em
+      &:after
+        width: calc(100% - 20px - 65px)
 
-        &:before
-          transform: rotate(-10deg)
-          transition: transform 0.2s
+.tl
+  left: 0
+  top: 0
 
-        &:after
-          width: calc(100% - 20px - 65px)
+  &.active a
+    color: $color-border-tl
 
-    &.tl
-      left: 0
-      top: 0
+  a::after
+    background: $color-border-tl
 
-      a::after
-        background: $color-border-tl
+.bl
+  bottom: 0
+  left: 0
 
-    &.bl
-      bottom: 0
-      left: 0
+  &.active a
+    color: $color-border-bl
 
-      a::after
-        background: $color-border-bl
+  a::after
+    background: $color-border-bl
 
-    &.tr
-      top: 0
+.tr
+  top: 0
+  right: 0
+
+  &.active a
+    color: $color-border-tr
+
+  a::after
+    background: $color-border-tr
+
+.br
+  bottom: 0
+  right: 0
+
+  &.active a
+    color: $color-border-br
+
+  a::after
+    background: $color-border-br
+
+.tr, .br
+  a
+    padding: 15px 75px 15px 10px
+
+    &:before
+      left: auto
       right: 0
 
-      a::after
-        background: $color-border-tr
-
-    &.br
-      bottom: 0
-      right: 0
-
-      a::after
-        background: $color-border-br
-
-    &.tr, &.br
-      a
-        padding: 15px 75px 15px 10px
-
-        &:before
-          left: auto
-          right: 0
-
-        &:after
-          left: auto
-          right: 75px
-
-
+    &:after
+      left: auto
+      right: 75px
 
 .is-front-page
   .nav

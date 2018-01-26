@@ -5,11 +5,51 @@
   left: 0
   width: 100%
   z-index: 999
-  background: purple
+  background: #fff
+  align-items: center
 
+  .logo
+    font-family: $font-bold
+    letter-spacing: 3px
+    font-size: 1.5em
+    padding: 0.8em
+    position: relative
+    text-transform: uppercase
+    &:after
+      content: '2018'
+      position: absolute
+      right: 1.4em
+      top: 0.8em
+      font-family: $font-monospace
+      font-size: 14px
   nav
+    margin-left: auto
     ul
       display: flex
+      li.nav-item
+        position: relative
+        right: 0
+        margin: 5px
+        a
+          font-family: $font-bold
+          font-size: 1.2em
+          padding: 8px 10px 8px 45px
+          letter-spacing: 0.05em
+          text-transform: uppercase
+          top: 0
+          left: 0
+          &:hover
+            &:after
+              left: 45px
+              width: calc(100% - 40px - 15px)
+
+          &:before
+            top: 0
+            left: 0
+            background-size: 40px
+            background-repeat: no-repeat
+            height: 40px
+            width: 40px
 
 .is-front-page
   .site-header

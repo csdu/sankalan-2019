@@ -5,6 +5,9 @@
  * Copyright 2018
  */
 
-if (window.location.pathname === '/sankalan/') {
+const isFrontPage = () =>
+  window.location.pathname === '/sankalan/';
+
+if (isFrontPage()) {
   document.body.classList.add('is-front-page');
 }
