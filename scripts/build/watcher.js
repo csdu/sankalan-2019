@@ -43,14 +43,16 @@ const watcher = () => {
   const watcherContent = chokidar.watch(paths.content, options);
   watcherContent.on('change', buildOne);
 
-  const watcherAssetHashes = chokidar.watch(paths.assetManifest, options);
-  watcherAssetHashes.on('change', () => {
-    console.log(`[${now()}] [ALERT] Assets modified.`);
-    clearAssetsCache();
-    buildAll();
-  });
+  if (process.env.NODE_ENV === 'production') {
+    const watcherAssetHashes = chokidar.watch(paths.assetManifest, options);
+    watcherAssetHashes.on('change', () => {
+      console.log(`[${now()}] [ALERT] Assets modified.`);
+      clearAssetsCache();
+      buildAll();
+    });
+  }
 
-  const watcherTemplate = chokidar.watch(paths.template, options);
+  const watcherTemplate = chokidar.watch(paths.templateDir, options);
   watcherTemplate.on('change', buildAll);
 };
 

@@ -1,3 +1,6 @@
+- const stylesheet = process.env.NODE_ENV === 'production' ? assets['style.sass'] : '/assets/css/style.css';
+- const script = process.env.NODE_ENV === 'production' ? assets['bundle.js'] : '/assets/js/bundle.js';
+
 title #{page.title}
-link(rel="stylesheet", type="text/css", href=assets['style.sass'])
-script(type="application/javascript", src=assets['bundle.js'])
+link(rel="stylesheet", type="text/css", href=stylesheet)
+script(type="application/javascript", src=script)

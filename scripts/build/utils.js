@@ -5,10 +5,13 @@ const {
   assetManifest,
 } = require('../../build.config.js');
 
+const cwd = process.cwd();
+
 const paths = {
-  template: path.resolve(process.cwd(), './src/template/index.pug'),
+  template: path.resolve(cwd, './src/template/index.pug'),
+  templateDir: path.resolve(cwd, './src/template/'),
   assetManifest,
-  content: path.join(process.cwd(), './src/content'),
+  content: path.join(cwd, './src/content'),
 };
 
 const getSavePath = (slug, ext) =>
