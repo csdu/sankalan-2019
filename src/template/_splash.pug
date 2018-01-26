@@ -1,0 +1,26 @@
+mixin nav()
+  nav.content-nav
+    ul
+      +navItem('🔥 Register 🔥', '/sankalan/register')
+      +navItem('Meet the team', '/sankalan/team')
+      +navItem('Need help?', '/sankalan/contact')
+
+mixin navItem($name, $link)
+  li
+    a(href=$link) !{$name}
+
+.splash-wrapper
+  .splash
+    .splash-borders
+      .top
+      .right
+      .bottom
+      .left
+    .splash-content
+      div
+        .title
+          h1 Sankalan
+          h1.screen-reader-text Sankalan
+        .text
+          p Sankalan is the annual tech fest of Dept Of Computer Science, University of Delhi (DUCS).
+        +nav()

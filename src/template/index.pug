@@ -2,4 +2,14 @@ html
   head
     include _head
   body
-    div !{content}
+    include _header
+    #content.site-content
+      include _splash
+      nav.nav
+        .nav-container
+          include _nav
+      .content-wrapper
+        #main.main-content !{content}
+    .pattern-background
+    canvas#canvas.bg-scene
+    include _footer

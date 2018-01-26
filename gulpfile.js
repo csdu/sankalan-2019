@@ -5,7 +5,6 @@ const sass = require('gulp-sass');
 const uglifyJs = require('gulp-uglify');
 const clean = require('gulp-clean');
 const concat = require('gulp-concat');
-const rename = require('gulp-rename');
 const hash = require('gulp-hash');
 
 const pages = require('./scripts/build/init');
@@ -26,8 +25,13 @@ const paths = {
   js: {
     src: [
       'header.js',
+      'canvas.js',
     ].map(f => `${srcDir}/js/${f}`),
     dest: `${distDir}/assets/js`,
+  },
+  images: {
+    src: `${srcDir}/images/**/*`,
+    dest: `${distDir}/assets/images`,
   },
   assetManifest,
 };
@@ -38,15 +42,15 @@ const options = {
       toplevel: true,
       // reserved: [],
     },
+    output: {
+      comments: 'some',
+    },
   },
   babel: {
     presets: ['es2015'],
   },
   sass: {
     outputStyle: 'compressed',
-  },
-  rename: {
-    suffix: '.min',
   },
   hash: {
     hash: {
@@ -79,7 +83,6 @@ const scripts = () => {
       .pipe(hash(options.hash.hash))
       .pipe(babel(options.babel))
       .pipe(uglifyJs(options.uglifyJs))
-      .pipe(rename(options.rename))
       .pipe(gulp.dest(paths.js.dest))
       .pipe(hash.manifest(paths.assetManifest, options.hash.js))
       .pipe(gulp.dest('.'));
@@ -94,8 +97,8 @@ const scripts = () => {
 const styles = () => {
   if (isProduction) {
     return gulp.src(paths.sass.src)
+      .pipe(sass(options.sass).on('error', sass.logError))
       .pipe(hash(options.hash.hash))
-      .pipe(rename(options.rename))
       .pipe(gulp.dest(paths.sass.dest))
       .pipe(hash.manifest(paths.assetManifest, options.hash.css))
       .pipe(gulp.dest('.'));
@@ -104,6 +107,12 @@ const styles = () => {
     .pipe(sass(options.sass).on('error', sass.logError))
     .pipe(gulp.dest(paths.sass.dest));
 };
+
+const images = () =>
+  gulp.src(paths.images.src, {
+    since: gulp.lastRun(images),
+  })
+    .pipe(gulp.dest(paths.images.dest));
 
 const build = (done) => {
   const content = (cb) => {
@@ -114,6 +123,7 @@ const build = (done) => {
     scripts,
     styles,
     content,
+    images,
   )(done);
 };
 
@@ -125,6 +135,7 @@ const watch = () => {
   content(() => {});
   gulp.watch(paths.sass.src, styles);
   gulp.watch(paths.js.src, scripts);
+  gulp.watch(paths.images.src, images);
 };
 
 module.exports = {
@@ -133,6 +144,7 @@ module.exports = {
   build,
   styles,
   scripts,
+  images,
   content: (cb) => {
     pages(false);
     cb();

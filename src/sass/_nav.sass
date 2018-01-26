@@ -1,0 +1,116 @@
+.nav
+  height: 100%
+  overflow: hidden
+  position: absolute
+  width: 100%
+  font-weight: 900
+  display: none
+  letter-spacing: 0.05em
+  text-transform: uppercase
+  font-family: $font-bold
+
+.nav-container
+  align-items: center
+  display: flex
+  height: 100%
+  justify-content: center
+  position: absolute
+  width: 100%
+
+  ul
+    height: 100%
+    margin: 0
+    padding: 0
+    position: relative
+    transition: all 0.7s ease
+    width: 100%
+
+  li.nav-item
+    transition-delay: 0.8s
+    margin: 50px
+    transition: transform 0.4s
+    z-index: 1000
+    position: absolute
+
+    a
+      display: block
+      font-size: 20px
+      padding: 15px 10px 15px 75px
+      transition: color 0.5s 0.8s, letter-spacing 0.2s
+
+      &:after
+        background: #000
+        bottom: calc(50% - 2px - .5em)
+        content: ""
+        height: 3px
+        left: 75px
+        position: absolute
+        transition: width 0.2s cubic-bezier(0.58, 0.3, 0.005, 1)
+        width: 0
+
+      &:before
+        display: block
+        height: 65px
+        width: 65px
+        content: ""
+        position: absolute
+        left: 0
+        top: 0
+        background-size: 100% auto
+        background-image: url("/assets/images/one.svg")
+
+      &:hover
+        letter-spacing: 0.1em
+
+        &:before
+          transform: rotate(-10deg)
+          transition: transform 0.2s
+
+        &:after
+          width: calc(100% - 20px - 65px)
+
+    &.tl
+      left: 0
+      top: 0
+
+      a::after
+        background: $color-border-tl
+
+    &.bl
+      bottom: 0
+      left: 0
+
+      a::after
+        background: $color-border-bl
+
+    &.tr
+      top: 0
+      right: 0
+
+      a::after
+        background: $color-border-tr
+
+    &.br
+      bottom: 0
+      right: 0
+
+      a::after
+        background: $color-border-br
+
+    &.tr, &.br
+      a
+        padding: 15px 75px 15px 10px
+
+        &:before
+          left: auto
+          right: 0
+
+        &:after
+          left: auto
+          right: 75px
+
+
+
+.is-front-page
+  .nav
+    display: block

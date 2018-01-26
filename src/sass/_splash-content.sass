@@ -1,0 +1,68 @@
+.splash-content
+  align-items: center
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  padding: 40px
+
+  // opacity: 0
+  text-align: center
+  text-shadow: 1px 1px 0 #fff
+  transition: opacity 0.5s
+  z-index: 50
+
+  .title
+    font-weight: 900
+    text-transform: uppercase
+    font-size: 36px
+    font-family: $font-bold
+    letter-spacing: 5px
+
+  .text
+    font-size: 16px
+    font-weight: 500
+    margin: 20px auto 30px
+    max-width: 700px
+    text-shadow: none
+
+    @media only screen and (min-width: 641px)
+      font-size: 24px
+      margin: 40px auto 60px
+
+.content-nav
+  display: block
+  width: 100%
+  font-family: $font-bold
+  letter-spacing: 1px
+
+  li
+    text-transform: uppercase
+    margin-bottom: 5px
+
+    &:nth-child(2n+1) a:hover
+      transform: rotate(3deg)
+
+    &:nth-child(2n) a:hover
+      transform: rotate(-3deg)
+
+    &:nth-child(1) a
+      transform: rotate(-1deg)
+      font-size: 2.5rem !important
+      color: $color-border-tl
+
+    &:nth-child(2) a
+      font-size: 2.2rem !important
+      color: $color-border-bl
+
+    &:nth-child(3) a
+      font-size: 2rem !important
+      color: $color-border-br
+
+    a
+      font-size: 24px
+      font-weight: 900
+      display: inline-block
+      transition: transform 0.2s
+
+      &:hover
+        text-decoration: underline
