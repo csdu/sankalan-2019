@@ -154,8 +154,8 @@ class Background {
    * starts animation
    */
   animate() {
-    this.ctx.fillStyle = this.backgroundColor;
-    this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
+    this.canvas.width = this.canvas.width; // clear canvas
+    this.canvas.style.background = this.backgroundColor;
 
     // draw
     this.move();
@@ -170,7 +170,7 @@ class Background {
       }
     }
     this.frameCount += 1;
-    window.requestAnimationFrame(this.animate.bind(this));
+    return window.requestAnimationFrame(this.anim);
   }
 
   /**
@@ -190,6 +190,7 @@ class Background {
       this.initPolyLine(this.polylines[i]);
     }
     // .forEach(this.initPolyLine);
+    this.anim = this.animate.bind(this);
     this.resize();
     this.animate();
     window.addEventListener('resize', this.resize);
