@@ -1,0 +1,62 @@
+.loader
+  height: 4px
+  width: 100%
+  position: fixed
+  top: -4px
+  overflow: hidden
+  z-index: 99999
+  transition: top 0.6s ease
+
+  &:before
+    display: block
+    position: absolute
+    content: ""
+    left: -200px
+    width: 200px
+    height: 100%
+    background-color: $color-tl
+    animation: Loader 2s linear infinite
+
+.loading
+  .main-content,
+  .splash-content,
+  footer
+    opacity: 0
+
+  .loader
+    top: 0
+
+  .nav-container .tl
+    transform: translate(-200px, -200px)
+
+  .nav-container .tr
+    transform: translate(200px, -200px)
+
+  .nav-container .bl
+    transform: translate(-200px, 200px)
+
+  .nav-container .br
+    transform: translate(200px, 200px)
+
+  .site-header
+    transform: translateY(-200px)
+
+@keyframes Loader
+  from
+    left: -200px
+    width: 30%
+
+  50%
+    width: 30%
+
+  70%
+    width: 70%
+
+  80%
+    left: 50%
+
+  95%
+    left: 120%
+
+  to
+    left: 100%

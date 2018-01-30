@@ -26,6 +26,7 @@ const paths = {
     src: [
       'header.js',
       'canvas.js',
+      'router.js',
     ].map(f => `${srcDir}/js/${f}`),
     dest: `${distDir}/assets/js`,
   },
