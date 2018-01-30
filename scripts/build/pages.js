@@ -19,6 +19,11 @@ module.exports = {
     slug: 'events/',
     file: 'events.pug',
   },
+  contact: {
+    title: 'Contact Us',
+    slug: 'contact/',
+    file: 'contact.pug',
+  },
   events_algoholics: {
     title: 'Algoholics',
     slug: 'events/algoholics',

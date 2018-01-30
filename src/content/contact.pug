@@ -1,0 +1,30 @@
+mixin contact({ title, email, phone })
+  .module
+    .contact.vc
+      if email
+        a.button(href="mailto://" + email) #{email}
+      if phone
+        a.button(href="tel://" + phone.replace(/\s/g, '')) #{phone}
+      em #{title}
+
+.banner
+  .banner-content
+    h2.banner-title Contact Us
+    p For general messages, feel free to reach us at our
+    a.button(href="https://facebook.com" style="text-shadow: none") Facebook page
+    p You can also contact for specific queries at links below
+.content
+  .section.bg-white.module
+    div
+      h3 We are located at:
+      pre.
+        Department of Computer Science,
+        Faculty of Mathematical Sciences,
+        New Academic Block,
+        University of Delhi
+
+    a.button(href="https://goo.gl/maps/YqMFB3uxy9m" target="_blank" style="margin-left: auto") Get Directions #[br] 28°41'17.2"N 77°12'25.7"E
+
+  +contact({ title: "...if you're interested in sponsoring the fest", email: "sponsor@ducs.in", phone: "999999999"  })
+
+  +contact({ title: "...if you're interested in sponsoring the fest", email: "sponsor@ducs.in", phone: "999999999"  })
