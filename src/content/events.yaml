@@ -1,0 +1,54 @@
+# this file contains description of all events
+# rendered on events/ and events/*
+
+algoholics:
+  title: Algoholics
+  quote:
+    text: An algorithm must be seen to be believed.
+    by: Donald Knuth
+  description:  |-
+    Multiple-choice based questions testing the participant’s algorithmic competency.
+    ...then solve set of problems overnight to develop algorithms.
+  image: /assets/images/logo-event1.png
+  teamSize: 2
+  lang: cpp
+  prizes:
+    - 10000
+    - 5000
+    - 1000
+    - GOODIES
+  rounds:
+    - Multiple-choice based questions testing the participant’s algorithmic competency.
+    - |-
+      The qualifying teams would be given a set of problems to develop an algorithm/pseudo-code on.
+      The problems are to be solved overnight at their own places and next day they have to present their solution to judges for evaluation.
+  details:
+    - hello world
+    - bye world
+codeathon:
+  title: Code-a-thon
+  description:  |-
+    Do you have what it takes to survive a coding marathon? Then we have just the right thing for you...
+    Multiple-choice questions based on concepts of C and C++.
+    ...then solve some real problems using C/C++.
+  image: /assets/images/logo-event1.png
+
+select-all-from-brain:
+  title: SELECT * FROM BRAIN
+  quote:
+    text: An algorithm must be seen to be believed.
+    by: Donald Knuth
+  description:  |-
+    Multiple-choice based questions testing the participant’s algorithmic competency.
+    ...then solve set of problems overnight to develop algorithms.
+  image: /assets/images/logo-event1.png
+
+brainspark:
+  title: BrainSpark
+  quote:
+    text: You can make anything happen if you put your mind to it.
+    by: Lori Greiner
+  description:  |-
+    We'll judge your logical and quantitative abilities.
+    And then we give you freaking cool puzzles to solve!
+  image: /assets/images/logo-event1.png

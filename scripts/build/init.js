@@ -1,12 +1,12 @@
 const pages = require('./pages');
-const mapValues = require('async/mapValues');
+const map = require('async/map');
 // const { now } = require('./utils');
 const build = require('./build');
 const watcher = require('./watcher');
 
 const init = (watch = false) => {
   // console.log(`[${now()}] Starting 'content build'... `);
-  mapValues(pages, build, (err) => {
+  map(pages, build, (err) => {
     if (err) {
       console.error(err);
       return;

@@ -1,0 +1,31 @@
+mixin eventInfo(ev, lang)
+  if lang === 'py'
+    pre.
+      prizes = [#{ev.prizes.join(', ')}]
+
+      self.teamSize = #{ev.teamSize}
+
+      if self.isWinner():
+        prize = #[span(title="Using a getter") self.prize]
+        self.receive(prize)
+
+  else if lang === 'cpp'
+    pre.
+      Prize prizes[#{ev.prizes.length}] = {#{ev.prizes.join(', ')}};
+
+      unsigned int teamSize = #{ev.teamSize};
+
+      if (isWinner(team)) {
+        Prize prize = getPrize(team);
+        sendPrize(team, prize);
+      }
+  else if lang === 'js'
+    pre.
+      const prizes = [#{ev.prizes.join(', ').replace('GOODIES', '...GOODIES')}]
+
+      const teamSize = #{ev.teamSize};
+
+      if (team.isWinner()) {
+        const prize = team.getPrize();
+        team.receive(prize);
+      }

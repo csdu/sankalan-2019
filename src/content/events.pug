@@ -1,0 +1,11 @@
+include _mixins/events
+
+.banner
+  .banner-content
+    h1.banner-subtitle #{page.title}
+    h2.banner-title Something for everyone!
+.content
+  div
+    .section
+      - for (const e in events)
+        +events(e)

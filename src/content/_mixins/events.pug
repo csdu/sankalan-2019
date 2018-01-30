@@ -1,0 +1,14 @@
+//- used to display list of events on events/ page
+mixin events($key)
+  - const content = events[$key]
+  - const permalink = `/sankalan/events/${$key}`
+  .module
+    div.module--half
+      if content.image
+        img(src=content.image)
+    div.module--half
+      h2 #{content.title}
+      if content.quote
+        h3 “#{content.quote.text}” #[span &mdash; #{content.quote.by}]
+      p !{content.description.replace(/\n/g, '</p><p>')}
+      a.button(href=permalink) Know more

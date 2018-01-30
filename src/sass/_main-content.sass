@@ -1,21 +1,25 @@
 .main-content
-  padding-top: 120px
+  // padding-top: 120px
   overflow: hidden
   position: relative
   z-index: 1000
   display: flex
   flex-direction: column
-  height: 100%
 
-@import "_banner"
+@import _banner
 
 .content
-  padding: 1em 0
   flex: 1
+
+.section
+  padding: 50px
 
 .bg-white
   background: #fff
-  padding: 50px
+
+.bg-black
+  background: #000
+  color: #fff
 
 .full-height
   height: 100%
@@ -23,3 +27,92 @@
 .is-front-page
   .main-content
     display: none
+
+.module
+  align-items: center
+  display: flex
+  width: 100%
+  padding: 20 40px
+  max-width: 1160px
+
+  & + .module
+    margin-top: 2em
+
+.module:nth-child(2n)
+  margin-right: auto
+  background: #fafafa
+
+.module:nth-child(2n+1)
+  margin-left: auto
+  background: #eee
+
+.module:nth-child(2n+3)
+  margin-left: auto
+  margin-right: auto
+  background: #fdfdfd
+
+  .module--half:nth-child(2)
+    order: -1
+
+.module--half
+  padding: 0.5em
+
+  p + p
+    margin-top: 0.5em
+
+.centered
+  margin-left: auto
+  margin-right: auto
+
+.content
+  h2
+    font-weight: 700
+    font-size: 2.4em
+    margin-top: 0.2em
+    margin-bottom: 0.2em
+
+  h3
+    font-size: 1.6em
+    font-weight: 700
+    margin-bottom: 0.2em
+
+    span
+      font-size: 70%
+      color: #555
+      display: block
+      white-space: nowrap
+      margin-left: auto
+      text-align: right
+
+a.button
+  outline: none
+  background: $color-border-tl
+  display: inline-block
+  padding: 0.8rem
+  font-size: 16px
+  text-transform: uppercase
+  font-weight: bold
+  color: #000
+  margin: 1em
+  position: relative
+  box-shadow: 8px 7px 0px 0px #333
+  transition: all 0.2s cubic-bezier(0.18, 0.74, 0.27, 0.86)
+
+  &:hover, &:active, &:focus
+    cursor: pointer
+    right: 2px
+    top: 2px
+    box-shadow: (-8px) -7px 0px 0px darken($color-border-tl, 10)
+
+@media screen and (max-width: 640px)
+  .section
+    padding: 10px
+
+  .module
+    flex-direction: column
+
+    & + .module
+      margin-top: 10px
+
+  .module--half
+    order: 1 !important

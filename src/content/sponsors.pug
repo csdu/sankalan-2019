@@ -1,1 +1,20 @@
-p rendered content for sponsors page :D
+- const mobile = '9999999999'
+- const email = 'sponsor@ducs.in'
+
+mixin sponsor(s)
+  a.sponsor(href=s.link target="_blank" title=s.name, style=`background-image: url('${s.image}'); background-size: cover; background-position: center center`)
+
+.banner
+  .banner-content
+    h1.banner-subtitle #{page.title}
+    h2.banner-title Thanks for the funds!
+.content
+  div
+    .section.sponsors
+      each sponsor in sponsors
+        +sponsor(sponsor)
+    .section.bg-white
+      h2 Interested in sponsoring us?
+      h3 Reach us at:
+      a.button(href='mailto://' + email) #{email}
+      a.button(href='tel://+91' + mobile) Call #{mobile}

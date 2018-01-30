@@ -1,0 +1,65 @@
+.event-quote
+  padding: 2em 1em
+  color: #777
+  font-style: italic
+
+  span
+    line-height: 1
+    font-size: 80%
+
+.event-page
+  display: flex
+  flex-wrap: wrap
+  justify-content: flex-end
+
+  & > div
+    display: inline-block
+    padding: 1em 2em
+    margin: 0.5em
+    min-height: 250px
+    border: 0.5em solid transparent
+
+.event-info
+  background-color: rgba(0, 0, 0, 0.2)
+  color: #fff
+  border-color: darken($color-border-tl, 5) !important
+  display: flex !important
+  flex-direction: column
+  justify-content: center
+  width: 100%
+  max-width: 450px
+  transition: background 0.2s #{$anim-cubic}
+
+  &:hover
+    background-color: $color-border-tl
+    color: #000
+    cursor: pointer
+
+.event-round
+  background-image: url("/assets/images/pattern.svg")
+  background-size: 20px
+  display: inline-block
+  flex-grow: 1
+  width: 100%
+  max-width: 600px
+  transition: background 0.2s #{$anim-cubic}
+
+  &:nth-child(2n)
+    background-color: #f1f1f1
+
+  &:nth-child(2n+1)
+    background-color: #eaeaea
+
+  &:hover
+    background-color: #fff
+
+  h3
+    margin-top: 0.5em
+
+.event-details li
+  font-size: 20px
+  max-width: 640px
+
+.event-info pre
+  white-space: pre-wrap
+  font-size: 19px
