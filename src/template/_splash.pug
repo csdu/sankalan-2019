@@ -1,13 +1,15 @@
-mixin nav()
-  nav.content-nav
-    ul
-      +navItem('🔥 Register 🔥', '/sankalan/register')
-      +navItem('Meet the team', '/sankalan/team')
-      +navItem('Need help?', '/sankalan/contact')
-
 mixin navItem($name, $link)
   li
     a(href=$link) !{$name}
+
+mixin nav()
+  nav.content-nav
+    ul
+      li
+        a.button(href='/sankalan/register' style="text-shadow: none; color: #000") Register
+      +navItem('Meet the team', '/sankalan/team')
+      +navItem('Need help?', '/sankalan/contact')
+
 
 .splash-wrapper
   .splash

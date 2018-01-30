@@ -40,30 +40,27 @@
     text-transform: uppercase
     margin-bottom: 5px
 
-    &:nth-child(2n+1) a:hover
-      transform: rotate(3deg)
-
-    &:nth-child(2n) a:hover
-      transform: rotate(-3deg)
+    a
+      font-weight: 900
+      display: inline-block
 
     &:nth-child(1) a
       transform: rotate(-1deg)
       font-size: 2.5rem !important
-      color: $color-tl
 
     &:nth-child(2) a
+      transform: rotate(2deg)
       font-size: 2.2rem !important
       color: $color-bl
 
     &:nth-child(3) a
+      transform: rotate(-2deg)
       font-size: 2rem !important
       color: $color-br
 
-    a
-      font-size: 16px
-      font-weight: 900
-      display: inline-block
-      transition: transform 0.2s
+  li:nth-child(n+2) a
+    transition: transform 0.2s
 
-      &:hover
-        text-decoration: underline
+    &:hover
+      transform: scale(1.05)
+      text-decoration: underline
