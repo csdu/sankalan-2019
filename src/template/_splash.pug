@@ -1,3 +1,5 @@
+- const prizeAmount = '2,50,000'
+
 mixin navItem($name, $link)
   li
     a(href=$link, class="xhr") !{$name}
@@ -25,6 +27,8 @@ mixin nav()
           h1.screen-reader-text Sankalan
         .text
           p Sankalan is the annual tech fest of Dept Of Computer Science, University of Delhi (DUCS).
+          p &nbsp;
+          p Prizes worth #[strong Rs. #{prizeAmount}]!
           p &nbsp;
           p
             span March 10, 2018
