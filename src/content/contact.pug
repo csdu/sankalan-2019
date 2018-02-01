@@ -1,3 +1,5 @@
+- const email = 'sankalan2018.ducs@gmail.com'
+
 mixin contact({ title, email, phone })
   .module
     .contact.vc
@@ -10,10 +12,15 @@ mixin contact({ title, email, phone })
 .banner
   .banner-content
     h2.banner-title Contact Us
-    p For general messages, feel free to reach us at our
-    a.button(href="https://facebook.com" style="text-shadow: none") Facebook page
-    p You can also contact for specific queries at links below
+    //- p You can also contact for specific queries at links below
 .content
+  .section
+    div.module
+      p For general queries, feel free to reach us at our Facebook page:
+      a.button(href="https://facebook.com/DUCS.Sankalan" style="text-shadow: none" target="_blank") fb.com/DUCS.Sankalan
+    div.module
+      p You can also send us an email at
+      a.button(href="mailto://" + email, style="text-shadow: none") #{email}
   .section.bg-white.module
     div
       h3 We are located at:
@@ -25,6 +32,6 @@ mixin contact({ title, email, phone })
 
     a.button(href="https://goo.gl/maps/YqMFB3uxy9m" target="_blank" style="margin-left: auto") Get Directions #[br] 28°41'17.2"N 77°12'25.7"E
 
-  +contact({ title: "...if you're interested in sponsoring the fest", email: "sponsor@ducs.in", phone: "999999999"  })
+  //- +contact({ title: "...if you're interested in sponsoring the fest", email: "sponsor@ducs.in", phone: "999999999"  })
 
-  +contact({ title: "...if you're interested in sponsoring the fest", email: "sponsor@ducs.in", phone: "999999999"  })
+  //- +contact({ title: "...if you're interested in sponsoring the fest", email: "sponsor@ducs.in", phone: "999999999"  })

@@ -1,8 +1,6 @@
 mixin eventInfo(ev, lang)
   if lang === 'py'
     pre.
-      prizes = [#{ev.prizes.join(', ')}]
-
       self.teamSize = #{ev.teamSize}
 
       if self.isWinner():
@@ -11,8 +9,6 @@ mixin eventInfo(ev, lang)
 
   else if lang === 'cpp'
     pre.
-      Prize prizes[#{ev.prizes.length}] = {#{ev.prizes.join(', ')}};
-
       unsigned int teamSize = #{ev.teamSize};
 
       if (isWinner(team)) {
@@ -21,8 +17,6 @@ mixin eventInfo(ev, lang)
       }
   else if lang === 'js'
     pre.
-      const prizes = [#{ev.prizes.join(', ').replace('GOODIES', '...GOODIES')}]
-
       const teamSize = #{ev.teamSize};
 
       if (team.isWinner()) {

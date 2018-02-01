@@ -14,6 +14,11 @@ module.exports = {
     slug: '',
     file: 'index.pug',
   },
+  register: {
+    title: 'Register',
+    slug: 'register/',
+    file: 'register.pug',
+  },
   events: {
     title: 'Events',
     slug: 'events/',

@@ -93,18 +93,17 @@ const loaderListener = (e) => {
 };
 
 initLoader = () => {
-  const links = document.querySelectorAll('a');
+  const links = document.querySelectorAll('a.xhr');
 
   for (const link of links) {
     link.removeEventListener('click', loaderListener);
     const { href } = link;
     const relHref = href.replace(`${window.location.protocol}//${window.location.host}`, '');
     if (relHref === href) {
-      return; // is external
+      continue; // is external
     }
     if (href === window.location.href) {
       link.addEventListener('click', e => e.preventDefault());
-      // eslint-disable-next-line no-continue
       continue;
     }
     link.addEventListener('click', loaderListener);

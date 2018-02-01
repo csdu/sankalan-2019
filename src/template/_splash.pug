@@ -1,12 +1,12 @@
 mixin navItem($name, $link)
   li
-    a(href=$link) !{$name}
+    a(href=$link, class="xhr") !{$name}
 
 mixin nav()
   nav.content-nav
     ul
       li
-        a.button(href='/sankalan/register/' style="text-shadow: none; color: #000") Register
+        a.button(href='/sankalan/register/' style="text-shadow: none; color: #000" class="xhr") Register
       +navItem('Meet the team', '/sankalan/team/')
       +navItem('Need help?', '/sankalan/contact/')
 
@@ -25,4 +25,12 @@ mixin nav()
           h1.screen-reader-text Sankalan
         .text
           p Sankalan is the annual tech fest of Dept Of Computer Science, University of Delhi (DUCS).
+          p &nbsp;
+          p
+            span March 10, 2018
+            | &nbsp;&mdash;&nbsp;
+            span March 11, 2018
+          p
+            strong
+              a(href="https://goo.gl/maps/YqMFB3uxy9m", target="_blank", title="Get directions on Google Maps", style="color: #000")  28°41'17.2"N 77°12'25.7"E
         +nav()

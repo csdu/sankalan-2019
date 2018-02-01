@@ -4,17 +4,21 @@ footer
   nav
     ul
       li
-        a(href='/sankalan/contact/') Contact
+        a(class="xhr" href='/sankalan/contact/') Contact
       li
-        a(href='/sankalan/privacy-policy/') Privacy Policy
+        a(class="xhr" href='/sankalan/privacy-policy/') Privacy Policy
       li
-        a(href='/sankalan/dashboard/') Dashboard
-      li.fb
+        a(class="xhr" href='/sankalan/dashboard/') Dashboard
+      li.social
         a(href="https://facebook.com" title="Find us on Facebook")
           img(src="/assets/images/fb-icon.svg", alt="FB")
+        | &nbsp;
+        a(href="https://instagram.com/" title="Find us on Instagram")
+          img(src="/assets/images/instagram-icon.png", alt="Instagram")
 
   .copyright
-    p Copyright © 2018. Made with ❤ by the #[a(href='/sankalan/team/') Developer Team].
-    p Computer Science Society (DUCSS),  #[br]Dept. of Computer Science, University of Delhi.
+    p Copyright © 2018. Made with ❤ by #[a(href='https://github.com/sidvishnoi') Sid Vishnoi].
+    p Meet the #[a(class="xhr" href='/sankalan/team/') Sankalan Team].
+    p Delhi University Computer Science Society (DUCSS)
 
 script(type="application/javascript", src=script)
