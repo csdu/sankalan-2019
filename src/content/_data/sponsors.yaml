@@ -1,4 +1,14 @@
 sponsors:
-  - name: Sponsor us!
-    image: 'https://s3.amazonaws.com/passle-net/568fe9b7b00e7e0a9817a41b/575ae4aa3d947408083e233c/2017-01-27-10-18-57-079-guid-1485512362886-Your-Name-Here_5000x500.jpg'
-    link: /sankalan/contact/
+  current:
+    - name: Sponsor us!
+      image: 'https://s3.amazonaws.com/passle-net/568fe9b7b00e7e0a9817a41b/575ae4aa3d947408083e233c/2017-01-27-10-18-57-079-guid-1485512362886-Your-Name-Here_5000x500.jpg'
+      link: /sankalan/contact/
+  past:
+    - https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Gigabyte_logo.svg/1280px-Gigabyte_logo.svg.png
+    - /assets/images/sponsors/DRDO-logo.png
+    - /assets/images/sponsors/Educational Partner.png
+    - /assets/images/sponsors/Entertainment.jpg
+    - /assets/images/sponsors/Event Sponser.png
+    - /assets/images/sponsors/Knowledge partner.png
+    - /assets/images/sponsors/merchandise.png
+    - /assets/images/sponsors/togetherness partner.png

@@ -11,8 +11,14 @@ mixin sponsor(s)
 .content
   div
     .section.sponsors
-      each sponsor in sponsors
+      each sponsor in sponsors.current
         +sponsor(sponsor)
+    .section.bg-white
+      h2(style="text-align:center; margin-bottom:16px;border-bottom: 3px solid #eeb81d") Our past sponsors
+      .past-sponsors
+        each sponsor in sponsors.past
+          .img
+            img(src=sponsor)
     .section.bg-white
       h2 Interested in sponsoring us?
       h3 Reach us at:
