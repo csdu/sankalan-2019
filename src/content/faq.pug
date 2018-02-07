@@ -1,0 +1,21 @@
+mixin section(heading)
+  .section.module
+    div
+      p
+        strong #{heading}
+      if block
+        block
+
+.banner
+  .banner-content
+    h2.banner-title FAQ
+.content
+  +section('Can I participate?')
+    p Yes.
+    p Why not.
+    p Definitely mate.
+
+  +section('Can I participate?')
+    p Yes.
+    p Why not.
+    p Definitely mate.

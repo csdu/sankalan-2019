@@ -1,6 +1,5 @@
 # this file contains description of all events
 # rendered on events/ and events/*
-
 algoholics:
   title: Algoholics
   quote:
@@ -12,11 +11,6 @@ algoholics:
   image: /assets/images/logo-event1.png
   teamSize: 2
   lang: cpp
-  prizes:
-    - 10000
-    - 5000
-    - 1000
-    - GOODIES
   rounds:
     - Multiple-choice based questions testing the participant’s algorithmic competency.
     - |-
@@ -25,6 +19,7 @@ algoholics:
   details:
     - hello world
     - bye world
+
 codeathon:
   title: Code-a-thon
   description:  |-
@@ -32,16 +27,33 @@ codeathon:
     Multiple-choice questions based on concepts of C and C++.
     ...then solve some real problems using C/C++.
   image: /assets/images/logo-event1.png
+  teamSize: 2
+  lang: cpp
+  rounds:
+    - Multiple-choice based questions based on concepts of C/C++.
+    - |-
+      The qualifying teams would be given a set of problems to code in C/C++.
+  details:
+    - 'Operating System: Windows'
+    - 'Platform: Dev C++'
 
-select-all-from-brain:
+select-star-from-brain:
   title: SELECT * FROM BRAIN
   quote:
-    text: An algorithm must be seen to be believed.
-    by: Donald Knuth
+    text: Select , Ignite , Fire...Prove that you have the answer to all queries.!!!
   description:  |-
-    Multiple-choice based questions testing the participant’s algorithmic competency.
-    ...then solve set of problems overnight to develop algorithms.
+    Multiple-choice questions based on standard SQL, XQuery and DBMS concepts.
+    ...then solve queries using SQL.
   image: /assets/images/logo-event1.png
+  teamSize: 2
+  lang: cpp
+  rounds:
+    - Multiple-choice questions based on standard SQL, XQuery and DBMS concepts.
+    - |-
+      The teams qualifying would be given a set of queries, that would have to be solved using SQL.
+  details:
+    - 'Operating System: Windows 10'
+    - 'Platform: Oracle 10g'
 
 brainspark:
   title: BrainSpark
@@ -52,3 +64,90 @@ brainspark:
     We'll judge your logical and quantitative abilities.
     And then we give you freaking cool puzzles to solve!
   image: /assets/images/logo-event1.png
+  teamSize: 2
+  lang: py
+  rounds:
+    - Multiple Choice Questions testing the logical and quantitative ability of participants.
+    - |-
+      The qualifying teams would be given a set of puzzles to solve.
+  details:
+    - hello world
+    - bye world
+
+debug-plus-plus:
+  title: debug++
+  quote:
+    text: Programming allows you to think about thinking, and while debugging you learn learning.
+    by: Nicholas Negroponte
+  description:  |-
+    Only when you are debugging somebody else’s program you understand that only 10% of the programmers are above average... are you among them?
+  image: /assets/images/logo-event1.png
+  teamSize: 2
+  lang: cpp
+  rounds:
+    - Multiple-choice based questions based on concepts of C/C++.
+    - |-
+      The qualifying teams would be given a set of certain C/C++ codes to debug.
+  details:
+    - 'Operating System: Windows - Dev C++'
+    - 'Operating System: Ubuntu 16 - gcc/g++'
+
+java-juggling:
+  title: Java juggling
+  description:  |-
+    Do you have what it takes to survive a coding marathon? Then we have just the right thing for you...
+  image: /assets/images/logo-event1.png
+  teamSize: 2
+  lang: cpp
+  rounds:
+    - Multiple-choice based questions based on concepts of Java.
+    - |-
+      The qualifying teams would be given a set of problems to code in Java.
+  details:
+    - 'Operating System: Any'
+    - 'Platform: Any Java IDE'
+
+make-app:
+  title: MakeApp
+  quote:
+    text: Come,Code,Develop!!
+  description:  |-
+    Create history with us in the field of Android/IOS App Development by showcasing your innovations.
+  image: /assets/images/logo-event1.png
+  teamSize: 2
+  lang: cpp
+  rounds:
+    - Elimination round (Multiple-choice based questions based on concepts of Java/Android).
+    - |-
+      The qualifying teams would be asked to develop an android/ios application overnight at their own places and next day have to present their project to judges for final evaluation
+  details:
+    - 'Operating System: Any Suitable System.'
+    - 'Platform: Platform as per requirement'
+
+mind-matters:
+  title: Mind Matters
+  description:  |-
+    Think you’re Mr. Know-it-All of the silicon world? Come and participate in this event, test your knowledge, let the world know that and walk away as a champion.
+  image: /assets/images/logo-event1.png
+  teamSize: 2
+  lang: py
+  rounds:
+    - Multiple-choice questions based on Computer Science and IT world.
+    - |-
+      The qualifying teams would compete in the Event's Main Quiz.(On the first day of intra-sankalan)
+
+spin-a-web:
+  title: Spin a Web
+  description:  |-
+    Have you been bitten by the creative bug? Then we have just the right antidote.
+    Spin on the creativity loom a web-site of Imagination, Innovation and Design.
+  image: /assets/images/logo-event1.png
+  teamSize: 2
+  lang: js
+  rounds:
+    - Multiple-choice questions based on internet, Web Servers, Web Development, HTML, CSS & JavaScript and PHP/.Net.
+    - |-
+      The qualifying teams would be asked to develop a website using HTML, CSS, PHP/.Net and MySQL, overnight at their own places and next day present their project to judges for final evaluation.
+  details:
+    - 'Operating System: Any Suitable System.'
+    - 'Platform: Apache 2.4.x / PHP 5.6/7.2 / MySQL 5.6.x / Asp.Net / Node / MongoDB or as per requirement'
