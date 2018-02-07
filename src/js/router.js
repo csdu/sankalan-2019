@@ -1,4 +1,4 @@
-/* global bg, isFrontPage */
+/* global bg */
 
 let initLoader;
 const maxDelay = 500; // if request takes maore than this much ms, we won't show user the "loading"
@@ -57,6 +57,7 @@ const loadPage = (href) => {
   const handleLoadError = (err) => {
     console.error(err);
     hideLoader();
+    bg.changeBackground('#fff');
   };
 
   const url = `${href}index.json`;
@@ -83,13 +84,9 @@ window.onpopstate = ({ state }) => {
 const loaderListener = (e) => {
   e.preventDefault();
   const target = e.target.closest('a');
-  document.body.classList.add('loading');
   reqStartTime = new Date();
-  const wait = isFrontPage() ? 600 : 0;
-  setTimeout(() => {
-    showLoader();
-    loadPage(target.href);
-  }, wait);
+  showLoader();
+  loadPage(target.href);
 };
 
 initLoader = () => {
