@@ -10,30 +10,20 @@
   transition: opacity 0.5s $anim-cubic
   z-index: 50
 
-  @media screen and (max-width: 640px)
-    p
-      font-size: 15px
-
   .title
     font-weight: 900
     text-transform: uppercase
-    font-size: 24px
     font-family: $font-bold
     letter-spacing: 5px
-
-    @media only screen and (min-width: 641px)
-      font-size: 36px
+    font-size: 36px
 
   .text
-    font-size: 16px
     font-weight: 500
-    margin: 20px auto 30px
     max-width: 700px
     text-shadow: none
-
-    @media only screen and (min-width: 641px)
-      font-size: 24px
-      margin: 40px auto 60px
+    padding: 5px
+    background: rgba(255,255,255,0.5)
+    margin: 40px auto 60px
 
 .content-nav
   display: block
@@ -69,3 +59,29 @@
     &:hover
       transform: scale(1.05)
       text-decoration: underline
+
+@media screen and (max-width: 640px)
+  .splash-content
+    padding: 10px
+
+    p
+      font-size: 12px
+
+    .title
+      font-size: 18px
+
+    .text
+      margin: 5px auto
+
+  li.nav-item
+    margin: 10px
+
+  .content-nav
+    li
+      margin-bottom: 2px
+
+    li:first-child a
+      font-size: 1.4rem !important
+
+    li:nth-child(n+2) a
+      font-size: 1rem !important

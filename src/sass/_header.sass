@@ -49,13 +49,6 @@
       font-family: $font-primary
       font-size: 14px
 
-    @media screen and (max-width: 640px)
-      font-size: 1em
-
-      &:after
-        top: 0.4em
-        right: 1em
-
   nav
     margin-left: auto
 
@@ -93,6 +86,14 @@
   .site-header
     .menu-toggle
       display: block
+
+    .logo
+      font-size: 1em
+
+      &::after
+        font-size: 10px
+        top: 0.6em
+        right: 1.2em
 
     nav
       display: none
