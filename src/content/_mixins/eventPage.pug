@@ -8,7 +8,7 @@ mixin eventPage(ev)
         img(src=ev.image)
       if ev.quote
         blockquote.event-quote
-          p “#{ev.quote.text}”
+          p &#147;#{ev.quote.text}&#148;
           span &mdash; #{ev.quote.by}
       p !{ev.description.replace(/\n/g, '</p><p>')}
   .content
