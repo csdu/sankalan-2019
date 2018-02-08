@@ -34,6 +34,10 @@ const paths = {
     src: `${srcDir}/images/**/*`,
     dest: `${distDir}/assets/images`,
   },
+  fonts: {
+    src: `${srcDir}/fonts/**/*`,
+    dest: `${distDir}/assets/fonts`,
+  },
   assetManifest,
 };
 
@@ -95,6 +99,12 @@ const scripts = () => {
     .pipe(gulp.dest(paths.js.dest));
 };
 
+const fonts = () =>
+  gulp.src(paths.fonts.src, {
+    since: gulp.lastRun(fonts),
+  })
+    .pipe(gulp.dest(paths.fonts.dest));
+
 const styles = () => {
   if (isProduction) {
     return gulp.src(paths.sass.src)
@@ -125,6 +135,7 @@ const build = (done) => {
     styles,
     content,
     images,
+    fonts,
   )(done);
 };
 
@@ -137,6 +148,7 @@ const watch = () => {
   gulp.watch(paths.sass.src, styles);
   gulp.watch(paths.js.src, scripts);
   gulp.watch(paths.images.src, images);
+  gulp.watch(paths.fonts.src, fonts);
 };
 
 module.exports = {
@@ -146,6 +158,7 @@ module.exports = {
   styles,
   scripts,
   images,
+  fonts,
   content: (cb) => {
     pages(false);
     cb();
