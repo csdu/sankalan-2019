@@ -1,0 +1,40 @@
+.credits
+  margin-bottom: 16px
+  flex-wrap: wrap
+  margin: 0 auto 16px
+
+  .credit
+    width: 100%
+    display: flex
+    padding: 5px
+    justify-content: space-between
+    align-items: center
+
+    &:hover
+      background-color: $color-tl
+      background-image: url("/assets/images/pattern.svg")
+      background-size: 25px 25px
+      color: #000
+
+  img
+    height: 20px
+    width: 20px
+
+  .avatar
+    display: block
+    position: relative
+
+    .link
+      position: absolute
+      bottom: -5px
+      right: -5px
+
+  img.avatar
+    width: 56px
+    height: 56px
+
+  a
+    margin-left: 4px
+    font-weight: bold
+    font-family: $font-bold
+    color: $color-tr

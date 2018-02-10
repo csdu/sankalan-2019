@@ -9,6 +9,7 @@ const { paths } = require('./utils');
 
 paths.eventsData = path.resolve(paths.content, './_data/events.yaml');
 paths.sponsorsData = path.resolve(paths.content, './_data/sponsors.yaml');
+paths.peopleData = path.resolve(paths.content, './_data/people.yaml');
 
 const generate = (page, content, cb) =>
   applyEach(
@@ -30,11 +31,16 @@ const build = (page, callback) => {
     ? yaml.readSync(paths.sponsorsData)
     : { sponsors: [] };
 
+  const people = page.slug.includes('team/')
+    ? yaml.readSync(paths.peopleData)
+    : { sponsors: [] };
+
   return waterfall([
     cb => renderContent({
       page,
       events,
       sponsors,
+      people,
     }, cb),
     (content, cb) => generate(page, content, cb),
   ], callback);

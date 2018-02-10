@@ -1,0 +1,34 @@
+mixin credit(type, key)
+  - const p = people[key];
+  .credit
+    div
+      p
+        strong #{type}:&nbsp;
+      p #{p.name}
+    div.avatar
+      - const image = p.image || '/assets/images/one.svg';
+      if p.url
+        a(href=p.url, target="_blank" title=`${p.name} @ ${p.url}`)
+          img.avatar(src=image alt=p.name)
+      else
+        img.avatar(src=image alt=p.name title=p.name)
+      if p.url
+        img.link(src="/assets/images/github-icon.svg")
+
+.banner
+  .banner-content
+    h1.banner-subtitle #{page.title}
+    h2.banner-title
+    p Sankalan won't be possible without its passionate team.
+.content
+  .section.bg-black
+    h2 The Panel
+    .credits
+      +credit('President', 'ashish-aggarwal')
+      +credit('Vice President', 'mohit-kumar')
+      +credit('General Secretary', 'puru-sharma')
+      +credit('Joint Secretary', 'abhinav-kesarvani')
+      +credit('Treasurer', 'ajay-jajoo')
+    h2 Developer Team
+    .credits
+      +credit('Web Developer', 'sudhanshu-vishnoi')
