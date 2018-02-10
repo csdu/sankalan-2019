@@ -6,7 +6,6 @@ const basename = '/sankalan';
 const savePath = slug => getSavePath(slug, 'json');
 
 const createJson = (page, content) => ({
-  build: new Date(),
   slug: page.slug,
   title: `${page.title + (page.title ? ' // ' : ' ')}Sankalan 2018`,
   link: `${basename}/${page.slug}`,
