@@ -25,10 +25,11 @@ const getMappedAssets = (assets) => {
   const mappedAssets = {};
   const basepath = '/assets';
   Object.keys(assets).map((f) => {
+    const ff = assets[f].replace('.gz', '');
     const type = path.extname(f) === '.js'
       ? 'js'
       : 'css';
-    mappedAssets[f] = `${basepath}/${type}/${assets[f]}`;
+    mappedAssets[f] = `${basepath}/${type}/${ff}`;
     return f;
   });
   return mappedAssets;

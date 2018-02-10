@@ -7,6 +7,7 @@ const clean = require('gulp-clean');
 const concat = require('gulp-concat');
 const hash = require('gulp-hash');
 const cleanCSS = require('gulp-clean-css');
+const gzip = require('gulp-gzip');
 
 const pages = require('./scripts/build/init');
 
@@ -89,6 +90,7 @@ const scripts = () => {
       .pipe(hash(options.hash.hash))
       .pipe(babel(options.babel))
       .pipe(uglifyJs(options.uglifyJs))
+      .pipe(gzip())
       .pipe(gulp.dest(paths.js.dest))
       .pipe(hash.manifest(paths.assetManifest, options.hash.js))
       .pipe(gulp.dest('.'));
@@ -100,18 +102,13 @@ const scripts = () => {
     .pipe(gulp.dest(paths.js.dest));
 };
 
-const fonts = () =>
-  gulp.src(paths.fonts.src, {
-    since: gulp.lastRun(fonts),
-  })
-    .pipe(gulp.dest(paths.fonts.dest));
-
 const styles = () => {
   if (isProduction) {
     return gulp.src(paths.sass.src)
       .pipe(sass(options.sass).on('error', sass.logError))
       .pipe(hash(options.hash.hash))
       .pipe(cleanCSS())
+      .pipe(gzip())
       .pipe(gulp.dest(paths.sass.dest))
       .pipe(hash.manifest(paths.assetManifest, options.hash.css))
       .pipe(gulp.dest('.'));
@@ -125,6 +122,7 @@ const images = () =>
   gulp.src(paths.images.src, {
     since: gulp.lastRun(images),
   })
+    .pipe(gzip())
     .pipe(gulp.dest(paths.images.dest));
 
 const build = (done) => {
@@ -137,7 +135,6 @@ const build = (done) => {
     styles,
     content,
     images,
-    fonts,
   )(done);
 };
 
@@ -150,7 +147,6 @@ const watch = () => {
   gulp.watch(paths.sass.src, styles);
   gulp.watch(paths.js.src, scripts);
   gulp.watch(paths.images.src, images);
-  gulp.watch(paths.fonts.src, fonts);
 };
 
 module.exports = {
@@ -160,7 +156,6 @@ module.exports = {
   styles,
   scripts,
   images,
-  fonts,
   content: (cb) => {
     pages(false);
     cb();
