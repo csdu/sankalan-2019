@@ -6,6 +6,7 @@ const uglifyJs = require('gulp-uglify');
 const clean = require('gulp-clean');
 const concat = require('gulp-concat');
 const hash = require('gulp-hash');
+const cleanCSS = require('gulp-clean-css');
 
 const pages = require('./scripts/build/init');
 
@@ -110,6 +111,7 @@ const styles = () => {
     return gulp.src(paths.sass.src)
       .pipe(sass(options.sass).on('error', sass.logError))
       .pipe(hash(options.hash.hash))
+      .pipe(cleanCSS())
       .pipe(gulp.dest(paths.sass.dest))
       .pipe(hash.manifest(paths.assetManifest, options.hash.css))
       .pipe(gulp.dest('.'));
