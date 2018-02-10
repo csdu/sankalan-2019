@@ -1,5 +1,6 @@
 - const script = process.env.NODE_ENV === 'production' ? assets['bundle.js'] : '/assets/js/bundle.js';
 - const stylesheet = process.env.NODE_ENV === 'production' ? assets['style.css'] : '/assets/css/style.css';
+- const fonts = 'https://fonts.googleapis.com/css?family=Fira+Mono|Russo+One';
 
 footer
   nav
@@ -26,7 +27,7 @@ footer
     p Delhi University Computer Science Society (DUCSS)
 
 script.
-  function loadJs(a){const b=document.createElement('script');b.src=a,b.setAttribute('async','true'),document.documentElement.firstChild.appendChild(b)};
-  function loadCSS(a){const b=document.createElement('link');b.href=a,b.setAttribute('rel','stylesheet'),document.documentElement.firstChild.appendChild(b)};
+  function loadJs(a){const b=document.createElement('script');b.src=a,b.setAttribute('async','true'),document.documentElement.firstChild.appendChild(b)};function loadCSS(a){const b=document.createElement('link');b.href=a,b.setAttribute('rel','stylesheet'),document.documentElement.firstChild.appendChild(b)};
   loadCSS('#{stylesheet}');
+  loadCSS('#{fonts}');
   loadJs('#{script}');
