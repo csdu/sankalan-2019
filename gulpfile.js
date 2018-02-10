@@ -7,7 +7,6 @@ const clean = require('gulp-clean');
 const concat = require('gulp-concat');
 const hash = require('gulp-hash');
 const cleanCSS = require('gulp-clean-css');
-const gzip = require('gulp-gzip');
 
 const pages = require('./scripts/build/init');
 
@@ -90,7 +89,6 @@ const scripts = () => {
       .pipe(hash(options.hash.hash))
       .pipe(babel(options.babel))
       .pipe(uglifyJs(options.uglifyJs))
-      .pipe(gzip())
       .pipe(gulp.dest(paths.js.dest))
       .pipe(hash.manifest(paths.assetManifest, options.hash.js))
       .pipe(gulp.dest('.'));
@@ -108,7 +106,6 @@ const styles = () => {
       .pipe(sass(options.sass).on('error', sass.logError))
       .pipe(hash(options.hash.hash))
       .pipe(cleanCSS())
-      .pipe(gzip())
       .pipe(gulp.dest(paths.sass.dest))
       .pipe(hash.manifest(paths.assetManifest, options.hash.css))
       .pipe(gulp.dest('.'));
@@ -122,7 +119,6 @@ const images = () =>
   gulp.src(paths.images.src, {
     since: gulp.lastRun(images),
   })
-    .pipe(gzip())
     .pipe(gulp.dest(paths.images.dest));
 
 const build = (done) => {
