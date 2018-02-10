@@ -1,0 +1,132 @@
+@media screen and (max-width: 1000px)
+  // fromt _header
+  .site-header
+    .menu-toggle
+      display: block
+
+    .logo
+      font-size: 1em
+
+      &::after
+        font-size: 10px
+        top: 0.6em
+        right: 1.2em
+
+    nav
+      display: none
+
+@media only screen and (max-width: 840px)
+  // from _nav
+  li.nav-item
+    margin: 25px
+
+    a
+      font-size: 14px
+      padding: 2px 0 2px 30px
+
+      &:after
+        left: 30px
+
+      &:hover
+        &:after
+          width: calc(100% - 36px - 10px)
+
+      &:before
+        height: 30px
+        width: 30px
+        background-size: 24px
+
+@media screen and (max-width: 640px)
+  // from _banner
+  .banner
+    padding: 1em
+
+  .banner-content
+    p
+      font-size: 16px
+
+    .image
+      position: relative
+      text-align: center
+
+  .banner-title
+    font-size: 30px
+    font-size: calc(2*16px + 2vw)
+
+  // from _event-page
+  .event-page
+    > div
+      padding: 1em
+      margin: 0.2em 0
+      min-height: auto
+
+  .event-info pre
+    font-size: 14px
+
+  .event-details li
+    font-size: 16px
+
+  // from _footer
+  footer
+    nav
+      padding: 0.5em 0
+
+      li
+        font-size: 13px
+
+        img
+          width: 16px
+          height: 16px
+
+    p
+      font-size: 12px
+
+  // from _main-content
+  .section
+    padding: 10px
+
+  .content
+    h2
+      font-size: 1.5em
+
+    h3
+      font-size: 1.2em
+
+  a.button
+    padding: 0.5rem
+
+  .module
+    flex-direction: column
+    padding: 20px
+
+    & + .module
+      margin-top: 10px
+
+  .module--half
+    order: 1 !important
+
+  // from _splash-content
+  .splash-content
+    padding: 10px
+
+    p
+      font-size: 12px
+
+    .title
+      font-size: 18px
+
+    .text
+      margin: 5px auto
+
+  li.nav-item
+    margin: 20px
+
+  .content-nav
+    li
+      margin-bottom: 2px
+
+    li:first-child a
+      font-size: 1.4rem !important
+
+    li:nth-child(n+2) a
+      font-size: 1rem !important
