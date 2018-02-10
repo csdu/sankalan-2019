@@ -57,7 +57,7 @@ const loadPage = (href) => {
   const handleLoadError = (err) => {
     console.error(err);
     hideLoader();
-    bg.changeBackground('#fff');
+    bg.changeBackground(isFrontPage() ? '#fff' : '#000');
   };
 
   const url = `${href}index.json`;
