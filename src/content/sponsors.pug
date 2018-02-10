@@ -16,9 +16,10 @@ mixin sponsor(s)
     .section.bg-white
       h2(style="text-align:center; margin-bottom:16px;border-bottom: 3px solid #eeb81d") Our past sponsors
       .past-sponsors
+        - const re = /([\w\d_-]*)\.?[^\\\/]*$/;
         each sponsor in sponsors.past
-          .img
-            img(src=sponsor)
+          - const name = sponsor.match(re)[1]
+          img(src=sponsor alt=name title=name)
     .section.bg-white
       h2 Interested in sponsoring us?
       h3 Reach us at:

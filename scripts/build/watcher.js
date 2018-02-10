@@ -28,12 +28,14 @@ const buildOne = (fpath) => {
   let page = $pages.find(p => p.file === fname);
 
   if (!page) {
-    if (path.extname(fpath) === '.yaml'
+    if (path.basename(fpath) === 'events.yaml'
         || path.basename(fname) === 'eventPage.pug') {
       buildEventPages();
       return;
     } else if (path.basename(fname) === 'events.pug') {
       page = pages.events; // build events/ only
+    } else if (path.basename(fname) === 'sponsors.yaml') {
+      page = pages.sponsors; // build sponsors/ only
     } else {
       return;
     }
