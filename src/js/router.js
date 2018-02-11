@@ -1,7 +1,7 @@
 /* global bg gtag GA_TRACKING_ID isFrontPage */
 
 let initLoader;
-let clickListener;
+let trackClicks;
 const maxDelay = 500; // if request takes maore than this much ms, we won't show user the "loading"
 let reqStartTime;
 
@@ -87,7 +87,7 @@ window.onpopstate = ({ state }) => {
   showLoader();
   showContent(state);
   initLoader();
-  clickListener();
+  trackClicks();
 };
 
 const loaderListener = (e) => {
@@ -117,23 +117,39 @@ initLoader = () => {
 };
 
 // track all clicks
-clickListener = () => {
+trackClicks = () => {
   const links = document.querySelectorAll('a');
+  const isExternal = url =>
+    !url.startsWith(window.location.host, 7);
+
+  const fn = (e) => {
+    const target = e.target.closest('a');
+    const label = target.dataset.id || target.innerText;
+    const action = target.href.split(window.location.host)[1] || target.href;
+    const props = {
+      event_category: 'Click Open',
+      event_label: label,
+    };
+    if (isExternal(target.href)) {
+      e.preventDefault();
+      const callback = () => {
+        document.location.href = target.href;
+        return true;
+      };
+      setTimeout(callback, 1000);
+      props.transport_type = 'beacon';
+      props.event_callback = callback;
+    }
+    gtag('event', action, props);
+  };
+
   for (const link of links) {
-    link.addEventListener('click', (e) => {
-      const target = e.target.closest('a');
-      const label = target.dataset.id || target.innerText;
-      const action = target.href.split(window.location.host)[1];
-      gtag('event', action, {
-        event_category: 'Click Open',
-        event_label: label,
-      });
-    });
+    link.addEventListener('click', fn);
   }
 };
 
 initLoader();
-clickListener();
+trackClicks();
 
 /* eslint-disable */
 // google analytics

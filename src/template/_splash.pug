@@ -2,7 +2,7 @@
 
 mixin navItem($name, $link)
   li
-    a(href=$link, class="xhr" data-id=`ct-nav-${$name}`) !{$name}
+    a(href=$link, class="xhr" data-id=`ct-nav-${$name.toLowerCase().replace(/ /g, '-')}`) !{$name}
 
 mixin nav()
   nav.content-nav
