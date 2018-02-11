@@ -11,4 +11,4 @@ mixin events($key)
       if content.quote
         h3 &#147;#{content.quote.text}&#148; #[span &mdash; #{content.quote.by}]
       p !{content.description.replace(/\n/g, '</p><p>')}
-      a.button(href=permalink class="xhr") Know more
+      a.button(href=permalink class="xhr" data-id=`events-${key}`) Know more

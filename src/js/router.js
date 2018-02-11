@@ -1,6 +1,7 @@
-/* global bg */
+/* global bg gtag GA_TRACKING_ID isFrontPage */
 
 let initLoader;
+let clickListener;
 const maxDelay = 500; // if request takes maore than this much ms, we won't show user the "loading"
 let reqStartTime;
 
@@ -40,6 +41,13 @@ const showContent = (json) => {
   window.scrollTo(0, 0);
   main.innerHTML = json.content;
   hideLoader();
+
+  // track page view
+  gtag('config', GA_TRACKING_ID, {
+    page_title: json.title,
+    page_path: json.link,
+  });
+
   return json;
 };
 
@@ -79,6 +87,7 @@ window.onpopstate = ({ state }) => {
   showLoader();
   showContent(state);
   initLoader();
+  clickListener();
 };
 
 const loaderListener = (e) => {
@@ -107,4 +116,29 @@ initLoader = () => {
   }
 };
 
+// track all clicks
+clickListener = () => {
+  const links = document.querySelectorAll('a');
+  for (const link of links) {
+    link.addEventListener('click', (e) => {
+      const target = e.target.closest('a');
+      const label = target.dataset.id || target.innerText;
+      const action = target.href.split(window.location.host)[1];
+      gtag('event', action, {
+        event_category: 'Click Open',
+        event_label: label,
+      });
+    });
+  }
+};
+
 initLoader();
+clickListener();
+
+/* eslint-disable */
+// google analytics
+loadJs('https://www.googletagmanager.com/gtag/js?id=UA-113942220-1');
+
+gtag('js', new Date());
+
+gtag('config', GA_TRACKING_ID);

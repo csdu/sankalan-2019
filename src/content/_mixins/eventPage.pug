@@ -27,4 +27,4 @@ mixin eventPage(ev)
         li !{p}
       else
         p Nothing more mentioned yet. Check back soon
-      a.button(href="/sankalan/register") Register
+      a.button(href="/sankalan/register" data-id=`register-${ev.title.toLowerCase().replace(/ /g, '-')}`) Register

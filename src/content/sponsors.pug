@@ -2,7 +2,7 @@
 - const email = 'sponsor@ducs.in'
 
 mixin sponsor(s)
-  a.sponsor(href=s.link target="_blank" title=s.name, style=`background-image: url('${s.image}'); background-size: cover; background-position: center center`)
+  a.sponsor(href=s.link target="_blank" title=s.name, style=`background-image: url('${s.image}'); background-size: cover; background-position: center center`, data-id=`sponsor-${s.name.toLowerCase().replace(/ /g), '-'}`)
 
 .banner
   .banner-content
@@ -23,5 +23,5 @@ mixin sponsor(s)
     .section.bg-white
       h2 Interested in sponsoring us?
       h3 Reach us at:
-      a.button(href='mailto://' + email) #{email}
-      a.button(href='tel://+91' + mobile) Call #{mobile}
+      a.button(href='mailto://' + email data-id="sponsor-email") #{email}
+      a.button(href='tel://+91' + mobile data-id="sponsor-phone") Call #{mobile}

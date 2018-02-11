@@ -2,13 +2,13 @@
 
 mixin navItem($name, $link)
   li
-    a(href=$link, class="xhr") !{$name}
+    a(href=$link, class="xhr" data-id=`ct-nav-${$name}`) !{$name}
 
 mixin nav()
   nav.content-nav
     ul
       li
-        a.button(href='/sankalan/register/' style="text-shadow: none; color: #000" class="xhr") Register
+        a.button(href='/sankalan/register/' style="text-shadow: none; color: #000" class="xhr" data-id='register-main') Register
       +navItem('Meet the team', '/sankalan/team/')
       +navItem('Need help?', '/sankalan/contact/')
 
