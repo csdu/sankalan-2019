@@ -1,2 +1,16 @@
-title #{page.title} #{page.title ? ' // ' : ''} Sankalan 2018
+- const $title = `${page.title}${page.title ? ' // ' : ''}Sankalan 2018`;
+- const $description = `Sankalan is the annual tech fest of Dept Of Computer Science, University of Delhi (DUCS).`;
+- const url = `http://ducs.in/sankalan/${page.slug}`;
+
+title #{$title}
 meta(name="viewport" content="width=device-width, initial-scale=1")
+
+meta(http-equiv="Content-Type" content="text/html; charset=utf-8")
+meta(name="description" content=$description)
+
+meta(property="og:url" content=url)
+meta(property="og:type" content="website")
+meta(property="og:title" content=$title)
+meta(property="og:description" content=$description)
+meta(property="og:image" content=(page.image || 'http://ducs.in/assets/images/sankalan-2018.png'))
+meta(property="fb:app_id" content="211826412729565")
