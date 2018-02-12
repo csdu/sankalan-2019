@@ -1,14 +1,14 @@
 //- used to display list of events on events/ page
 mixin events($key)
-  - const content = events[$key]
+  - const event = events[$key]
   - const permalink = `/sankalan/events/${$key}/`
-  .module
+  .module(class={"event-live": event.islive, "event-over": event.isover})
     div.module--half
-      if content.image
-        img(src=content.image)
+      if event.image
+        img(src=event.image)
     div.module--half
-      h2 #{content.title}
-      if content.quote
-        h3 &#147;#{content.quote.text}&#148; #[span &mdash; #{content.quote.by}]
-      p !{content.description.replace(/\n/g, '</p><p>')}
+      h2 #{event.title}
+      if event.quote
+        h3 &#147;#{event.quote.text}&#148; #[span &mdash; #{event.quote.by}]
+      p !{event.description.replace(/\n/g, '</p><p>')}
       a.button(href=permalink class="xhr" data-id=`events-${$key}`) Know more

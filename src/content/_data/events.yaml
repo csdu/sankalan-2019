@@ -8,6 +8,8 @@ algoholics:
   description:  |-
     Multiple-choice based questions testing the participant’s algorithmic competency.
     ...then solve set of problems overnight to develop algorithms.
+  islive: false
+  isover: false
   image: /assets/images/logo-event1.png
   teamSize: 2
   lang: cpp
@@ -26,6 +28,8 @@ codeathon:
     Do you have what it takes to survive a coding marathon? Then we have just the right thing for you...
     Multiple-choice questions based on concepts of C and C++.
     ...then solve some real problems using C/C++.
+  islive: false
+  isover: false
   image: /assets/images/logo-event1.png
   teamSize: 2
   lang: cpp
@@ -44,6 +48,8 @@ select-star-from-brain:
   description:  |-
     Multiple-choice questions based on standard SQL, XQuery and DBMS concepts.
     ...then solve queries using SQL.
+  islive: false
+  isover: false
   image: /assets/images/logo-event1.png
   teamSize: 2
   lang: cpp
@@ -63,6 +69,8 @@ brainspark:
   description:  |-
     We'll judge your logical and quantitative abilities.
     And then we give you freaking cool puzzles to solve!
+  islive: false
+  isover: false
   image: /assets/images/logo-event1.png
   teamSize: 2
   lang: py
@@ -81,6 +89,8 @@ debug-plus-plus:
     by: Nicholas Negroponte
   description:  |-
     Only when you are debugging somebody else’s program you understand that only 10% of the programmers are above average... are you among them?
+  islive: false
+  isover: false
   image: /assets/images/logo-event1.png
   teamSize: 2
   lang: cpp
@@ -96,6 +106,8 @@ java-juggling:
   title: Java juggling
   description:  |-
     Do you have what it takes to survive a coding marathon? Then we have just the right thing for you...
+  islive: false
+  isover: false
   image: /assets/images/logo-event1.png
   teamSize: 2
   lang: cpp
@@ -113,6 +125,8 @@ make-app:
     text: Come,Code,Develop!!
   description:  |-
     Create history with us in the field of Android/IOS App Development by showcasing your innovations.
+  islive: false
+  isover: false
   image: /assets/images/logo-event1.png
   teamSize: 2
   lang: cpp
@@ -128,6 +142,8 @@ mind-matters:
   title: Mind Matters
   description:  |-
     Think you’re Mr. Know-it-All of the silicon world? Come and participate in this event, test your knowledge, let the world know that and walk away as a champion.
+  islive: false
+  isover: false
   image: /assets/images/logo-event1.png
   teamSize: 2
   lang: py
@@ -141,6 +157,8 @@ spin-a-web:
   description:  |-
     Have you been bitten by the creative bug? Then we have just the right antidote.
     Spin on the creativity loom a web-site of Imagination, Innovation and Design.
+  islive: false
+  isover: false
   image: /assets/images/logo-event1.png
   teamSize: 2
   lang: js

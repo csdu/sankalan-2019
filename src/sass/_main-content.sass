@@ -113,3 +113,25 @@ a.button
     right: 2px
     top: 2px
     box-shadow: (-8px) -7px 0px 0px darken($color-tl, 10)
+
+.event-live, .event-over
+  position: relative
+
+  &:after
+    content: "LIVE NOW!"
+    display: block
+    position: absolute
+    top: 0
+    right: 0
+    background: red
+    color: #fff
+    padding: 4px
+    font-size: 14px
+    font-family: $font-primary
+    text-shadow: none
+    letter-spacing: 1px
+
+.event-over:after
+  content: "EVENT ENDED"
+  background: #888
+  color: #333

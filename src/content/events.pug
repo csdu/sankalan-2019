@@ -1,5 +1,9 @@
 include _mixins/events
 
+- const liveEvents = Object.keys(events).filter(k => events[k].islive && !events[k].isover);
+- const restEvents = Object.keys(events).filter(k => !events[k].islive && !events[k].isover);
+- const overEvents = Object.keys(events).filter(k => !events[k].islive && events[k].isover);
+
 .banner
   .banner-content
     h1.banner-subtitle #{page.title}
@@ -7,5 +11,9 @@ include _mixins/events
 .content
   div
     .section
-      - for (const e in events)
+      each e in liveEvents
+        +events(e)
+      each e in restEvents
+        +events(e)
+      each e in overEvents
         +events(e)
