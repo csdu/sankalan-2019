@@ -6,10 +6,10 @@
 class Background {
   constructor(canvas) {
     this.canvas = canvas;
+    this.canvas.style.background = '#000';
     this.ctx = canvas.getContext('2d');
     this.polylines = [];
     this.frameCount = 0;
-    this.backgroundColor = '#fff';
 
     const TAU = Math.PI * 2;
     const ISO_ANGLE = TAU * (45 / 360);
@@ -18,11 +18,6 @@ class Background {
     this.NUM_SEGMENT = 8;
     this.SEGMENT_LENGTH = 120;
     this.RESET_FACTOR = 5;
-  }
-
-  // change canvas background
-  changeBackground(newColor) {
-    this.backgroundColor = newColor;
   }
 
   // convert {r,g,b} to rgba string
@@ -155,7 +150,6 @@ class Background {
    */
   animate() {
     this.canvas.width = this.canvas.width; // clear canvas
-    this.canvas.style.background = this.backgroundColor;
 
     // draw
     this.move();
@@ -200,4 +194,3 @@ class Background {
 const $canvas = document.getElementById('canvas');
 const bg = new Background($canvas);
 bg.init();
-if (!isFrontPage()) bg.changeBackground('#000');

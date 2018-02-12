@@ -1,4 +1,4 @@
-/* global bg gtag GA_TRACKING_ID isFrontPage */
+/* global gtag GA_TRACKING_ID */
 
 let initLoader;
 let trackClicks;
@@ -12,7 +12,6 @@ const changeHistory = (page) => {
 
 const showLoader = () => {
   document.body.classList.add('loading');
-  bg.changeBackground('#000');
 };
 
 const hideLoader = () => {
@@ -31,10 +30,8 @@ const showContent = (json) => {
   const isHomePage = json.slug === '';
   if (isHomePage) {
     document.body.classList.add('is-front-page');
-    bg.changeBackground('#fff');
   } else {
     document.body.classList.remove('is-front-page');
-    bg.changeBackground('#000');
   }
   if (!json.link) throw new Error('bad content');
 
@@ -65,7 +62,6 @@ const loadPage = (href) => {
   const handleLoadError = (err) => {
     console.error(err);
     hideLoader();
-    bg.changeBackground(isFrontPage() ? '#fff' : '#000');
   };
 
   const url = `${href}index.json`;
