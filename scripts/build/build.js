@@ -5,7 +5,7 @@ const waterfall = require('async/waterfall');
 const applyEach = require('async/applyEach');
 const yaml = require('node-yaml');
 const path = require('path');
-const { paths } = require('./utils');
+const { paths, assetBasePath } = require('./utils');
 
 paths.eventsData = path.resolve(paths.content, './_data/events.yaml');
 paths.sponsorsData = path.resolve(paths.content, './_data/sponsors.yaml');
@@ -35,13 +35,16 @@ const build = (page, callback) => {
     ? yaml.readSync(paths.peopleData)
     : { sponsors: [] };
 
+  const locals = {
+    page,
+    events,
+    sponsors,
+    people,
+    assets: { $: assetBasePath },
+  };
+
   return waterfall([
-    cb => renderContent({
-      page,
-      events,
-      sponsors,
-      people,
-    }, cb),
+    cb => renderContent(locals, cb),
     (content, cb) => generate(page, content, cb),
   ], callback);
 };

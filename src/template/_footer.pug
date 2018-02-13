@@ -1,5 +1,5 @@
-- const script = process.env.NODE_ENV === 'production' ? assets['bundle.js'] : '/assets/js/bundle.js';
-- const stylesheet = process.env.NODE_ENV === 'production' ? assets['style.css'] : '/assets/css/style.css';
+- const script = process.env.NODE_ENV === 'production' ? assets['bundle.js'] : `${assets.$}/js/www/bundle.js`;
+- const stylesheet = process.env.NODE_ENV === 'production' ? assets['style.css'] : `${assets.$}/css/www/style.css`;
 - const fonts = 'https://fonts.googleapis.com/css?family=Fira+Mono|Russo+One';
 
 footer
@@ -13,10 +13,10 @@ footer
         a(href='http://dashboard.ducs.in/sankalan/' data-id='footer-dashboard') Dashboard
       li.social
         a(href="https://facebook.com/DUCS.Sankalan" title="Find us on Facebook" data-id='footer-FB')
-          img(src="/assets/images/fb-icon.svg", alt="FB")
+          img(src=`${assets.$}/images/www/fb-icon.svg`, alt="FB")
         | &nbsp;
         a(href="https://www.instagram.com/sankalan.ducs/" title="Find us on Instagram" data-id='footer-IG')
-          img(src="/assets/images/instagram-icon.png", alt="Instagram")
+          img(src=`${assets.$}/images/www/instagram-icon.png`, alt="Instagram")
 
   .copyright
     p Copyright &#169; 2018. Made with &#9829; by&nbsp;

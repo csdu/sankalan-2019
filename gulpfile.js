@@ -7,6 +7,8 @@ const clean = require('gulp-clean');
 const concat = require('gulp-concat');
 const hash = require('gulp-hash');
 const cleanCSS = require('gulp-clean-css');
+const nodeSass = require('node-sass');
+const { assetBasePath } = require('./scripts/build/utils');
 
 const pages = require('./scripts/build/init');
 
@@ -21,7 +23,7 @@ const isProduction = process.env.NODE_ENV === 'production';
 const paths = {
   sass: {
     src: `${srcDir}/sass/**/*.sass`,
-    dest: `${distDir}/assets/css`,
+    dest: `${distDir}/assets/css/www`,
   },
   js: {
     src: [
@@ -29,15 +31,15 @@ const paths = {
       'canvas.js',
       'router.js',
     ].map(f => `${srcDir}/js/${f}`),
-    dest: `${distDir}/assets/js`,
+    dest: `${distDir}/assets/js/www`,
   },
   images: {
     src: `${srcDir}/images/**/*`,
-    dest: `${distDir}/assets/images`,
+    dest: `${distDir}/assets/images/www`,
   },
   fonts: {
     src: `${srcDir}/fonts/**/*`,
-    dest: `${distDir}/assets/fonts`,
+    dest: `${distDir}/assets/fonts/www`,
   },
   assetManifest,
 };
@@ -57,6 +59,12 @@ const options = {
   },
   sass: {
     outputStyle: 'compressed',
+    functions: {
+      'mapImg($img)': function _mapImg(img) {
+        const p = `${assetBasePath}${img.getValue()}`;
+        return new nodeSass.types.String(p);
+      },
+    },
   },
   hash: {
     hash: {

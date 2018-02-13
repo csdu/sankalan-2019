@@ -6,14 +6,14 @@ mixin credit(type, key)
         strong #{type}:&nbsp;
       p #{p.name}
     div.avatar
-      - const image = p.image || '/assets/images/one.svg';
+      - const image = p.image || `${assets.$}/images/www/one.svg`;
       if p.url
         a(href=p.url, target="_blank" title=`${p.name} @ ${p.url}` data-id=`team-${key}`)
           img.avatar(src=image alt=p.name)
       else
         img.avatar(src=image alt=p.name title=p.name)
       if p.url
-        img.link(src="/assets/images/github-icon.svg")
+        img.link(src=`${assets.$}/images/www/github-icon.svg`)
 
 .banner
   .banner-content
