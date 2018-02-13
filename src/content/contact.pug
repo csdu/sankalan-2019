@@ -4,10 +4,10 @@ mixin contact({ title, email, phone })
   .module
     .contact.vc
       if email
-        a.button(href=`mailto://${email}`, data-id=`contact-${email}`) #{email}
+        a.button(href=`mailto:${email}`, data-id=`contact-${email}`) #{email}
       if phone
         - const p = phone.replace(/\s/g, '');
-        a.button(href=`tel://${p}`, data-id=`contact-${p}`) #{phone}
+        a.button(href=`tel:${p}`, data-id=`contact-${p}`) #{phone}
       em #{title}
 
 .banner
@@ -20,7 +20,7 @@ mixin contact({ title, email, phone })
       a.button(href="https://facebook.com/DUCS.Sankalan" style="text-shadow: none" target="_blank" data-id="contact-FB") fb.com/DUCS.Sankalan
     div.module
       p You can also send us an email at
-      a.button(href="mailto://" + email, style="text-shadow: none" data-id=`contact-${email}`) #{email}
+      a.button(href="mailto:" + email, style="text-shadow: none" data-id=`contact-${email}`) #{email}
   .section.bg-white.module
     div
       h3 We are located at:
