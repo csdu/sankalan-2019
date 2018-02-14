@@ -83,7 +83,8 @@ const options = {
 
 const cleanDist = () =>
   gulp.src([
-    `${distDir}/*`,
+    `${distDir}/assets/`,
+    `${distDir}/sankalan/`,
     paths.assetManifest,
   ], {
     read: false,
