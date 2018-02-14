@@ -24,7 +24,7 @@ const getSavePath = (slug, ext) =>
 
 
 const basepath = isProduction
-  ? 'http://cdn.ducs.in'
+  ? 'https://cdn.ducs.in'
   : 'http://localhost:8000';
 // convert normal asset filenames to hashed asset paths
 const getMappedAssets = (assets) => {
