@@ -35,6 +35,18 @@
     color: #000
     cursor: pointer
 
+.story
+  max-width: 800px !important
+  background-color: #fff !important
+
+  p
+    margin: auto
+    font-size: 1.1em
+    max-width: 700px
+
+    & + p
+      margin-top: 1em
+
 .event-round
   background-image: url($img-pattern)
   background-size: 20px
@@ -56,9 +68,18 @@
   h3
     margin-top: 0.5em
 
-.event-details li
-  font-size: 20px
-  max-width: 640px
+.event-details
+  li
+    font-size: 20px
+
+    a
+      color: $color-bl
+
+    ul, ol
+      margin: 0.1em 0 0.1em 3em
+
+  ul, ol
+    margin-left: 1em
 
 .event-info pre
   white-space: pre-wrap

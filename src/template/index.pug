@@ -1,7 +1,7 @@
 html
   head
     include _head
-  body
+  body(class={"is-front-page": page.slug === ''})
     include _header
     #content.site-content
       include _splash

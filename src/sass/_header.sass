@@ -7,48 +7,6 @@
   box-shadow: 0 0 7px rgba(0, 0, 0, 0.12)
   transition: transform 0.5s $anim-cubic
 
-  .menu-toggle
-    display: none
-    border: 0
-    font-size: 16px
-    font-family: $font-bold
-    letter-spacing: 2px
-    font-weight: 500
-    margin: 0 18px 0 0
-    padding: 10px
-    padding-right: 36px
-    margin-left: auto
-    position: relative
-    text-decoration: none
-    text-transform: uppercase
-
-    &:after
-      content: ""
-      display: block
-      position: absolute
-      right: 0
-      top: 5px
-      width: 32px
-      height: 32px
-      background: url($img-nav-icon) center no-repeat
-      background-size: 32px
-
-  .logo
-    font-family: $font-bold
-    letter-spacing: 3px
-    font-size: 1.5em
-    padding: 0.8em
-    position: relative
-    text-transform: uppercase
-
-    &:after
-      content: "2018"
-      position: absolute
-      right: 1.4em
-      top: 0.8em
-      font-family: $font-primary
-      font-size: 14px
-
   nav
     margin-left: auto
 
@@ -82,6 +40,49 @@
             background-repeat: no-repeat
             height: 40px
             width: 40px
+
+
+.menu-toggle
+  display: none
+  border: 0
+  font-size: 16px
+  font-family: $font-bold
+  letter-spacing: 2px
+  font-weight: 500
+  margin: 0 18px 0 0
+  padding: 10px
+  padding-right: 36px
+  margin-left: auto
+  position: relative
+  text-decoration: none
+  text-transform: uppercase
+
+  &:after
+    content: ""
+    display: block
+    position: absolute
+    right: 0
+    top: 5px
+    width: 32px
+    height: 32px
+    background: url($img-nav-icon) center no-repeat
+    background-size: 32px
+
+.logo
+  font-family: $font-bold
+  letter-spacing: 3px
+  font-size: 1.5em
+  padding: 0.8em
+  position: relative
+  text-transform: uppercase
+
+  &:after
+    content: "2018"
+    position: absolute
+    right: 1.4em
+    top: 0.8em
+    font-family: $font-primary
+    font-size: 14px
 
 .is-front-page
   .site-header

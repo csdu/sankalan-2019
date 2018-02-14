@@ -59,16 +59,6 @@ module.exports = {
     slug: 'events/brainspark',
     file: 'events-brainspark.pug',
   },
-  events_debug_plus_plus: {
-    title: 'Debug++',
-    slug: 'events/debug-plus-plus',
-    file: 'events-debug-plus-plus.pug',
-  },
-  events_java_juggling: {
-    title: 'Java Juggling',
-    slug: 'events/java-juggling',
-    file: 'events-java-juggling.pug',
-  },
   events_make_app: {
     title: 'MakeApp',
     slug: 'events/make-app',
@@ -83,5 +73,20 @@ module.exports = {
     title: 'Spin A Web',
     slug: 'events/spin-a-web',
     file: 'events-spin-a-web.pug',
+  },
+  events_chakravyuh: {
+    title: 'Chakravyuh',
+    slug: 'events/chakravyuh',
+    file: 'events-chakravyuh.pug',
+  },
+  events_turncoat: {
+    title: 'Turn Coat',
+    slug: 'events/turncoat',
+    file: 'events-turncoat.pug',
+  },
+  events_jam: {
+    title: 'Just A Minute (JAM)',
+    slug: 'events/jam',
+    file: 'events-jam.pug',
   },
 };

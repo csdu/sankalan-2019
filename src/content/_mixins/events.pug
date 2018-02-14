@@ -2,7 +2,7 @@
 mixin events($key)
   - const event = events[$key]
   - const permalink = `/sankalan/events/${$key}/`
-  .module(class={"event-live": event.islive, "event-over": event.isover})
+  .module(class={"event-live": event.islive, "event-over": event.isover, "event-nt": event.isnontech})
     div.module--half
       if event.image
         img(src=event.image)

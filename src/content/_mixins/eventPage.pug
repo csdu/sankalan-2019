@@ -1,7 +1,12 @@
 include _eventInfo
 
+mixin story(ct, c='')
+  div.story(class=c)
+    p !{ct.replace(/\n/g, '</p><p>')}
+    p &nbsp;
+
 mixin eventPage(ev)
-  .banner(class={"event-live": ev.islive, "event-over": ev.isover})
+  .banner(class={"event-live": ev.islive, "event-over": ev.isover, "event-nt": ev.isnontech})
     .banner-content
       h2.banner-title #{page.title}
       div.image
@@ -13,18 +18,25 @@ mixin eventPage(ev)
       p !{ev.description.replace(/\n/g, '</p><p>')}
   .content
     .section.event-page
-      .event-info
-        +eventInfo(ev, ev.lang || 'py')
-
-      each round, num in ev.rounds
-        .event-round
-          h3 Round ##{num + 1}
-          p !{round.replace(/\n/g, '</p><p>')}
+      if ev.story && !ev.rounds
+        +story(ev.story, 'event-round')
+      if ev.rounds
+        .event-info
+          +eventInfo(ev, ev.lang || 'py')
+        each round, num in ev.rounds
+          .event-round
+            h3 Round ##{num + 1}
+            p !{round.replace(/\n/g, '</p><p>')}
     .section.bg-white.event-details
+      if ev.story && ev.rounds
+        +story(ev.story)
       h3 Further details
       ul
       each p in ev.details || []
         li !{p}
       else
         p Nothing more mentioned yet. Check back soon
-      a.button(href="https://dashboard.ducs.in/sankalan/register/" data-id=`register-${ev.title.toLowerCase().replace(/ /g, '-')}`) Register
+      if ev.reg !== 0
+        a.button(href="https://dashboard.ducs.in/sankalan/register/" data-id=`register-${ev.title.toLowerCase().replace(/ /g, '-')}`) Register
+      if ev.fbpage
+        a.button(href=ev.fbpage data-id=`fb-ev-${ev.title.toLowerCase().replace(/ /g, '-')}`) Facebook Event Page

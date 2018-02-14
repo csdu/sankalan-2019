@@ -64,7 +64,14 @@ const loadPage = (href) => {
     hideLoader();
   };
 
-  const url = `${href}index.json`;
+  let url = href;
+  if (url.substr(-1) === '/') {
+    url += 'index.json';
+  } else if (url.endsWith('/index.json')) {
+    /* do nothing */
+  } else {
+    url += '/index.json'; // when url ends without a trailing slash
+  }
 
   return window.fetch(url)
     .then(parseResponse)

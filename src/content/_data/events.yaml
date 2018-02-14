@@ -10,7 +10,8 @@ algoholics:
     ...then solve set of problems overnight to develop algorithms.
   islive: false
   isover: false
-  image: /assets/images/logo-event1.png
+  isnontech: false
+  image: https://4.bp.blogspot.com/-xiXObYptcz8/WoQlBNaKdhI/AAAAAAAAAFM/XCBPEki96FAs8gdSExp0Dh1XWWdRgddbACLcBGAs/s1600/algoholics.png
   teamSize: 2
   lang: cpp
   rounds:
@@ -30,7 +31,8 @@ codeathon:
     ...then solve some real problems using C/C++.
   islive: false
   isover: false
-  image: /assets/images/logo-event1.png
+  isnontech: false
+  image: https://2.bp.blogspot.com/-5cI0thPnBhA/WoQlCYAo5bI/AAAAAAAAAFY/VZqb9bk8kBkbcbKJ1oY5fiKJrpt98tTOQCLcBGAs/s1600/codeathon.png
   teamSize: 2
   lang: cpp
   rounds:
@@ -44,13 +46,14 @@ codeathon:
 select-star-from-brain:
   title: SELECT * FROM BRAIN
   quote:
-    text: Select , Ignite , Fire...Prove that you have the answer to all queries.!!!
+    text: Select, Ignite, Fire...Prove that you have the answer to all queries.!!!
   description:  |-
     Multiple-choice questions based on standard SQL, XQuery and DBMS concepts.
     ...then solve queries using SQL.
   islive: false
   isover: false
-  image: /assets/images/logo-event1.png
+  isnontech: false
+  image: https://3.bp.blogspot.com/-Vb4GVY_dMxc/WoQlFcftDzI/AAAAAAAAAF0/Ku7nJUOxvUQ-vD9s0WwkNHYa-lfe9r1zwCLcBGAs/s1600/select-star-from-brain.png
   teamSize: 2
   lang: cpp
   rounds:
@@ -71,7 +74,8 @@ brainspark:
     And then we give you freaking cool puzzles to solve!
   islive: false
   isover: false
-  image: /assets/images/logo-event1.png
+  isnontech: false
+  image: https://2.bp.blogspot.com/-1a6qQZYbrpE/WoQlBS2ea1I/AAAAAAAAAFQ/5SaEn51dKeoasXDCeR_nqTFdtiFPMV9kACLcBGAs/s1600/brainspark.png
   teamSize: 2
   lang: py
   rounds:
@@ -82,43 +86,6 @@ brainspark:
     - hello world
     - bye world
 
-debug-plus-plus:
-  title: debug++
-  quote:
-    text: Programming allows you to think about thinking, and while debugging you learn learning.
-    by: Nicholas Negroponte
-  description:  |-
-    Only when you are debugging somebody else’s program you understand that only 10% of the programmers are above average... are you among them?
-  islive: false
-  isover: false
-  image: /assets/images/logo-event1.png
-  teamSize: 2
-  lang: cpp
-  rounds:
-    - Multiple-choice based questions based on concepts of C/C++.
-    - |-
-      The qualifying teams would be given a set of certain C/C++ codes to debug.
-  details:
-    - 'Operating System: Windows - Dev C++'
-    - 'Operating System: Ubuntu 16 - gcc/g++'
-
-java-juggling:
-  title: Java juggling
-  description:  |-
-    Do you have what it takes to survive a coding marathon? Then we have just the right thing for you...
-  islive: false
-  isover: false
-  image: /assets/images/logo-event1.png
-  teamSize: 2
-  lang: cpp
-  rounds:
-    - Multiple-choice based questions based on concepts of Java.
-    - |-
-      The qualifying teams would be given a set of problems to code in Java.
-  details:
-    - 'Operating System: Any'
-    - 'Platform: Any Java IDE'
-
 make-app:
   title: MakeApp
   quote:
@@ -127,7 +94,8 @@ make-app:
     Create history with us in the field of Android/IOS App Development by showcasing your innovations.
   islive: false
   isover: false
-  image: /assets/images/logo-event1.png
+  isnontech: false
+  image: https://4.bp.blogspot.com/-4mLcE3VmB0g/WoQlDzFkEJI/AAAAAAAAAFo/Cn1a-8rNOK8fh7xDh2bsYF_idU6QSdHJwCLcBGAs/s1600/make-app.png
   teamSize: 2
   lang: cpp
   rounds:
@@ -144,7 +112,8 @@ mind-matters:
     Think you’re Mr. Know-it-All of the silicon world? Come and participate in this event, test your knowledge, let the world know that and walk away as a champion.
   islive: false
   isover: false
-  image: /assets/images/logo-event1.png
+  isnontech: false
+  image: https://2.bp.blogspot.com/-JZQmFk7p9aI/WoQlEK5DOhI/AAAAAAAAAFs/i10-uTyn_vgzPbOHcv4i0mRLOiwtP1NKwCLcBGAs/s1600/mind-matters.png
   teamSize: 2
   lang: py
   rounds:
@@ -159,7 +128,8 @@ spin-a-web:
     Spin on the creativity loom a web-site of Imagination, Innovation and Design.
   islive: false
   isover: false
-  image: /assets/images/logo-event1.png
+  isnontech: false
+  image: https://3.bp.blogspot.com/-WQkH3MtoRws/WoQlFjZ80QI/AAAAAAAAAF4/ju6Qx5FS0x4KKwoiyucIG5lmIHeXjogfACLcBGAs/s1600/spin-a-web.png
   teamSize: 2
   lang: js
   rounds:
@@ -169,3 +139,66 @@ spin-a-web:
   details:
     - 'Operating System: Any Suitable System.'
     - 'Platform: Apache 2.4.x / PHP 5.6/7.2 / MySQL 5.6.x / Asp.Net / Node / MongoDB or as per requirement'
+
+chakravyuh:
+  title: Chakravyuh
+  quote:
+    text: The secret impresses no one. The trick you use it for is everything
+    by: The Prestige
+  description: |-
+    This is an online treasure hunt event. At each level, a question will be posed and hints may be given.
+    A participant must answer correctly to advance to the next level.
+  islive: false
+  isover: false
+  isnontech: true
+  reg: 0
+  image: https://3.bp.blogspot.com/-Pi6aevZwxsE/WoQlBa7rxTI/AAAAAAAAAFU/0HOsD-cUy74T974QqEEe_54f0eVXPldYACLcBGAs/s1600/chakravyuh.png
+  story: |-
+    Have you ever experienced a virtual adventure? Do you really have something to go for a quest of your life to bring the clues out the world’s most complicated system –world wide web?
+    If you and your browser can dive into the virtual world, then pull up your surfing skills and be ready to engage in competitive one-upmanship to create the ultimate artificial illusion.
+    Sankalan 2018 - The Annual Tech Fest of Department Of Computer Science, brings you the much awaited event - Chakravyuh (The online treasure hunt).
+  details:
+    - Solve all the levels first and you win!
+    - 'Registration Fee:  Nil'
+    - 'Maximum Team Members:  1'
+    - |-
+      <strong>Rules follow:</strong>
+      <ol>
+        <li>First team to finish the game wins.</li>
+        <li>Number of participants in a team can maximum be 1.
+        <br>Do not ask your friends for help or help them (AKA no cheating)</li>
+        <li>Event is open to all college/institute students.</li>
+        <li>Decision of the organisers would be final and binding.</li>
+        <li>Organisers have the right to disqualify any team if they are found breaking any rules.</li>
+      </ol>
+    - 'Venue: <a href="http://chakravyuh18.com/">http://chakravyuh18.com/</a>'
+    - 'Date: 2nd-4th March 2018. (tentative)'
+    - 'Start Time: 10:00 pm.'
+    - Step forward in the arena and join the battle! Contact for details.
+
+turncoat:
+  title: Turn Coat
+  description: Get ready to drive through a battle of thoughts with your own self on a buzzer press.
+  islive: false
+  isover: false
+  isnontech: true
+  image: https://2.bp.blogspot.com/-aMzxTWLXUS0/WoQlGi59z6I/AAAAAAAAAGA/3rfAKVB1aF8cavBk1zvJUiQ1JUDw6ZsCgCLcBGAs/s1600/turncoat.png
+  teamSize: 1
+  rounds:
+    - Each participant will be given 2 minutes to speak on a debatable topic, with alternative durations of 30 seconds each in favor or against the issue.
+    - Two participants will be given the same topic to speak. Alternatively, they will have to speak in favor and against.
+    - All qualifying participants will be given the same topic to speak. They would randomly be asked to present their views in contradiction to the previous speaker.
+  details:
+    - 'Contact for details: Ramneek, Divya'
+
+jam:
+  title: Just A Minute (JAM)
+  description: Every single second matters, every single round matters. You’ve got to fight every second, every minute and every round.
+  teamSize:  2
+  islive: false
+  isover: false
+  isnontech: true
+  image: https://1.bp.blogspot.com/-xw8Ufl5JgTE/WoQlCQWgVRI/AAAAAAAAAFc/KYzs-8C5s7MgAFqfql5T1PFuurb64Yd_wCLcBGAs/s1600/jam.png
+  details:
+    - Games would have to be completed in a minute period.
+    - A maximum of 72 teams would be allowed.
