@@ -1,3 +1,8 @@
+- const CLIENT_ID = '144689138876-qc9uip5jg8o0bd4oldlik4lp550lk38u.apps.googleusercontent.com';
+- const REDIRECT_URI = encodeURIComponent('https://dashboard.ducs.in/sankalan/auth');
+- const SCOPE = encodeURIComponent('https://www.googleapis.com/auth/userinfo.email');
+- const authUrl = `https://accounts.google.com/o/oauth2/auth?response_type=code&access_type=online&client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&state&scope=${SCOPE}&approval_prompt=auto`;
+
 .banner
   .banner-content
     h2.banner-title &nbsp;
@@ -5,7 +10,10 @@
   div
     .section.bg-black
       h2 Registration links are now active!
-      p Visit the Sankalan Dashboard link below
-      a.button(href='https://dashboard.ducs.in/sankalan/register/' data-id="FB-register") Sankalan Dashboard
-
+      p Sign-in using Google to regiter
+      a.button(href=authUrl data-id="register-page" style="width: 256px")
+        img(src="https://unpkg.com/simple-icons@1.2.19/icons/google.svg" alt="Google" style="max-width:26px;padding-right:10px")
+        | Sign-in with Google
+      p Or visit the Sankalan Dashboard at
+        |  #[a(href="https://dashboard.ducs.in/sankalan/" data-id="dashboard-page") https://dashboard.ducs.in/sankalan/] for more details.
       p Registration will be open till March 10th, 2018.
