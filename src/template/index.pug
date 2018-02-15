@@ -3,7 +3,7 @@ html
     include _head
   body(class={"is-front-page": page.slug === ''})
     include _header
-    .slow-load
+    .loader
       p &gt; loading...#[br]
       include _loader-svg.html
     #content.site-content
@@ -15,6 +15,5 @@ html
       .content-wrapper
         #main.main-content !{content}
     .pattern-background
-    .loader
     canvas#canvas.bg-scene
     include _footer
