@@ -1,9 +1,10 @@
-/* global gtag GA_TRACKING_ID */
+/* global loadJs gtag GA_TRACKING_ID */
 
 let initLoader;
 let trackClicks;
 const maxDelay = 500; // if request takes maore than this much ms, we won't show user the "loading"
 let reqStartTime;
+let notFoundFlag = false;
 
 const changeHistory = (page) => {
   document.title = page.title;
@@ -45,10 +46,21 @@ const showContent = (json) => {
     page_path: json.link,
   });
 
+  notFoundFlag = false;
+
   return json;
 };
 
+const setURL = (href) => {
+  const path = href.split(window.location.host)[1];
+  window.history.replaceState(window.history.state, document.title, path);
+};
+
 const loadPage = (href) => {
+  const pastUrl = window.location.href;
+  // change url so that slow requests don't lead to full page reload (due to trackClicks() callback)
+  setURL(href);
+
   const parseResponse = (res) => {
     const contentType = res.headers.get('Content-Type');
     if (!res.ok) {
@@ -61,6 +73,8 @@ const loadPage = (href) => {
 
   const handleLoadError = (err) => {
     console.error(err);
+    notFoundFlag = true;
+    setURL(pastUrl); // reset url and history
     hideLoader();
   };
 
@@ -123,38 +137,44 @@ initLoader = () => {
 trackClicks = () => {
   const links = document.querySelectorAll('a');
   const isExternal = url =>
-    !url.startsWith(window.location.host, 7);
+    !url.includes(window.location.host);
 
   const fn = (e) => {
+    e.preventDefault();
+    let done = false;
     const target = e.target.closest('a');
     const label = target.dataset.id || target.innerText;
-    const action = target.href.split(window.location.host)[1] || target.href;
+    const { href } = target;
+    const action = href.split(window.location.host)[1] || href;
+    const callback = () => {
+      done = true;
+      if (document.location.href !== href && !notFoundFlag) { // XXX
+        document.location.href = href;
+        console.log('callback', true);
+      } else {
+        console.log('callback', false);
+      }
+    };
     const props = {
       event_category: 'Click Open',
       event_label: label,
+      event_callback: callback,
     };
-    if (isExternal(target.href)) {
-      e.preventDefault();
-      const callback = () => {
-        document.location.href = target.href;
-        return true;
-      };
-      setTimeout(callback, 1000);
+    if (isExternal(href)) {
+      if (!done) setTimeout(callback, 1000);
       props.transport_type = 'beacon';
-      props.event_callback = callback;
     }
     gtag('event', action, props);
   };
 
   for (const link of links) {
-    link.addEventListener('click', fn);
+    link.addEventListener('click', fn, false);
   }
 };
 
 initLoader();
 trackClicks();
 
-/* eslint-disable */
 // google analytics
 loadJs('https://www.googletagmanager.com/gtag/js?id=UA-113942220-1');
 
