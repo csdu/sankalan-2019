@@ -10,12 +10,13 @@ mixin eventPage(ev)
     .banner-content
       h2.banner-title #{page.title}
       div.image
-        img(src=ev.image)
-      if ev.quote
-        blockquote.event-quote
-          p &#147;#{ev.quote.text}&#148;
-          span &mdash; #{ev.quote.by}
-      p !{ev.description.replace(/\n/g, '</p><p>')}
+        img(src=ev.image.replace('/s1600/', '/s200/'))
+      .banner-text
+        if ev.quote
+          blockquote.event-quote
+            p &#147;#{ev.quote.text}&#148;
+            span &mdash; #{ev.quote.by}
+        p !{ev.description.replace(/\n/g, '</p><p>')}
   .content
     .section.event-page
       if ev.story && !ev.rounds

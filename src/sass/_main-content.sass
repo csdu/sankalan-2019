@@ -13,7 +13,7 @@
   flex: 1
 
 .section
-  padding: 50px
+  padding: 3vw
 
 .bg-white
   background: #fff
@@ -121,26 +121,27 @@ a.button
 .event-live, .event-over, .event-nt
   position: relative
 
-  &:after
-    content: "LIVE NOW!"
-    display: block
-    position: absolute
-    top: 0
-    right: 0
-    background: red
-    color: #fff
-    padding: 4px
-    font-size: 14px
-    font-family: $font-primary
-    text-shadow: none
-    letter-spacing: 1px
+.event-nt:before, .event-live:after, .event-over:after
+  display: block
+  position: absolute
+  top: 0
+  right: 0
+  color: #fff
+  padding: 4px
+  font-size: 14px
+  font-family: $font-primary
+  text-shadow: none
+  letter-spacing: 1px
+
+.event-live::after
+  content: "LIVE NOW!"
+  background: red
 
 .event-over:after
   content: "EVENT ENDED"
-  background: #888
-  color: #333
+  background: #333
 
-.event-nt:after
+.event-nt:before
   content: "NON TECHNICAL"
   background: $color-bl
   left: 0

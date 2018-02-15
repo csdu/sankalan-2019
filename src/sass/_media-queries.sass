@@ -36,18 +36,24 @@
         width: 30px
         background-size: 24px
 
+@media screen and (max-width: 1530px)
+  .banner-content
+    padding: 1em
+
+@media screen and (max-width: 640px + 200px + 4 * 16px)
+  .banner-content
+    .image
+      position: relative
+      text-align: center
+      padding: 1em
+
+    p
+      max-width: 100%
+
 @media screen and (max-width: 640px)
   // from _banner
   .banner
     padding: 1em
-
-  .banner-content
-    p
-      font-size: 16px
-
-    .image
-      position: relative
-      text-align: center
 
   .banner-title
     font-size: 30px
@@ -82,9 +88,6 @@
       font-size: 12px
 
   // from _main-content
-  .section
-    padding: 10px
-
   .content
     h2
       font-size: 1.5em
