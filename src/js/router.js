@@ -150,9 +150,6 @@ trackClicks = () => {
       done = true;
       if (document.location.href !== href && !notFoundFlag) { // XXX
         document.location.href = href;
-        console.log('callback', true);
-      } else {
-        console.log('callback', false);
       }
     };
     const props = {
