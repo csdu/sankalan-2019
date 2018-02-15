@@ -4,6 +4,12 @@
   "description": "",
   "main": "gulpfile.js",
   "dependencies": {},
+  "homepage": "https://www.ducs.in/sankalan/",
+  "description": "Sankalan is the annual tech fest of Dept Of Computer Science, University of Delhi (DUCS).",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sidvishnoi/sankalan-2018.git"
+  },
   "devDependencies": {
     "async": "^2.6.0",
     "babel-core": "^6.26.0",
@@ -33,6 +39,6 @@
     "build:dev": "./node_modules/.bin/gulp watch",
     "build:clean": "./node_modules/.bin/gulp clean"
   },
-  "author": "",
+  "author": "Sid Vishnoi <sidvishnoi.dev@gmail.com> (https://github.com/sidvishnoi)",
   "license": "ISC"
 }
