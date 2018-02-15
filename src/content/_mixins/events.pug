@@ -5,7 +5,7 @@ mixin events($key)
   .module(class={"event-live": event.islive, "event-over": event.isover, "event-nt": event.isnontech})
     div.module--half
       if event.image
-        img(src=event.image)
+        img(src=event.image.replace('/s1600/', '/w200/'))
     div.module--half
       h2 #{event.title}
       if event.quote
