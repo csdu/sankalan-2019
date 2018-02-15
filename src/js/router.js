@@ -105,7 +105,7 @@ initLoader = () => {
   const links = document.querySelectorAll('a.xhr');
 
   for (const link of links) {
-    link.removeEventListener('click', loaderListener);
+    link.removeEventListener('click', loaderListener, true);
     const { href } = link;
     const relHref = href.replace(`${window.location.protocol}//${window.location.host}`, '');
     if (relHref === href) {
@@ -115,7 +115,7 @@ initLoader = () => {
       link.addEventListener('click', e => e.preventDefault());
       continue;
     }
-    link.addEventListener('click', loaderListener);
+    link.addEventListener('click', loaderListener, true);
   }
 };
 
