@@ -27,7 +27,7 @@
 
 li.nav-item
   transition-delay: 0.8s
-  margin: 50px
+  margin: 3vw
   transition: transform 0.5s $anim-cubic
   z-index: 1000
   position: absolute
@@ -35,7 +35,8 @@ li.nav-item
   a
     display: block
     font-size: 20px
-    padding: 15px 10px 15px 75px
+    font-size: calc(10px + 0.8vw)
+    padding: 1vw 0.6vw 1vw 4vw
     color: #fff
     transition: color 0.5s 0.8s, letter-spacing 0.2s
 
@@ -43,15 +44,15 @@ li.nav-item
       bottom: calc(50% - 2px - .5em)
       content: ""
       height: 3px
-      left: 75px
+      left: 5vw
       position: absolute
       transition: width 0.2s cubic-bezier(0.58, 0.3, 0.005, 1)
       width: 0
 
     &:before
       display: block
-      height: 65px
-      width: 65px
+      height: 3.6vw
+      width: 3.6vw
       content: ""
       position: absolute
       left: 0
@@ -68,7 +69,7 @@ li.nav-item
         transition: transform 0.2s
 
       &:after
-        width: calc(100% - 20px - 65px)
+        width: calc(100% - 1vw - 4.6vw)
 
 .tl
   left: 0
@@ -112,7 +113,7 @@ li.nav-item
 
 .tr, .br
   a
-    padding: 15px 75px 15px 10px
+    padding: 1vw 5vw 1vw 0.6vw
 
     &:before
       left: auto
@@ -120,7 +121,7 @@ li.nav-item
 
     &:after
       left: auto
-      right: 75px
+      right: 5vw
 
 .is-front-page
   .nav

@@ -3,6 +3,9 @@ html
     include _head
   body(class={"is-front-page": page.slug === ''})
     include _header
+    .slow-load
+      p &gt; loading...#[br]
+      include _loader-svg.html
     #content.site-content
       include _splash
       nav.nav

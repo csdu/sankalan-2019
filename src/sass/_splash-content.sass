@@ -3,7 +3,7 @@
   display: flex
   flex-wrap: wrap
   justify-content: center
-  padding: 40px
+  padding: 2vw
   text-align: center
   color: #fff
   opacity: 1
@@ -22,7 +22,7 @@
     max-width: 700px
     text-shadow: none
     padding: 5px
-    margin: 40px auto 60px
+    margin: 1vh auto
 
 .content-nav
   display: block
@@ -40,16 +40,20 @@
 
     &:nth-child(1) a
       transform: rotate(-1deg)
+      margin: 2vh
       font-size: 2.5rem !important
+      font-size: calc(18px + 1vw) !important
 
     &:nth-child(2) a
       transform: rotate(2deg)
       font-size: 2.2rem !important
+      font-size: calc(14px + 1vw) !important
       color: $color-bl
 
     &:nth-child(3) a
       transform: rotate(-2deg)
       font-size: 2rem !important
+      font-size: calc(13px + 1vw) !important
       color: $color-br
 
   li:nth-child(n+2) a
