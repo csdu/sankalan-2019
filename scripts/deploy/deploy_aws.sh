@@ -13,11 +13,11 @@ f_cache="--metadata-directive REPLACE --cache-control max-age=2592000" # for ass
 f_cache_ct="--metadata-directive REPLACE --cache-control max-age=180" # for content only
 
 # s3 buckets
-b_cdn=s3://cdn.ducs.in_
-b_www=s3://www.ducs.in_
+b_cdn=s3://cdn.ducs.in
+b_www=s3://www.ducs.in
 
 # build
-# npm run build:clean
+npm run build:clean
 npm run build
 
 # get updated files list in scripts/deploy/tmp.txt
@@ -56,14 +56,14 @@ if [ $num -gt 0 ]; then
     if [[ $f == assets/* ]]; then
       rf=${f#assets/}
       if [[ $rf == css/* ]]; then
-        echo aws s3 cp dist/upload/$f $b_cdn/$rf  # $f_cache $f_encoding $f_permissions
+        aws s3 cp dist/upload/$f $b_cdn/$rf $f_cache $f_encoding $f_permissions
       elif [[ $rf == js/* ]]; then
-        echo aws s3 cp dist/upload/$f $b_cdn/$rf  # $f_cache $f_encoding $f_permissions
+        aws s3 cp dist/upload/$f $b_cdn/$rf $f_cache $f_encoding $f_permissions
       elif [[ $rf == images/* ]]; then
-        echo aws s3 cp dist/upload/$f $b_cdn/$rf  # $f_cache $f_permissions
+        aws s3 cp dist/upload/$f $b_cdn/$rf $f_cache $f_permissions
       fi
     elif [[ $f == sankalan/* ]]; then
-      echo aws s3 cp dist/upload/$f $b_www/$f  # $f_cache_ct $f_encoding $f_permissions
+      aws s3 cp dist/upload/$f $b_www/$f $f_cache_ct $f_encoding $f_permissions
     fi
     echo $f >> $uploadedList
   done < $tmpFile
