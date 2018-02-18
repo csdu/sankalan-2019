@@ -10,6 +10,17 @@ mixin contact({ title, email, phone })
         a.button(href=`tel:${p}`, data-id=`contact-${p}`) #{phone}
       em #{title}
 
+mixin eventContact($event, $people)
+  p
+    strong #{$event}
+  each $p in $people
+    - const p = people[$p];
+    p #{p.name}&nbsp;
+      if p.email
+        a(href=`mailto:${p.email}`) &lt;#{p.email}&gt;&nbsp;
+      if p.tel
+        a(href=`tel:${p.tel}`) #{p.tel}
+
 .banner
   .banner-content
     h2.banner-title Contact Us
@@ -32,6 +43,20 @@ mixin contact({ title, email, phone })
 
     a.button(href="https://goo.gl/maps/YqMFB3uxy9m" target="_blank" style="margin-left: auto" data-id="contact-directions") Get Directions #[br] 28°41'17.2"N 77°12'25.7"E
 
-  +contact({ title: "...if you need to talk to the web developer of Sankalan", email: "dev@ducs.in" })
+  +contact({
+    title: "...if you need to talk to the web developer of Sankalan",
+    email: "dev@ducs.in",
+  })
 
-  +contact({ title: "...if you're interested in sponsoring the fest", email: "sponsor@ducs.in", phone: "9990365950"  })
+  +contact({
+    title: "...if you're interested in sponsoring the fest",
+    email: "sponsor@ducs.in",
+    phone: "9990395650",
+  })
+
+  .section.bg-white.module
+    div
+      //- h3 Contact for specific event:
+      //- +eventContact('Spin-a-Hack', [
+      //-   'sudhanshu-vishnoi',
+      //- ])

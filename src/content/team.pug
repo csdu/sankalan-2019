@@ -17,11 +17,11 @@ mixin credit(type, key)
 
 .banner
   .banner-content
-    h1.banner-subtitle #{page.title}
-    h2.banner-title
+    h1.banner-subtitle
+    h2.banner-title #{page.title}
     p Sankalan won't be possible without its passionate team.
 .content
-  .section.bg-black
+  .section(style="color:#fff;background-color: rgba(0,0,0,0.5)")
     h2 The Panel
     .credits
       +credit('President', 'ashish-aggarwal')
