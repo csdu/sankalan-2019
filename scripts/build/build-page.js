@@ -14,10 +14,16 @@ module.exports = (page, content, callback) => {
   const mappedAssets = getMappedAssets(assets);
 
   const file = savePath(page.slug);
-  const html = pug.renderFile(paths.template, {
-    content,
-    page,
-    assets: mappedAssets,
-  });
+  let html;
+  try {
+    html = pug.renderFile(paths.template, {
+      content,
+      page,
+      assets: mappedAssets,
+    });
+  } catch (e) {
+    console.error(`Error in build-page: ${page.file}`);
+    console.error(e);
+  }
   return outputFile(file, html, callback);
 };

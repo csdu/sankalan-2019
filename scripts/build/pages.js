@@ -24,6 +24,11 @@ module.exports = {
     slug: 'team/',
     file: 'team.pug',
   },
+  terms: {
+    title: 'Terms',
+    slug: 'terms/',
+    file: 'terms.pug',
+  },
   register: {
     title: 'Register',
     slug: 'register/',
@@ -88,5 +93,35 @@ module.exports = {
     title: 'Just A Minute (JAM)',
     slug: 'events/jam',
     file: 'events-jam.pug',
+  },
+  events_technospeak: {
+    title: 'Technospeak',
+    slug: 'events/technospeak',
+    file: 'events-technospeak.pug',
+  },
+  events_junkyard_wars: {
+    title: 'Junkyard Wars',
+    slug: 'events/junkyard-wars',
+    file: 'events-junkyard-wars.pug',
+  },
+  events_blind_coding: {
+    title: 'Blind Coding',
+    slug: 'events/blind-coding',
+    file: 'events-blind-coding.pug',
+  },
+  events_beg_borrow_steal: {
+    title: 'Beg Borrow Steal',
+    slug: 'events/beg-borrow-steal',
+    file: 'events-beg-borrow-steal.pug',
+  },
+  events_cypher_o_more: {
+    title: 'Cypher-o-More',
+    slug: 'events/cypher-o-more',
+    file: 'events-cypher-o-more.pug',
+  },
+  events_pictionary: {
+    title: 'Pictionary',
+    slug: 'events/pictionary',
+    file: 'events-pictionary.pug',
   },
 };

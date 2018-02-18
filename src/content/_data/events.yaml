@@ -212,7 +212,7 @@ technospeak:
   islive: false
   isover: false
   isnontech: false
-  image:
+  image: https://4.bp.blogspot.com/-xqZ2bTz2Yfw/WoVRnH61zPI/AAAAAAAAAH4/aCy-xnxDp-IjpDjDy6Lor6iLODv2CfhAQCLcBGAs/s1600/technospeak.png
   rounds:
     - Participants should mail their article to technospeak@ducs.in with subject as ‘Workshop on security issues in Crypto-currency’
     - |-
@@ -234,7 +234,7 @@ technospeak:
     - 'Note that this workshop is open for students of Departments of Computer Science as well. '
     - ' Contact for details:   Ajay Jajoo'
 
-junkyard:
+junkyard-wars:
   title: Junkyard wars
   quote:
     text: Creativity is making Marvellous out of the Discarded
@@ -245,12 +245,12 @@ junkyard:
   islive: false
   isover: false
   isnontech: false
-  image:
+  image: https://4.bp.blogspot.com/-PLK_JfQhM6c/Woma1qA1FeI/AAAAAAAAAJE/8l-V7MfSC3cZOqicTb97-fmqUvWgNMhBgCLcBGAs/s1600/junkyard-wars.png
   rounds:
   - Audio-Visual questions based on hardware
   - The qualified teams would compete in the battle of assembling the CPUs.
 
-blind coding:
+blind-coding:
   title: Blind Coding
   description: |-
     Do you think you code like a pro? Do you think coding comes naturally to you? Well, think again!
@@ -259,10 +259,10 @@ blind coding:
   islive: false
   isover: false
   isnontech: false
-  lang: c/cpp
-  image:
+  lang: cpp
+  image: https://3.bp.blogspot.com/-SNhEGTANrDY/WomavEcTsBI/AAAAAAAAAI8/xHHOWAL1tzsODuPIuNpydWwwZ-MDHVTNgCLcBGAs/s1600/blind-coding.png
   rounds:
-    - This round will consist of simple coding problems.Participants will be provided 45 minutes to code.
+    - This round will consist of simple coding problems. Participants will be provided 45 minutes to code.
     - |-
       In the second round i.e. the final round, the coding problems provided would be slightly harder. Participants will be provided 1 hour to code. The participant, with the best performance in this round, will be the winner.
   details:
@@ -286,7 +286,7 @@ beg-borrow-steal:
   islive: false
   isover: false
   isnontech: true
-  image:
+  image: https://1.bp.blogspot.com/-9wr_pDuE460/Womaz-bs0LI/AAAAAAAAAJA/punpkTmWIhUBZmrz7ikvvaCVVoIlbgFCgCLcBGAs/s1600/beg-borrow-steal.png
   details:
     - |-
       <strong>Rules follow:</strong>
@@ -320,9 +320,9 @@ pictionary:
   title: Pictionary
   quote:
     text: |-
-      The canvas thereby stands alone <br>
-      Waiting for your creative tone <br>
-      Pump in all quirkiness , therefore <br>
+      The canvas thereby stands alone<br>
+      Waiting for your creative tone<br>
+      Pump in all quirkiness, therefore<br>
       Be quick, smart to DRAW N SCORE
   description: |-
     Pictionary , a battle where your pen is actually mightier than any sword .
@@ -330,7 +330,8 @@ pictionary:
   islive: false
   isover: false
   isnontech: true
-  image:
+  isfunlearn: true
+  image: ''
   details:
     - It is a non-technical event that will be held for the entire 2 days.
     - People who wish to play can deposit a minimal amount of Rs 10 for every new time.
@@ -339,4 +340,12 @@ pictionary:
     - So, let the artist inside you play and win exciting PRIZES.
     - 'Registration fee: Rs. 10/-'
 
-# https://4.bp.blogspot.com/-xqZ2bTz2Yfw/WoVRnH61zPI/AAAAAAAAAH4/aCy-xnxDp-IjpDjDy6Lor6iLODv2CfhAQCLcBGAs/s1600/technospeak.png
+#
+# https://1.bp.blogspot.com/-ZZGM4EgiF_w/Woma3LYwMXI/AAAAAAAAAJI/OwkKhYR60lQKNVLgs4v5RYZTW0pR-un_ACLcBGAs/s1600/lan-gaming.png
+# https://2.bp.blogspot.com/-eaPDqgn5EzE/Womaudz362I/AAAAAAAAAI4/rUMNWiBG48gvtvgF6aNeTsD5b0iyCUcvgCLcBGAs/s1600/code-auction.png
+
+# code-auction - tech
+# pictionary - non tech - fun learn
+# beg borrow steal - non tech
+# quriosity - non tech- live
+# alacrity - non tech - live

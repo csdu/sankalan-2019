@@ -2,13 +2,15 @@
 mixin events($key)
   - const event = events[$key]
   - const permalink = `/sankalan/events/${$key}/`
-  .module(class={"event-live": event.islive, "event-over": event.isover, "event-nt": event.isnontech})
+  .module(class={"event-live": event.islive, "event-over": event.isover, "event-nt": event.isnontech, "event-fl": event.isfunlearn})
     div.module--half
       if event.image
         img(src=event.image.replace('/s1600/', '/w200/'))
     div.module--half
       h2 #{event.title}
       if event.quote
-        h3 &#147;#{event.quote.text}&#148; #[span &mdash; #{event.quote.by}]
+        h3 &#147;!{event.quote.text}&#148;
+          if event.quote.by
+            span &mdash; #{event.quote.by}
       p !{event.description.replace(/\n/g, '</p><p>')}
       a.button(href=permalink class="xhr" data-id=`events-${$key}`) Know more
