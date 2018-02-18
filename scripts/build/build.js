@@ -31,7 +31,7 @@ const build = (page, callback) => {
     ? yaml.readSync(paths.sponsorsData)
     : { sponsors: [] };
 
-  const people = page.slug.includes('team/')
+  const people = page.slug.includes('team/') || page.slug.includes('contact/')
     ? yaml.readSync(paths.peopleData)
     : { sponsors: [] };
 

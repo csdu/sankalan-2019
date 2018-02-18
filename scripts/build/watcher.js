@@ -9,7 +9,11 @@ const {
   paths,
 } = require('./utils');
 
+let buildAll;
+
 const $pages = Object.keys(pages).map(k => pages[k]);
+
+let $pagesToBuild = pages;
 
 const buildEventPages = () => {
   const pagesToBuild = $pages.filter(p => p.slug.includes('events/'));
@@ -36,6 +40,10 @@ const buildOne = (fpath) => {
       page = pages.events; // build events/ only
     } else if (path.basename(fname) === 'sponsors.yaml') {
       page = pages.sponsors; // build sponsors/ only
+    } else if (path.basename(fname) === 'people.yaml') {
+      $pagesToBuild = [pages.team, pages.contact];
+      buildAll();
+      return;
     } else {
       return;
     }
@@ -48,13 +56,14 @@ const buildOne = (fpath) => {
   });
 };
 
-const buildAll = () => {
+buildAll = () => {
   console.log(`[${now()}] Starting 'Rebuild <all>'... `);
-  map(pages, build, (err) => {
+  map($pagesToBuild, build, (err) => {
     if (err) {
       console.error(err);
       return;
     }
+    $pagesToBuild = pages; // reset to all pages
     console.log(`[${now()}] Finished 'Rebuild <all>'... `);
   });
 };
