@@ -2,9 +2,8 @@
 
 let initLoader;
 let trackClicks;
-const maxDelay = 500; // if request takes maore than this much ms, we won't show user the "loading"
+const maxDelay = 600; // if request takes more than this much ms, we won't show user the "loading"
 let reqStartTime;
-let notFoundFlag = false;
 
 const changeHistory = (page) => {
   document.title = page.title;
@@ -46,8 +45,6 @@ const showContent = (json) => {
     page_path: json.link,
   });
 
-  notFoundFlag = false;
-
   return json;
 };
 
@@ -71,9 +68,15 @@ const loadPage = (href) => {
     return Promise.resolve(res.json());
   };
 
+  const cacheResponse = (json) => {
+    const localStorageKey = href.split(window.location.host)[1];
+    window.localStorage.setItem(localStorageKey, JSON.stringify(json));
+    window.localStorage.setItem(`t-${localStorageKey}`, new Date().valueOf());
+    return Promise.resolve(json);
+  };
+
   const handleLoadError = (err) => {
     console.error(err);
-    notFoundFlag = true;
     setURL(pastUrl); // reset url and history
     hideLoader();
   };
@@ -87,8 +90,22 @@ const loadPage = (href) => {
     url += '/index.json'; // when url ends without a trailing slash
   }
 
+  // get from local storage if available and appropriate
+  const localStorageKey = href.split(window.location.host)[1];
+  const t = window.localStorage.getItem(`t-${localStorageKey}`);
+  const lastFetchTime = new Date(parseInt(t, 10));
+  if (new Date() - lastFetchTime < 120 * 1000) { // cache time 120s
+    const json = JSON.parse(window.localStorage.getItem(localStorageKey));
+    return new Promise(resolve => resolve(json))
+      .then(showContent)
+      .then(changeHistory)
+      .then(initLoader)
+      .catch(handleLoadError);
+  }
+
   return window.fetch(url)
     .then(parseResponse)
+    .then(cacheResponse)
     .then(showContent)
     .then(changeHistory)
     .then(initLoader)
@@ -101,7 +118,9 @@ window.onpopstate = ({ state }) => {
   }
 
   reqStartTime = new Date().valueOf() + 250;
+  const { link } = state;
   showLoader();
+  setURL(window.location.host + link);
   showContent(state);
   initLoader();
   trackClicks();
@@ -147,10 +166,14 @@ trackClicks = () => {
     const { href } = target;
     const action = href.split(window.location.host)[1] || href;
     const callback = () => {
-      done = true;
-      if (document.location.href !== href && !notFoundFlag) { // XXX
-        document.location.href = href;
+      if (!done && document.location.href !== href && !target.classList.contains('xhr')) {
+        if (target.getAttribute('target') === '_blank') {
+          window.open(href, '_blank');
+        } else {
+          document.location.href = href;
+        }
       }
+      done = true;
     };
     const props = {
       event_category: 'Click Open',
