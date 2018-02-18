@@ -14,15 +14,17 @@ const showLoader = () => {
   document.body.classList.add('loading');
 };
 
-const hideLoader = () => {
+const hideLoader = (callback = () => {}) => {
   let delay = new Date() - reqStartTime;
   if (delay > maxDelay) {
     delay = 0;
   } else {
     delay = maxDelay - delay;
   }
-  window.setTimeout(() =>
-    document.body.classList.remove('loading'), delay);
+  window.setTimeout(() => {
+    document.body.classList.remove('loading');
+    callback();
+  }, delay);
 };
 
 const showContent = (json) => {
@@ -36,8 +38,11 @@ const showContent = (json) => {
   if (!json.link) throw new Error('bad content');
 
   window.scrollTo(0, 0);
-  main.innerHTML = json.content;
-  hideLoader();
+  hideLoader(() => {
+    main.innerHTML = json.content;
+    initLoader();
+    trackClicks();
+  });
 
   // track page view
   gtag('config', GA_TRACKING_ID, {
@@ -122,8 +127,6 @@ window.onpopstate = ({ state }) => {
   showLoader();
   setURL(window.location.host + link);
   showContent(state);
-  initLoader();
-  trackClicks();
 };
 
 const loaderListener = (e) => {
