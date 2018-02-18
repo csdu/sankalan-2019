@@ -308,7 +308,7 @@ cypher-o-more:
   islive: false
   isover: false
   isnontech: false
-  image: ''
+  image: https://1.bp.blogspot.com/-EqzbwhrlQFk/WonkMX73ODI/AAAAAAAAAJs/ZIhUNsuy-HgUcF1sLxZ9Ur7R-ZuiiBSqACLcBGAs/s1600/cypher-o-more.png
   rounds:
     - For prelims, you have to answer a set of MCQ's related to cryptology, cryptography, and cryptanalysis.
     - For the final round, you have to shake up your brain to find the message in a coded story.
@@ -325,13 +325,13 @@ pictionary:
       Pump in all quirkiness, therefore<br>
       Be quick, smart to DRAW N SCORE
   description: |-
-    Pictionary , a battle where your pen is actually mightier than any sword .
-    Just load your bullets of creativity , exercise your witty brain and get ready to pull off 'THE SHELDON ' in you.
+    Pictionary, a battle where your pen is actually mightier than any sword.
+    Just load your bullets of creativity, exercise your witty brain and get ready to pull off 'THE SHELDON' in you.
   islive: false
   isover: false
   isnontech: true
   isfunlearn: true
-  image: ''
+  image: https://4.bp.blogspot.com/-Kwu49LImCF4/WonkLxGFgzI/AAAAAAAAAJo/4LRVuBFVbcwHMOaoedDSVKcDyhIdZb5rACLcBGAs/s1600/pictionary.png
   details:
     - It is a non-technical event that will be held for the entire 2 days.
     - People who wish to play can deposit a minimal amount of Rs 10 for every new time.
@@ -343,7 +343,8 @@ pictionary:
 #
 # https://1.bp.blogspot.com/-ZZGM4EgiF_w/Woma3LYwMXI/AAAAAAAAAJI/OwkKhYR60lQKNVLgs4v5RYZTW0pR-un_ACLcBGAs/s1600/lan-gaming.png
 # https://2.bp.blogspot.com/-eaPDqgn5EzE/Womaudz362I/AAAAAAAAAI4/rUMNWiBG48gvtvgF6aNeTsD5b0iyCUcvgCLcBGAs/s1600/code-auction.png
-
+# https://1.bp.blogspot.com/-bScb6sAl5lQ/WonkQG7_C-I/AAAAAAAAAJw/THWQxRrI9oAjkpKBPcOPXyNDErf7M1r0QCLcBGAs/s1600/alacrity.png
+# https://4.bp.blogspot.com/-uqE0IBjOrFM/WonkSo8InII/AAAAAAAAAJ0/eLx2Uwa5ET0phRygmuupkdXZhqUl4J_pgCLcBGAs/s1600/quriosity.png
 # code-auction - tech
 # pictionary - non tech - fun learn
 # beg borrow steal - non tech
