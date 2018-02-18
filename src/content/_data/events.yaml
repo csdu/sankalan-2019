@@ -149,8 +149,8 @@ chakravyuh:
     text: The secret impresses no one. The trick you use it for is everything
     by: The Prestige
   description: |-
-    This is an online treasure hunt event. At each level, a question will be posed and hints may be given.
-    A participant must answer correctly to advance to the next level.
+     This is an online treasure hunt event. At each level, a question will be posed and hints may be given.
+     A participant must answer correctly to advance to the next level.
   islive: false
   isover: false
   isnontech: true
@@ -206,4 +206,145 @@ jam:
     - Games would have to be completed in a minute period.
     - A maximum of 72 teams would be allowed.
 
+technospeak:
+  title: Technospeak
+  description:Sankalan 2018 in Association with The Defence Research and Development Organisation(DRDO) presents Workshop on Information Security
+  teamSize: 2
+  islive: false
+  isover: false
+  isnontech: false
+  image:
+  rounds:
+    - Participants should mail their article to technospeak@ducs.in with subject as ‘Workshop on security issues in Crypto-currency’
+    - |-
+      Subsequently, based on technical review, the authors of the best eight selected articles would be invited to give a presentation of their topics (10-20 minutes) on 11th March 2018 at Department of Computer Science ,University of Delhi.
+  details:
+    - We invite the participants to make a presentation on a topic in Security issues in crypto-currency. The participants are expected to write an article on a topic of their choice with in the scope of crypto-currency. The article may be ​based on ​original research or a review article of the work in some area within the domain of security in crypto-currency. 
+    - |-
+      <strong>Rules follow:</strong>
+      <ol>
+        <li>Format of the article: PDF  </li>
+        <li>Font : Times New Roman </li>
+        <li>Size: 14.</li>
+        <li>The article should include an abstract. The articles should be restricted to 10 pages. </li>
+        <li>Other details to be submitted along with the article: <br>
+              Contact details of the participants (maximum Two), <br>
+              Name, Email Id,College,Contact Number.</li>
+         <li>'Last date of submission is March 4, 2018.'</li>
+      </ol>
+      - 'Note that this workshop is open for students of Departments of Computer Science as well. '
+      - ' Contact for details:   Ajay Jajoo'  
+ 
+ 
+ junkyard:
+    title: Junkyard wars
+    quote:
+    text:Creativity is making Marvellous out of the Discarded
+    description: |-
+    Got a knack for the computer systems? Ever wondered to dwell into the world of CPU’s? 
+    A key to achieving success is to assemble a strong and stable management of parts together. Here, you get to what is arguably the most fun part of the process: assembling the parts together. Come and participate to showcase your craftsmanship and technical skills.
+    teamSize: 2
+    islive: false
+    isover: false
+    isnontech: false
+    image:
+    rounds:
+    - Audio-Visual questions based on hardware  
+    - |-
+      The qualified teams would compete in the battle of assembling the CPUs’.
+      
+      
+ blind coding:
+    title: Blind Coding
+    description: |-
+    Do you think you code like a pro? Do you think coding comes naturally to you? Well, think again!
+    Presenting Blind Coding, a simple coding competition where you’ll be given even simpler problems to code. Sounds too easy? It isn’t! The catch is that you will be forbidden to look at your code!
+    teamSize: 1
+    islive: false
+    isover: false
+    isnontech: false
+    lang: c/cpp
+    image:
+    rounds:
+    - This round will consist of simple coding problems.Participants will be provided 45 minutes to code. 
+    - |-
+      In the second round i.e. the final round, the coding problems provided would be slightly harder. Participants will be provided 1 hour to code. The participant, with the best performance in this round, will be the winner.
+    details:
+     - 5-6 participants will be selected for the next round (Mains) on the basis of their performance in this round.
+     - Performance in each round will be evaluated based on the results of compilation and execution.
+     - During both rounds, participants will only have access to the keyboard and the monitors will be turned off.
+     - The participants are forbidden to turn on the screens, during or after the event.
+     - Decision made by the event organizers will be final and binding.
+     - Any arguments and/or nuisance caused to the organizers will not be tolerated.
+     - The result of the prelims will be declared on the same day and teams that qualify for mains will compete on Day 2 of Sankalan.
+     - 'Compiler:DevCpp'
+    
+    
+beg-borrow-steal:
+  title: Beg Borrow Steal
+  quote:
+    text: You can plead, you can use your charm or else you can steal.
+  description: |-
+     Get it or Steal it!!!
+     In this game you can win exciting prizes by begging, borrowing or stealing things. Each participant will be given an item in each round, they have to either beg it , borrow it or steal it. The participant that earns the maximum points in the least time will be declared winner.  For once in a lifetime you won't be eschewed for begging, despised for borrowing or prosecuted for stealing. So get ready to put all your resources and contacts to fetch the most radical and extraordinary things in this epic race and have some real fun.
+  islive: false
+  isover: false
+  isnontech: true
+  image: 
+  details:
+    - |-
+      <strong>Rules follow:</strong>
+      <ol>
+        <li>Participants have to either beg, borrow or steal the items that are enlisted and provided to them</li>
+        <li>Participants have to get themselves registered before the commencement of the event.</li>
+        <li>After the completion of the task the participants are required to report to the coordinators for evaluation.</li>
+        <li>Participants will be judged on first come, first serve basis and also the items they were able to collect.</li>
+       </ol>
+       
+       
+       
+       
+cypher-o-more:
+  title: Cypher-o-more
+  quote:
+    text: There are two types of encryption: one that will prevent your sister from reading your diary and one that will prevent your government.
+    by: Bruce Schneier
+  description: |-
+     Hey, crypto heads!
+    Do you have your secret decoder handy? Sankalan'18 gives you the opportunity to bring out the Alan Turing in you.
+  islive: false
+  isover: false
+  isnontech: false
+  image: 
+  rounds:
+  - For prelims, you have to answer a set of MCQ's related to cryptology, cryptography, and cryptanalysis.
+    - |-
+      For the final round, you have to shake up your brain to find the message in a coded story. 
+  details:  
+    - Challenge the cryptographer in you and win exciting prizes.
+    - So, put on your Sherlock vibes and get ready to explore the field of computer security.
+
+pictionary:
+  title: Pictionary 
+  quote:
+    text:The canvas thereby stands alone <br>
+         Waiting for your creative tone <br>
+         Pump in all quirkiness , therefore <br>
+         Be quick, smart to DRAW N SCORE
+  description: |-
+     Pictionary , a battle where your pen is actually mightier than any sword . 
+    Just load your bullets of creativity , exercise your witty brain and get ready to pull off 'THE SHELDON ' in you.
+  islive: false
+  isover: false
+  isnontech: true
+  image: 
+  details:
+    - It is a non-technical event that will be held for the entire 2 days.
+    - People who wish to play can deposit a minimal amount of Rs 10 for every new time.
+    - You will be given a word from any domain, and will be required to explain that, by drawing anything related to the same on the board, to the audience in a time span of 2 minutes.
+    - Prompting or adopting any illegal means can lead to disqualification. 
+    - So, let the artist inside you play and win exciting PRIZES.
+    - 'Registration fee: Rs. 10/-'
+    
+     
 # https://4.bp.blogspot.com/-xqZ2bTz2Yfw/WoVRnH61zPI/AAAAAAAAAH4/aCy-xnxDp-IjpDjDy6Lor6iLODv2CfhAQCLcBGAs/s1600/technospeak.png
