@@ -1,5 +1,5 @@
 - const $title = `${page.title}${page.title ? ' // ' : ''}Sankalan 2018`;
-- const $description = `Sankalan is the annual tech fest of Dept Of Computer Science, University of Delhi (DUCS).`;
+- const $description = page.description || `Sankalan is the annual tech fest of Dept Of Computer Science, University of Delhi (DUCS).`;
 - const url = `https://ducs.in/sankalan/${page.slug}`;
 
 title #{$title}
