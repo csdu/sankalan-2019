@@ -8,7 +8,7 @@ mixin credit(type, key)
     div.avatar
       - const image = p.image || `${assets.$}/images/www/one.svg`;
       if p.url
-        a(href=p.url, target="_blank" title=`${p.name} @ ${p.url}` data-id=`team-${key}`)
+        a(href=p.url, target="_blank" rel="noopener" title=`${p.name} @ ${p.url}` data-id=`team-${key}`)
           img.avatar(src=image alt=p.name)
       else
         img.avatar(src=image alt=p.name title=p.name)

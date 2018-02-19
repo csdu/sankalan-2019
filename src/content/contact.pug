@@ -28,7 +28,7 @@ mixin eventContact($event, $people)
   .section
     div.module
       p For general queries, feel free to reach us at our Facebook page:
-      a.button(href="https://facebook.com/DUCS.Sankalan" style="text-shadow: none" target="_blank" data-id="contact-FB") fb.com/DUCS.Sankalan
+      a.button(href="https://facebook.com/DUCS.Sankalan" style="text-shadow: none" target="_blank" rel="noopener" data-id="contact-FB") fb.com/DUCS.Sankalan
     div.module
       p You can also send us an email at
       a.button(href="mailto:" + email, style="text-shadow: none" data-id=`contact-${email}`) #{email}
@@ -41,7 +41,7 @@ mixin eventContact($event, $people)
         New Academic Block,
         University of Delhi
 
-    a.button(href="https://goo.gl/maps/YqMFB3uxy9m" target="_blank" style="margin-left: auto" data-id="contact-directions") Get Directions #[br] 28°41'17.2"N 77°12'25.7"E
+    a.button(href="https://goo.gl/maps/YqMFB3uxy9m" target="_blank" rel="noopener" style="margin-left: auto" data-id="contact-directions") Get Directions #[br] 28°41'17.2"N 77°12'25.7"E
 
   +contact({
     title: "...if you need to talk to the web developer of Sankalan",

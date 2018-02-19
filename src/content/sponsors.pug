@@ -2,7 +2,7 @@
 - const email = 'sponsor@ducs.in'
 
 mixin sponsor(s)
-  a.sponsor(href=s.link target="_blank" title=s.name, style=`background-image: url('${s.image}'); background-size: cover; background-position: center center`, data-id=`sponsor-${s.name.toLowerCase().replace(/ /g), '-'}`)
+  a.sponsor(href=s.link target="_blank" rel="noopener" title=s.name, style=`background-image: url('${s.image}'); background-size: cover; background-position: center center`, data-id=`sponsor-${s.name.toLowerCase().replace(/ /g), '-'}`)
 
 .banner
   .banner-content

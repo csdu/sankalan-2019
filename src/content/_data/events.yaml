@@ -19,9 +19,9 @@ algoholics:
     - |-
       The qualifying teams would be given a set of problems to develop an algorithm/pseudo-code on.
       The problems are to be solved overnight at their own places and next day they have to present their solution to judges for evaluation.
-  details:
-    - hello world
-    - bye world
+  # details:
+  #   - hello world
+  #   - bye world
 
 codeathon:
   title: Code-a-thon
