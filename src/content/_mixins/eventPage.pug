@@ -33,11 +33,12 @@ mixin eventPage(ev)
       if ev.story && ev.rounds
         +story(ev.story)
       h3 Further details
-      ul
-      each p in ev.details || []
-        li !{p}
-      else
+      if !ev.details
         p Nothing more mentioned yet. Check back soon
+      else
+        ul
+          each p in ev.details || []
+            li !{p}
       if ev.reg !== 0
         a.button(rel="noopener" href="https://dashboard.ducs.in/sankalan/register/" data-id=`register-${ev.title.toLowerCase().replace(/ /g, '-')}`) Register
       if ev.fbpage
