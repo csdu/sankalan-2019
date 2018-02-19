@@ -27,7 +27,7 @@ codeathon:
   title: Code-a-thon
   description:  |-
     Do you have what it takes to survive a coding marathon? Then we have just the right thing for you...
-    Multiple-choice questions based on concepts of C,C++and Java.
+    Multiple-choice questions based on concepts of C, C++ and Java.
     ...then solve some real problems using C/C++/Java.
   islive: false
   isover: false
@@ -37,8 +37,7 @@ codeathon:
   lang: cpp
   rounds:
     - Multiple-choice based questions based on concepts of C/C++/Java.
-    - |-
-      The qualifying teams would be given a set of problems to code in C/C++/Java.
+    - The qualifying teams would be given a set of problems to code in C/C++/Java.
   details:
     - 'Operating System: Windows'
     - 'Platform: Dev C++/Netbeans(Java)'
@@ -82,9 +81,9 @@ brainspark:
     - Multiple Choice Questions testing the logical and quantitative ability of participants.
     - |-
       The qualifying teams would be given a set of puzzles to solve.
-  details:
-    - hello world
-    - bye world
+  # details:
+  #   - hello world
+  #   - bye world
 
 make-app:
   title: MakeApp
@@ -216,23 +215,25 @@ technospeak:
   rounds:
     - Participants should mail their article to technospeak@ducs.in with subject as ‘Workshop on security issues in Crypto-currency’
     - |-
-      Subsequently, based on technical review, the authors of the best eight selected articles would be invited to give a presentation of their topics (10-20 minutes) on 11th March 2018 at Department of Computer Science ,University of Delhi.
+      Subsequently, based on technical review, the authors of the best eight selected articles would be invited to give a presentation of their topics (10-20 minutes) on 11th March 2018 at Department of Computer Science,University of Delhi.
+  story: We invite the participants to make a presentation on a topic in Security issues in crypto-currency. The participants are expected to write an article on a topic of their choice with in the scope of crypto-currency. The article may be ​based on ​original research or a review article of the work in some area within the domain of security in crypto-currency.
   details:
-    - We invite the participants to make a presentation on a topic in Security issues in crypto-currency. The participants are expected to write an article on a topic of their choice with in the scope of crypto-currency. The article may be ​based on ​original research or a review article of the work in some area within the domain of security in crypto-currency.
     - |-
+      Participants should mail their article to <a href="mailto:technospeak@ducs.in">technospeak@ducs.in</a> with subject as <br>‘Workshop on security issues in Crypto-currency’
       <strong>Rules follow:</strong>
       <ol>
         <li>Format of the article: PDF  </li>
-        <li>Font : Times New Roman </li>
+        <li>Font: Times New Roman </li>
         <li>Size: 14.</li>
-        <li>The article should include an abstract. The articles should be restricted to 10 pages. </li>
+        <li>The article should include an abstract.</li>
+        <li>The article should be restricted to 10 pages. </li>
         <li>Other details to be submitted along with the article: <br>
-              Contact details of the participants (maximum Two), <br>
-              Name, Email Id,College,Contact Number.</li>
-         <li>'Last date of submission is March 4, 2018.'</li>
+        Contact details of the participants (maximum Two):
+        Name, Email Id, College, Contact Number<br> <em>(if you've registered through our portal, just send your ticket 'ID')</em></li>
+         <li>Last date of submission is March 4, 2018.</li>
       </ol>
-    - 'Note that this workshop is open for students of Departments of Computer Science as well. '
-    - ' Contact for details:   Ajay Jajoo'
+    - 'Note: this workshop is open for students of Dept. of Computer Science as well.'
+    - 'Contact for details: Ajay Jajoo'
 
 junkyard-wars:
   title: Junkyard wars
@@ -282,7 +283,7 @@ beg-borrow-steal:
     by: ''
   description: |-
     Get it or Steal it!!!
-    In this game you can win exciting prizes by begging, borrowing or stealing things. Each participant will be given an item in each round, they have to either beg it , borrow it or steal it. The participant that earns the maximum points in the least time will be declared winner.  For once in a lifetime you won't be eschewed for begging, despised for borrowing or prosecuted for stealing. So get ready to put all your resources and contacts to fetch the most radical and extraordinary things in this epic race and have some real fun.
+    In this game you can win exciting prizes by begging, borrowing or stealing things. Each participant will be given an item in each round, they have to either beg it, borrow it or steal it. The participant that earns the maximum points in the least time will be declared winner.  For once in a lifetime you won't be eschewed for begging, despised for borrowing or prosecuted for stealing. So get ready to put all your resources and contacts to fetch the most radical and extraordinary things in this epic race and have some real fun.
   islive: false
   isover: false
   isnontech: true
