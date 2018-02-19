@@ -132,6 +132,10 @@ window.onpopstate = ({ state }) => {
 const loaderListener = (e) => {
   e.preventDefault();
   const target = e.target.closest('a');
+  if (e.ctrlKey) {
+    window.open(target.href, '_blank');
+    return;
+  }
   reqStartTime = new Date();
   showLoader();
   loadPage(target.href);
@@ -170,7 +174,7 @@ trackClicks = () => {
     const action = href.split(window.location.host)[1] || href;
     const callback = () => {
       if (!done && document.location.href !== href && !target.classList.contains('xhr')) {
-        if (target.getAttribute('target') === '_blank') {
+        if (target.getAttribute('target') === '_blank' || e.ctrlKey) {
           window.open(href, '_blank');
         } else {
           document.location.href = href;
