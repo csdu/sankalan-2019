@@ -42,4 +42,4 @@ Also, please report any issues you face in website or the build process.
 
 # Copyright
 
-The website is designed by Sid Vishnoi (@sidvishnoi) for Sankalan 2018 - the annual tech fest of DUCS. Copyright. Give credits if you use any part of it any where.
+The website is designed by Sudhanshu Vishnoi (https://github.com/sidvishnoi) for Sankalan 2018 - the annual tech fest of DUCS. Copyright. Give credits if you use any part of it any where.

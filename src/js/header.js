@@ -1,6 +1,6 @@
 /**
  * @preserve
- * Developed by Sid Vishnoi
+ * Developed by Sudhanshu Vishnoi
  * (https://github.com/sidvishnoi)
  * Copyright 2018
  */
