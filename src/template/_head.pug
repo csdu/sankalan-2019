@@ -1,6 +1,7 @@
 - const $title = `${page.title}${page.title ? ' // ' : ''}Sankalan 2018`;
 - const $description = page.description || `Sankalan is the annual tech fest of Dept Of Computer Science, University of Delhi (DUCS).`;
 - const url = `https://ducs.in/sankalan/${page.slug}`;
+- const $defaultImage = 'https://2.bp.blogspot.com/-wg6-sy-mxqo/Wow4UQRw__I/AAAAAAAAAMA/QK1RETSD9vkpTENNdD6Qo2yLZaUG8JY4QCLcBGAs/s1600/sankalan-2018.png';
 
 title #{$title}
 meta(name="viewport" content="width=device-width, initial-scale=1")
@@ -12,7 +13,7 @@ meta(property="og:url" content=url)
 meta(property="og:type" content="website")
 meta(property="og:title" content=$title)
 meta(property="og:description" content=$description)
-meta(property="og:image" content=(page.image || `${assets.$}/images/www/sankalan-2018.png`))
+meta(property="og:image" content=(page.image || $defaultImage))
 meta(property="fb:app_id" content="211826412729565")
 
 link(rel="apple-touch-icon" sizes="60x60" href=`${assets.$}/images/www/favicon/apple-icon-60x60.png`)
