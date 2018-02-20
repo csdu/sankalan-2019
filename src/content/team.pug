@@ -6,14 +6,15 @@ mixin credit(type, key)
         strong #{type}:&nbsp;
       p #{p.name}
     div.avatar
-      - const image = p.image || `${assets.$}/images/www/one.svg`;
+      - const image = (p.image && p.image.replace('/s1600/', '/w56-h56-p/')) || `${assets.$}/images/www/one.svg`;
       if p.url
         a(href=p.url, target="_blank" rel="noopener" title=`${p.name} @ ${p.url}` data-id=`team-${key}`)
           img.avatar(src=image alt=p.name)
       else
         img.avatar(src=image alt=p.name title=p.name)
       if p.url
-        img.link(src=`${assets.$}/images/www/github-icon.svg`)
+        - const img = p.url.includes('github.com') ? 'github-icon.svg' : 'fb-icon-white.svg';
+        img.link(src=`${assets.$}/images/www/${img}`)
 
 .banner
   .banner-content
