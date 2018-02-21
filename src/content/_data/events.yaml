@@ -287,6 +287,7 @@ beg-borrow-steal:
   islive: false
   isover: false
   isnontech: true
+  isfunlearn: true
   image: https://1.bp.blogspot.com/-9wr_pDuE460/Womaz-bs0LI/AAAAAAAAAJA/punpkTmWIhUBZmrz7ikvvaCVVoIlbgFCgCLcBGAs/s1600/beg-borrow-steal.png
   details:
     - |-
@@ -341,13 +342,61 @@ pictionary:
     - So, let the artist inside you play and win exciting PRIZES.
     - 'Registration fee: Rs. 10/-'
 
+quriosity:
+  title: Quriosity
+  description: |-
+    Getting tired of lazily browsing through same old sitcoms wile waiting for dinner? Fret Not, for Sankalan 2018 presents Quriosity’18, every night at 10. From the 1st to the 28th of Feb, we will give you a knowledgeable prime-time. One that you are bound not to miss!
+  details:
+    - Every day at 10 pm from 1st Feb 2018 till 28 Feb 2018, we will post a simple question or a puzzle for you to answer.
+    - The player who tops the leaderboard at the end wins the game.
+    - The winner will be announced at Sankalan '18.
+    - Don't forget to join in the fun and stay tuned for more updates.
+    - 'P.S : You are not allowed to edit your answers.'
+  image: https://4.bp.blogspot.com/-uqE0IBjOrFM/WonkSo8InII/AAAAAAAAAJ0/eLx2Uwa5ET0phRygmuupkdXZhqUl4J_pgCLcBGAs/s1600/quriosity.png
+  islive: true
+  isnontech: true
+  isover: false
+  reg: 0
+  fbpage: https://www.facebook.com/hashtag/quriosity18
+
+alacrity:
+  title: Alacrity
+  description: |-
+    A Photography Competition is a platform to showcase your talent. While clicking away just for the sake of photography is a lot of fun, sometimes a competition can help you raise the bar as a photographer.
+  story: A Photography Competition is a platform to showcase your talent. While clicking away just for the sake of photography is a lot of fun, sometimes a competition can help you raise the bar as a photographer. Especially when you know your image will be seen by a discerning group of judges, and then possibly displayed alongside those of other winners. So, Sankalan’18 presents to you Alacrity’18, the Photography Competition of DUCS.
+  details:
+    - The contests are open for online submissions only.
+    - The photographs can be taken on either of digital cameras or smartphones.
+    - Submissions will not be accepted once the deadline lapses.
+    - You are required to provide a unique title & description for each image submitted.
+    - Basic editing, including color enhancement, the use of filters, and cropping of the photo(s) is acceptable, provided any such editing does not affect the authenticity and/or genuineness of the photo(s).
+    - Advanced editing used to create illusions, deceptions and/or manipulations, and the adding and removing of significant elements within the frame is prohibited.
+    - Only one submission is allowed per participant, per theme.
+    - The <strong>theme</strong> will be updated on our <a href="" target="_blank" rel="nofollow" data-id="fb-page-alacrity">Facebook page</a> every week.
+    - <strong>You will have to mail your submissions at <a href="mailto:sankalan.entries@gmail.com">sankalan.entries@gmail.com</a>.</strong>
+    - The submission mail must contain the Full Name, College Name, Department Name, Course Name, Semester and Contact Number of the participant. You also have to provide title & description for each image. The submission won't be accepted without the mentioned details.
+    - |-
+      <strong>Judgment</strong> will be done based on two criteria:
+      <ol>
+        <li>50 percent of score depends on our judges.</li>
+        <li>The other 50 percent is on you. We will post the photographs on our official Facebook page & Instagram Page every night after 12, and it's your duty to increase the number of positive reactions on your photo by sharing with your friends. The one with the highest positive reactions after <attr title="7 days">168 hours</attr> of your picture being posted will score the highest.</li>
+      </ol>
+    - At the end of every week 3 winners will be announced, and they have to come on March 9-10, 2018 at Dept. of Computer Science, Delhi University (see contact page for details), for the final round.
+    - |-
+      For any queries contact: Pradipti Kayal<br>
+      Email: <a href="mailto:pradipti.mcs16.du@gmail.com">pradipti.mcs16.du@gmail.com</a><br>
+      Facebook: <a href="https://www.facebook.com/pradipti.kayal" target="_blank" rel="nofollow">https://www.facebook.com/pradipti.kayal</a>
+
+  image: https://1.bp.blogspot.com/-bScb6sAl5lQ/WonkQG7_C-I/AAAAAAAAAJw/THWQxRrI9oAjkpKBPcOPXyNDErf7M1r0QCLcBGAs/s1600/alacrity.png
+  islive: true
+  isnontech: true
+  isover: false
+  reg: 0
+  fbpage: https://www.facebook.com/hashtag/alacrity18
+
 #
 # https://1.bp.blogspot.com/-ZZGM4EgiF_w/Woma3LYwMXI/AAAAAAAAAJI/OwkKhYR60lQKNVLgs4v5RYZTW0pR-un_ACLcBGAs/s1600/lan-gaming.png
 # https://2.bp.blogspot.com/-eaPDqgn5EzE/Womaudz362I/AAAAAAAAAI4/rUMNWiBG48gvtvgF6aNeTsD5b0iyCUcvgCLcBGAs/s1600/code-auction.png
-# https://1.bp.blogspot.com/-bScb6sAl5lQ/WonkQG7_C-I/AAAAAAAAAJw/THWQxRrI9oAjkpKBPcOPXyNDErf7M1r0QCLcBGAs/s1600/alacrity.png
-# https://4.bp.blogspot.com/-uqE0IBjOrFM/WonkSo8InII/AAAAAAAAAJ0/eLx2Uwa5ET0phRygmuupkdXZhqUl4J_pgCLcBGAs/s1600/quriosity.png
+
 # code-auction - tech
-# pictionary - non tech - fun learn
 # beg borrow steal - non tech
-# quriosity - non tech- live
-# alacrity - non tech - live

@@ -57,6 +57,18 @@ module.exports = {
     image: 'https://2.bp.blogspot.com/-97Ai3RyUW_8/WoxGTe6usLI/AAAAAAAAAMk/DyyklsokmI0cywdqID9paes0BXEAOGPtgCLcBGAs/s1600/ducs-sankalan-algoholics.png',
     description: 'Algoholics - algorithm based technical event at Sankalan 2018. Multiple-choice based questions testing the participant’s algorithmic competency, Then solve set of problems overnight to develop algorithms.',
   },
+  events_quriosity: {
+    title: 'Quriosity',
+    slug: 'events/quriosity/',
+    file: 'events-quriosity.pug',
+    description: 'Quriosity: Sankalan 2018 - Every day at 10 pm from 1st Feb 2018 till 28 Feb 2018, we will post a simple question or a puzzle for you to answer. The player who tops the leaderboard at the end wins the game.',
+  },
+  events_alacrity: {
+    title: 'Alacrity',
+    slug: 'events/alacrity/',
+    file: 'events-alacrity.pug',
+    description: 'Alacrity: Sankalan 2018 - A Photography Competition is a platform to showcase your talent. While clicking away just for the sake of photography is a lot of fun, sometimes a competition can help you raise the bar as a photographer.',
+  },
   events_codeathon: {
     title: 'Code-a-thon',
     slug: 'events/codeathon/',
