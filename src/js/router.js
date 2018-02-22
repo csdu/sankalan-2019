@@ -99,7 +99,7 @@ const loadPage = (href) => {
   const localStorageKey = href.split(window.location.host)[1];
   const t = window.localStorage.getItem(`t-${localStorageKey}`);
   const lastFetchTime = new Date(parseInt(t, 10));
-  if (new Date() - lastFetchTime < 120 * 1000) { // cache time 120s
+  if (new Date() - lastFetchTime < 300 * 1000) { // cache time 5min
     const json = JSON.parse(window.localStorage.getItem(localStorageKey));
     return new Promise(resolve => resolve(json))
       .then(showContent)

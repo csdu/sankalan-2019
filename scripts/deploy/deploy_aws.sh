@@ -10,7 +10,7 @@ d_img=dist/assets/images
 f_permissions="--grants read=uri=http://acs.amazonaws.com/groups/global/AllUsers"
 f_encoding="--content-encoding gzip" # for assets only
 f_cache="--metadata-directive REPLACE --cache-control max-age=2592000" # for assets only
-f_cache_ct="--metadata-directive REPLACE --cache-control max-age=180" # for content only
+f_cache_ct="--metadata-directive REPLACE --cache-control max-age=300" # for content only
 
 # s3 buckets
 b_cdn=s3://cdn.ducs.in
