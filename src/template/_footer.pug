@@ -11,15 +11,18 @@ footer
         a(class="xhr" href='/sankalan/terms/' data-id='footer-terms') Terms
       li
         a(href='https://dashboard.ducs.in/sankalan/' data-id='footer-dashboard') Dashboard
-      li.social
-        a(href="https://facebook.com/DUCS.Sankalan" title="Find us on Facebook" data-id='footer-FB' rel="noopener" target="_blank")
+      li.social(itemscope itemtype="http://schema.org/Organization")
+        link(itemprop="url" href="https://www.ducs.in/sankalan/")
+        link(itemprop="logo" href="https://3.bp.blogspot.com/-hRUBNsFroTw/WoQqtKB941I/AAAAAAAAAGw/nwyz6wSxFT0-AxFmLRnVivVaikG4DLE3gCLcBGAs/s1600/logo.png")
+        meta(itemprop="name" content="DUCS Sankalan")
+        a(href="https://facebook.com/DUCS.Sankalan" title="Find us on Facebook" data-id='footer-FB' rel="noopener" target="_blank" itemprop="sameAs")
           img(src=`${assets.$}/images/www/fb-icon.svg`, alt="FB")
         | &nbsp;
-        a(href="https://www.instagram.com/sankalan.ducs/" title="Find us on Instagram" data-id='footer-IG' rel="noopener" target="_blank")
+        a(href="https://www.instagram.com/sankalan.ducs/" title="Find us on Instagram" data-id='footer-IG' rel="noopener" target="_blank" itemprop="sameAs")
           img(src=`${assets.$}/images/www/instagram-icon.png`, alt="Instagram")
 
   .copyright
-    p Copyright &#169; 2018. Made with &#9829; by&nbsp;
+    p Copyright &copy; 2018. Made with &hearts; by&nbsp;
       a(href='https://github.com/sidvishnoi' data-id="footer-dev")
         span(style="white-space: nowrap") Sudhanshu Vishnoi
       | .

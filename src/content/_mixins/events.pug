@@ -9,7 +9,7 @@ mixin events($key)
     div.module--half
       h2 #{event.title}
       if event.quote
-        h3 &#147;!{event.quote.text}&#148;
+        h3 &ldquo;!{event.quote.text}&rdquo;
           if event.quote.by
             span &mdash; #{event.quote.by}
       p !{event.description.replace(/\n/g, '</p><p>')}

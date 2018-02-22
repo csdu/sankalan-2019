@@ -16,7 +16,7 @@ include _mixins/events
     p We have #{numTech} technical events as well as #{numNonTech} non-technical events.
 .content
   div
-    .section
+    .section(itemscope itemtype="http://schema.org/ItemList")
       each e in liveEvents
         +events(e)
       each e in restEvents

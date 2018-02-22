@@ -14,7 +14,7 @@ mixin eventPage(ev)
       .banner-text
         if ev.quote
           blockquote.event-quote
-            p &#147;!{ev.quote.text}&#148;
+            p &ldquo;!{ev.quote.text}&rdquo;
             if ev.quote.by
               span &mdash; #{ev.quote.by}
         p !{ev.description.replace(/\n/g, '</p><p>')}
