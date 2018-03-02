@@ -356,9 +356,9 @@ quriosity:
     - Don't forget to join in the fun and stay tuned for more updates.
     - 'P.S : You are not allowed to edit your answers.'
   image: https://4.bp.blogspot.com/-uqE0IBjOrFM/WonkSo8InII/AAAAAAAAAJ0/eLx2Uwa5ET0phRygmuupkdXZhqUl4J_pgCLcBGAs/s1600/quriosity.png
-  islive: true
+  islive: false
   isnontech: true
-  isover: false
+  isover: true
   reg: 0
   fbpage: https://www.facebook.com/hashtag/quriosity18
 
