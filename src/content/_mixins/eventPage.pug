@@ -8,7 +8,7 @@ mixin story(ct, c='')
 mixin eventPage(ev)
   .banner(class={"event-live": ev.islive, "event-over": ev.isover, "event-nt": ev.isnontech, "event-fl": ev.isfunlearn})
     .banner-content(style="min-height: 250px;min-height: calc(256px + 3em)")
-      h2.banner-title #{page.title}
+      h2.banner-title.event-title #{page.title}
       div.image
         img(src=ev.image.replace('/s1600/', '/w256/') alt=ev.title)
       .banner-text
