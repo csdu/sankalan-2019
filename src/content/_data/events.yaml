@@ -149,7 +149,7 @@ chakravyuh:
   description: |-
      This is an online treasure hunt event. At each level, a question will be posed and hints may be given.
      A participant must answer correctly to advance to the next level.
-  islive: false
+  islive: true
   isover: false
   isnontech: true
   reg: 0
@@ -172,8 +172,8 @@ chakravyuh:
         <li>Decision of the organisers would be final and binding.</li>
         <li>Organisers have the right to disqualify any team if they are found breaking any rules.</li>
       </ol>
-    - 'Venue: <a href="http://chakravyuh18.com/">http://chakravyuh18.com/</a>'
-    - 'Date: 2nd-4th March 2018. (tentative)'
+    - 'Venue: <a href="http://chakravyuh18.com/" target="_blank">http://chakravyuh18.com/</a>'
+    - 'Date: 2nd - 4th March 2018.'
     - 'Start Time: 10:00 pm.'
     - Step forward in the arena and join the battle! Contact for details.
 
