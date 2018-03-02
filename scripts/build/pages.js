@@ -38,6 +38,12 @@ module.exports = {
     file: 'register.pug',
     description: 'Register for Sankalan 2018, the annual tech fest of Dept. of Computer Science, University of Delhi',
   },
+  whats_new: {
+    title: 'What\'s New in Sankalan 2018?',
+    slug: 'whats-new/',
+    file: 'whats-new.pug',
+    description: 'Find out what\'s new in Sankalan this year! Sankalan 2018, the annual tech fest of Dept. of Computer Science, University of Delhi',
+  },
   events: {
     title: 'Events',
     slug: 'events/',

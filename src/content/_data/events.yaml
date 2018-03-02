@@ -307,6 +307,8 @@ cypher-o-more:
   description: |-
     Hey, crypto heads!
     Do you have your secret decoder handy? Sankalan'18 gives you the opportunity to bring out the Alan Turing in you.
+  teamSize: 2
+  lang: cpp
   islive: false
   isover: false
   isnontech: false
