@@ -76,6 +76,13 @@ module.exports = {
     image: 'https://4.bp.blogspot.com/-wQH8c9mDIBg/WoxGhiBpWrI/AAAAAAAAAMw/QKhz6G81zrsriJS2Ap_ZOxiCf9muwsIRQCLcBGAs/s1600/ducs-sankalan-codeathon.png',
     description: 'Code-a-thon: C/C++/Java based coding event at Sankalan 2018.',
   },
+  events_code_auction: {
+    title: 'Code Auction',
+    slug: 'events/code-auction/',
+    file: 'events-code-auction.pug',
+    image: 'https://4.bp.blogspot.com/-iSK8ZopECA0/WpkmdNV5PcI/AAAAAAAAAPE/pnudMptg0ush8Va2MFohwqQcCMpUk0orgCLcBGAs/s1600/ducs-sankalan-code-auction.png',
+    description: 'Code Auction gives you an opportunity to be a part of a bidding contest where you can bid our money and your friend\'s knowledge at Sankalan 2018.',
+  },
   events_select_star_from_brain: {
     title: 'Select * From Brain',
     slug: 'events/select-star-from-brain/',
