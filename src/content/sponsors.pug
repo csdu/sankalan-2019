@@ -1,25 +1,28 @@
 - const mobile = '9990395650'
 - const email = 'sponsor@ducs.in'
 
-mixin sponsor(s)
-  a.sponsor(href=s.link target="_blank" rel="noopener" title=s.name, style=`background-image: url('${s.image}'); background-size: cover; background-position: center center`, data-id=`sponsor-${s.name.toLowerCase().replace(/ /g), '-'}`)
-
 .banner
   .banner-content
     h1.banner-subtitle #{page.title}
     h2.banner-title Thanks for the funds!
 .content
   div
-    .section.sponsors
+    .section.sponsors.bg-white
       each sponsor in sponsors.current
-        +sponsor(sponsor)
+        img(src=sponsor.image.replace('/s1600/', '/h80/') alt=sponsor.name title=sponsor.name)
+
+    br
+    br
     .section.bg-white
       h2(style="text-align:center; margin-bottom:16px;border-bottom: 3px solid #eeb81d") Our past sponsors
-      .past-sponsors
+      .sponsors
         - const re = /([\w\d_-]*)\.?[^\\\/]*$/;
         each sponsor in sponsors.past
           - const name = sponsor.match(re)[1]
-          img(src=sponsor alt=name title=name)
+          img(src=sponsor.replace('/s1600/', '/h70/') alt=name title=name)
+
+    br
+    br
     .section.bg-white
       h2 Interested in sponsoring us?
       h3 Reach us at:
