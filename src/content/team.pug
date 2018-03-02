@@ -3,7 +3,7 @@ mixin credit(type, key)
   .credit
     div
       p
-        strong #{type}:&nbsp;
+        strong #{type}#{type ? ':' : ''}
       p #{p.name}
     div.avatar
       - const image = (p.image && p.image.replace('/s1600/', '/w56-h56-p/')) || `${assets.$}/images/www/one.svg`;
@@ -30,6 +30,38 @@ mixin credit(type, key)
       +credit('General Secretary', 'puru-sharma')
       +credit('Joint Secretary', 'abhinav-kesarwani')
       +credit('Treasurer', 'ajay-jajoo')
+    br
     h2 Developer Team
     .credits
       +credit('Web Developer', 'sudhanshu-vishnoi')
+    br
+    h2 Graphic Designers
+    .credits
+      +credit('', 'somnath-saha')
+      +credit('', 'kirti-jain')
+      +credit('', 'vipin-kumar')
+      +credit('', 'avinash-prasad')
+      +credit('', 'abhishek-gupta')
+    br
+    h2 Content Managers
+    .credits
+      +credit('', 'pradipti-kayal')
+      +credit('', 'sudhanshu-vishnoi')
+    br
+    h2 Sponsorship Team
+    .credits
+      +credit('', 'rajni-dabas')
+      +credit('', 'rahul-dewan')
+      +credit('', 'anjali-bansal')
+      +credit('', 'ajay-kumar')
+      +credit('', 'radha-verma')
+    br
+    h2 Event Coordinators
+    h3 Chakravyuh
+    .credits
+      +credit('', 'amol-mathur')
+      +credit('', 'suyash-gupta')
+      +credit('', 'avinash-prasad')
+      +credit('', 'abhishek-gupta')
+    br
+    p As this list gets too long, we would like to thank all other people who contributed in Sankalan 2018.
