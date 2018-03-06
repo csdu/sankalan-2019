@@ -149,8 +149,8 @@ chakravyuh:
   description: |-
      This is an online treasure hunt event. At each level, a question will be posed and hints may be given.
      A participant must answer correctly to advance to the next level.
-  islive: true
-  isover: false
+  islive: false
+  isover: true
   isnontech: true
   reg: 0
   image: https://2.bp.blogspot.com/-dpr_vYF9G8s/WoVRfZdNXsI/AAAAAAAAAHY/O3SA3fCNxL8ZVuboCASMJyIW-oqQjMJvQCLcBGAs/s1600/chakravyuh.png
@@ -216,7 +216,7 @@ technospeak:
   rounds:
     - Participants should mail their article to technospeak@ducs.in with subject as ‘Workshop on security issues in Crypto-currency’
     - |-
-      Subsequently, based on technical review, the authors of the best eight selected articles would be invited to give a presentation of their topics (10-20 minutes) on March 18th, 2018 at Department of Computer Science,University of Delhi.
+      Subsequently, based on technical review, the authors of the best eight selected articles would be invited to give a presentation of their topics (10-20 minutes) on April 8th, 2018 at Department of Computer Science,University of Delhi.
   story: We invite the participants to make a presentation on a topic in Security issues in crypto-currency. The participants are expected to write an article on a topic of their choice with in the scope of crypto-currency. The article may be ​based on ​original research or a review article of the work in some area within the domain of security in crypto-currency.
   details:
     - |-
@@ -231,7 +231,7 @@ technospeak:
         <li>Other details to be submitted along with the article: <br>
         Contact details of the participants (maximum Two):
         Name, Email Id, College, Contact Number<br> <em>(if you've registered through our portal, just send your ticket 'ID')</em></li>
-         <li>Last date of submission is March 4, 2018.</li>
+         <li>Last date of submission is April 8th, 2018.</li>
       </ol>
     - 'Note: this workshop is open for students of Dept. of Computer Science as well.'
     - 'Contact for details: Ajay Jajoo'
