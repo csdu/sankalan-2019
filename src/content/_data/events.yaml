@@ -424,5 +424,20 @@ code-auction:
   isnontech: false
   isover: false
 
-#
-# https://1.bp.blogspot.com/-ZZGM4EgiF_w/Woma3LYwMXI/AAAAAAAAAJI/OwkKhYR60lQKNVLgs4v5RYZTW0pR-un_ACLcBGAs/s1600/lan-gaming.png
+lan-den:
+  title: LAN Den
+  description: |-
+    Tired of owning noobs? Have you got what it takes to cross the finish-line? Can you take A-side blindfolded with one hand tied behind your back?
+    Then come, take the adrenaline shot with us. Prepare yourself for one of the most awaited LAN gaming event. There's no place for Weaklings! You might just get burnt. So Practice, and get perfect! Or else, Prepare to get HUMILIATED!
+  islive: false
+  isnontech: true
+  isover: false
+  quote:
+    text: When you encounter your enemies, it means you are heading in the right direction.
+  image: https://2.bp.blogspot.com/-QDXRwdgof4Q/WqEL3xM0IBI/AAAAAAAAATY/-41KdnYLo6gdccEsbgncC-cG6b7O6uwZgCLcBGAs/s1600/lan-den.png
+  details:
+    - 'CS: teamSize = 4'
+    - 'NFS Most Wanted: teamSize = 1'
+    - 'Mini Militia: teamSize = 1'
+
+# https://3.bp.blogspot.com/-LWzpbIA2Y3c/WqELzqifcrI/AAAAAAAAATU/881Q-fEhcokD7LhO69Ov-q_2fzCZ5tFKgCLcBGAs/s1600/spin-a-hack.jpg
