@@ -9,7 +9,11 @@ mixin sponsors(title, lst)
     h3.g #{title}
     .sponsors
       each sponsor in lst
-        img(src=sponsor.image.replace('/s1600/', '/h80/') alt=sponsor.name title=sponsor.name)
+        if sponsor.link
+          a(href=sponsor.link title=sponsor.name target="_blank" rel="nofollow" data-id=`sponsor-${sponsor.name.toLowerCase().replace(/ /g, '-')}`)
+            img(src=sponsor.image.replace('/s1600/', '/h80/') alt=sponsor.name)
+        else
+          img(src=sponsor.image.replace('/s1600/', '/h80/') alt=sponsor.name title=sponsor.name)
   br
 
 .banner
