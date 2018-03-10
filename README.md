@@ -2,6 +2,8 @@
 
 This repository contains the source code for Sankalan 2018 website (https://www.ducs.in/sankalan/).
 
+See also: https://github.com/sidvishnoi/dashboard.ducs.in
+
 Sankalan is the annual tech fest of Dept Of Computer Science, University of Delhi (DUCS).
 
 # How to build
