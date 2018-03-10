@@ -40,6 +40,48 @@ I'll archive this repository when the fest is done. So make sure you give your e
 
 Also, please report any issues you face in website or the build process.
 
+# Deployment
+
+The current deployment script makes use of `aws-cli` and `git`. You need create an empty git-repo in the dist folder, so thatonly the files that have been actually modified in the build process will be uploaded.
+
+The official website (https://www.ducs.in/sankalan/) is hosted via a combination of AWS S3, Cloudfront and AWS Lambda@Edge.
+
+S3 makes use of two buckets (cdn and www) so the assets in cdn can be cached for longer than www files.
+
+By using a Lambda@Edge function as an "Origin-Request" trigger on cloudfront, we can now have correct responses to paths with/without trailing slashes.
+
+The Cloudfront behaviours for the www distribution look like: 
+![Cloudfront Behaviours](https://i.imgur.com/X9Gf0Qz.png)
+
+Only the precedence 4 has Lambda@Edge function as trigger.
+
+This is done to reduce requests on Lambda@Edge, as it becomes expensive. In end, only urls without trailing slashes are being handled by the Lambda@Edge function:
+
+``` js
+'use strict';
+exports.handler = (event, context, callback) => {
+    var request = event.Records[0].cf.request;
+
+    var s = request.uri.toLowerCase();
+    
+    console.log('URL.in = ', s);
+    
+    // leave files with extensions as it is
+    if (/(?=.*)\.([a-z]{3,4})$/.test(s)) return callback(null, request);
+
+	if (s.substr(-1) === '/') s += 'index.html'
+	else if (s.endsWith('/index.html')) { /* do nothing */ }
+	else s += '/index.html';
+
+    request.uri = s;
+    console.log('URL.out = ', s);
+
+    // Return to CloudFront
+    return callback(null, request);
+
+};
+```
+
 # Copyright
 
 The website is designed by Sudhanshu Vishnoi (https://github.com/sidvishnoi) for Sankalan 2018 - the annual tech fest of DUCS. Copyright. Give credits if you use any part of it any where.
