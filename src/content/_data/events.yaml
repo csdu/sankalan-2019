@@ -90,22 +90,22 @@ spin-a-hack:
   quote:
     text: Come,Code,Develop!!
   description:  |-
-    Create history with us in the field of Web Development/Android/IOS App Development by showcasing your innovations.
+    Create history with us in the field of Web Development/Android/IOS App Development by showcasing your innovations in this mini-hackathon.
   islive: false
   isover: false
   isnontech: false
-  image: https://4.bp.blogspot.com/-OnrAGeqSHKY/WoVRiZyckZI/AAAAAAAAAHk/wYhkfZvU54kZ7Osq4E-aI4WKg9ZTaxxpgCLcBGAs/s1600/makeapp.png
+  image: https://3.bp.blogspot.com/-LWzpbIA2Y3c/WqELzqifcrI/AAAAAAAAATU/881Q-fEhcokD7LhO69Ov-q_2fzCZ5tFKgCLcBGAs/s1600/spin-a-hack.jpg
   teamSize: 2
   lang: js
   rounds:
-    -  The teams would be asked to develop a website or an android/ios application. They have to present their project to judges for final evaluation
+    -  The teams would be asked to develop a website/web-app or an android/ios application. They have to present their project to judges for final evaluation.
   details:
-    - 'Note: The teams need to bring their own system with the software installed. Internet will be provided.'
-    - 'You will get 8 hours that is from 10am-6pm.'
-    - 'Theme will be provided on spot.'
-    - 'Regristration will be done separately on day 2 of Sankalan.'
+    - 'Important: The teams need to bring their own system with the software installed. Internet will be provided.'
+    - You will be given 8 hours from 10am - 6pm to develop your app.
+    - Theme will be provided on spot.
+    - Registration will be done separately on day 2 of Sankalan. The online ticket is still required.
     - 'Operating System: Any Suitable System.'
-    - 'Platform: Platform as per requirement'
+    - 'Platform: As per requirement'
 
 mind-matters:
   title: Mind Matters
@@ -124,23 +124,23 @@ mind-matters:
 coding-cup:
   title: DUCS Coding Cup
   quote:
-    text: If debugging is the process of removing software bugs, then programming must be the process of putting them in. 
+    text: If debugging is the process of removing software bugs, then programming must be the process of putting them in.
     by: Edsger Dijkstra
   description:  |-
-    This is a special event mainly targeting the students of undergraduate pursuing their bachelor’s in Computer Science from Delhi University. 
-    Students will gain ample amount of knowledge and practice which will help them increase their coding skills. 
+    This is a special event mainly targeting the students of undergraduate pursuing their bachelor’s in Computer Science from Delhi University.
+    Students will gain ample amount of knowledge and practice which will help them increase their coding skills.
   islive: false
   isover: false
   isnontech: false
-  image: https://2.bp.blogspot.com/-8R7BMj3aL5g/WoVRk4PjVlI/AAAAAAAAAHw/1qje7sRyf1EAw73fgaP7kmC2wm1yGhwJwCLcBGAs/s1600/spin-a-web.png
+  image: https://2.bp.blogspot.com/-AAzgDBMmMpo/Wq5fLEJ0kaI/AAAAAAAAAUY/HKkexnGE8JEosnF3aFJ2Djqt4Y8Xo_irwCLcBGAs/s1600/coding-cup.png
   teamSize: 2
   lang: cpp
   rounds:
     - The teams will have to solve the coding questions online.
   details:
-    - 'This will be an overnight event'
-    - 'You can solve the coding questions in any language c/c++/java/python'
-    
+    - This will be an overnight event.
+    - 'You can solve the coding questions in any language C/C++/Java/Python'
+
 chakravyuh:
   title: Chakravyuh
   quote:
@@ -435,9 +435,7 @@ lan-den:
   quote:
     text: When you encounter your enemies, it means you are heading in the right direction.
   image: https://2.bp.blogspot.com/-QDXRwdgof4Q/WqEL3xM0IBI/AAAAAAAAATY/-41KdnYLo6gdccEsbgncC-cG6b7O6uwZgCLcBGAs/s1600/lan-den.png
-  details:
-    - 'CS: teamSize = 4'
-    - 'NFS Most Wanted: teamSize = 1'
-    - 'Mini Militia: teamSize = 1'
-
-# https://3.bp.blogspot.com/-LWzpbIA2Y3c/WqELzqifcrI/AAAAAAAAATU/881Q-fEhcokD7LhO69Ov-q_2fzCZ5tFKgCLcBGAs/s1600/spin-a-hack.jpg
+  # details:
+  #   - 'CS: teamSize = 4'
+  #   - 'NFS Most Wanted: teamSize = 1'
+  #   - 'Mini Militia: teamSize = 1'

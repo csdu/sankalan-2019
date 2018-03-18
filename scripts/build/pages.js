@@ -103,10 +103,12 @@ module.exports = {
     image: 'https://3.bp.blogspot.com/-rNRXTDghFuU/WoxGWD4W1gI/AAAAAAAAAMo/MFM01aIr1dUtCNolVOkOmDp_6nDbxdHEQCLcBGAs/s1600/ducs-sankalan-brainspark.png',
     description: 'BrainSpark: We\'ll judge your logical and quantitative abilities. And then we give you freaking cool puzzles to solve!',
   },
-  events_make_app: {
-    title: 'MakeApp',
-    slug: 'events/make-app/',
-    file: 'events-make-app.pug',
+  events_coding_cup: {
+    title: 'DUCS Coding Cup',
+    slug: 'events/coding-cup/',
+    file: 'events-coding-cup.pug',
+    image: 'https://4.bp.blogspot.com/-2QrW1EdGfHQ/Wq5h-xKKqXI/AAAAAAAAAUw/RMHN-hbIVPY9yhn5TG9wlkXZUgZT43XQwCLcBGAs/s1600/ducs-sankalan-coding-cup.png',
+    description: 'This is a special event mainly targeting the students of undergraduate pursuing their bachelor’s in Computer Science from Delhi University. Students will gain ample amount of knowledge and practice which will help them increase their coding skills.',
   },
   events_mind_matters: {
     title: 'Mind Matters',
@@ -115,10 +117,12 @@ module.exports = {
     image: 'https://4.bp.blogspot.com/-M5n81OmhwPU/WoxG0cpIxsI/AAAAAAAAANE/Gg0Kyr2lXlIZseSJY9Xv14u_CoxLhIOGwCLcBGAs/s1600/ducs-sankalan-mind-matters.png',
     description: 'Mind Matters: Computer Science and IT quiz at DUCS Sankalan 2018. Come and participate in this event, test your knowledge, let the world know that and walk away as a champion.',
   },
-  events_spin_a_web: {
-    title: 'Spin A Web',
-    slug: 'events/spin-a-web/',
-    file: 'events-spin-a-web.pug',
+  events_spin_a_hack: {
+    title: 'Spin A Hack',
+    slug: 'events/spin-a-hack/',
+    file: 'events-spin-a-hack.pug',
+    image: 'https://4.bp.blogspot.com/-M81ci-5H9CM/WqENVZ2nk6I/AAAAAAAAATk/CXgIOU2PKncR4y0bZfsKCqBoMUrpg2tiQCLcBGAs/s1600/ducs-sankalan-spin-a-hack.png',
+    description: 'Create history with us in the field of Web Development/Android/IOS App Development by showcasing your innovations in this mini-hackathon.',
   },
   events_chakravyuh: {
     title: 'Chakravyuh',
