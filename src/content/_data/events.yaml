@@ -85,26 +85,25 @@ brainspark:
   #   - hello world
   #   - bye world
 
-make-app:
-  title: MakeApp
+spin-a-hack:
+  title: Spin-a-hack
   quote:
     text: Come,Code,Develop!!
   description:  |-
-    Create history with us in the field of Android/IOS App Development by showcasing your innovations.
+    Create history with us in the field of Web Development/Android/IOS App Development by showcasing your innovations.
   islive: false
   isover: false
   isnontech: false
   image: https://4.bp.blogspot.com/-OnrAGeqSHKY/WoVRiZyckZI/AAAAAAAAAHk/wYhkfZvU54kZ7Osq4E-aI4WKg9ZTaxxpgCLcBGAs/s1600/makeapp.png
   teamSize: 2
-  lang: cpp
+  lang: js
   rounds:
-    -  The teams would be asked to develop an android/ios application on spot. They have to present their project to judges for final evaluation
+    -  The teams would be asked to develop a website or an android/ios application. They have to present their project to judges for final evaluation
   details:
     - 'Note: The teams need to bring their own system with the software installed. Internet will be provided.'
     - 'You will get 8 hours that is from 10am-6pm.'
     - 'Theme will be provided on spot.'
     - 'Regristration will be done separately on day 2 of Sankalan.'
-    - 'Registration fee:Rs 50/-'
     - 'Operating System: Any Suitable System.'
     - 'Platform: Platform as per requirement'
 
@@ -122,25 +121,26 @@ mind-matters:
     - Multiple-choice questions based on Computer Science and IT world.
     - The qualifying teams would compete in the Event's Main Quiz.
 
-spin-a-web:
-  title: Spin a Web
+coding-cup:
+  title: DUCS Coding Cup
+  quote:
+    text: If debugging is the process of removing software bugs, then programming must be the process of putting them in. 
+    by: Edsger Dijkstra
   description:  |-
-    Have you been bitten by the creative bug? Then we have just the right antidote.
-    Spin on the creativity loom a web-site of Imagination, Innovation and Design.
+    This is a special event mainly targeting the students of undergraduate pursuing their bachelor’s in Computer Science from Delhi University. 
+    Students will gain ample amount of knowledge and practice which will help them increase their coding skills. 
   islive: false
   isover: false
   isnontech: false
   image: https://2.bp.blogspot.com/-8R7BMj3aL5g/WoVRk4PjVlI/AAAAAAAAAHw/1qje7sRyf1EAw73fgaP7kmC2wm1yGhwJwCLcBGAs/s1600/spin-a-web.png
   teamSize: 2
-  lang: js
+  lang: cpp
   rounds:
-    - Multiple-choice questions based on internet, Web Servers, Web Development, HTML, CSS & JavaScript and PHP/.Net.
-    - |-
-      The qualifying teams would be asked to develop a website using HTML, CSS, PHP/.Net and MySQL, overnight at their own places and next day present their project to judges for final evaluation.
+    - The teams will have to solve the coding questions online.
   details:
-    - 'Operating System: Any Suitable System.'
-    - 'Platform: Apache 2.4.x / PHP 5.6/7.2 / MySQL 5.6.x / Asp.Net / Node / MongoDB or as per requirement'
-
+    - 'This will be an overnight event'
+    - 'You can solve the coding questions in any language c/c++/java/python'
+    
 chakravyuh:
   title: Chakravyuh
   quote:
