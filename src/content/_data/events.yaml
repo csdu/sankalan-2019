@@ -56,12 +56,12 @@ select-star-from-brain:
   teamSize: 2
   lang: cpp
   rounds:
-    - Multiple-choice questions based on standard SQL, XQuery and DBMS concepts.
+    - Multiple-choice questions based on standard SQL, PL/SQL, XQuery and DBMS concepts.
     - |-
       The teams qualifying would be given a set of queries, that would have to be solved using SQL.
   details:
     - 'Operating System: Windows 10'
-    - 'Platform: Oracle 10g'
+    - 'Platform: MySQL Workbench'
 
 brainspark:
   title: BrainSpark
