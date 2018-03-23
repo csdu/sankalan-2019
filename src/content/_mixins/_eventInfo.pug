@@ -23,3 +23,11 @@ mixin eventInfo(ev, lang)
         const prize = team.getPrize();
         team.receive(prize);
       }
+
+  else if lang === 'sql'
+    pre.
+      SELECT `team` AS `winner`
+      FROM `SCORES`
+      WHERE `event` = 'select_star'
+      ORDER BY `score` DESC
+      LIMIT 1;

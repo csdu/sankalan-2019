@@ -54,7 +54,7 @@ select-star-from-brain:
   isnontech: false
   image: https://4.bp.blogspot.com/-ou5iUtuASSw/WoVRkPqTJsI/AAAAAAAAAHs/VYZdvCZvBYsn2ehBvceu1OxaxjM2xsgYgCLcBGAs/s1600/selectfrombrain.png
   teamSize: 2
-  lang: cpp
+  lang: sql
   rounds:
     - Multiple-choice questions based on standard SQL, PL/SQL, XQuery and DBMS concepts.
     - |-
