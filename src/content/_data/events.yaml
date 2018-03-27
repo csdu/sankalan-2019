@@ -133,12 +133,12 @@ coding-cup:
   isover: false
   isnontech: false
   image: https://2.bp.blogspot.com/-AAzgDBMmMpo/Wq5fLEJ0kaI/AAAAAAAAAUY/HKkexnGE8JEosnF3aFJ2Djqt4Y8Xo_irwCLcBGAs/s1600/coding-cup.png
-  teamSize: 2
+  teamSize: 1
   lang: cpp
   rounds:
-    - The teams will have to solve the coding questions online.
+    - The students will have to solve the coding questions online.
   details:
-    - This will be an overnight event.
+    - This will be a day event.
     - 'You can solve the coding questions in any language C/C++/Java/Python'
 
 chakravyuh:
@@ -391,7 +391,7 @@ alacrity:
       Facebook: <a href="https://www.facebook.com/pradipti.kayal" target="_blank" rel="nofollow">https://www.facebook.com/pradipti.kayal</a>
 
   image: https://1.bp.blogspot.com/-bScb6sAl5lQ/WonkQG7_C-I/AAAAAAAAAJw/THWQxRrI9oAjkpKBPcOPXyNDErf7M1r0QCLcBGAs/s1600/alacrity.png
-  islive: true
+  islive: false
   isnontech: true
   isover: false
   reg: 0
