@@ -1,4 +1,7 @@
 sponsors:
+  associate:
+    - name: Nagarro
+      image: https://2.bp.blogspot.com/-1yzXr7LUW8E/WrqWxD-TckI/AAAAAAAAAEo/LUp6YJS3BIY0fhN7mS2ArDXgvFoY5R9nwCLcBGAs/s320/nagarro.png
   educational:
     - name: Fadoo Engineers
       image: https://3.bp.blogspot.com/-WCoakAxzrbA/Wpk_gZJ4yTI/AAAAAAAAAPw/89gAa2ken-ERHLSzz6Eah04ppzMo58-tACLcBGAs/s1600/fadoo-engineers.png
@@ -21,6 +24,8 @@ sponsors:
       image: https://1.bp.blogspot.com/-cze2zR1TCDA/Wpk_hJUDeQI/AAAAAAAAAP0/qhS36hw3vakMYDP1sUefTsMBXtXE_u6zwCLcBGAs/s1600/festpav.png
     - name: OH Campus
       image: https://4.bp.blogspot.com/-FCJd_Pec8CI/Wpk_iDQutPI/AAAAAAAAAQE/dVtASLKmXC4MjZxxVfdPubcnUunDVuZXgCLcBGAs/s1600/oh-campus.png
+    - name: University Express
+      image: https://3.bp.blogspot.com/-wuhlsZLO-oY/WrqWv8f14sI/AAAAAAAAAEk/P9ZGsj7GkuMcMOIK2xpN7K_Xw7v2lpyPQCLcBGAs/s320/university-express.png
   technology:
     - name: i3indya Technologies
       link: http://www.i3indyatechnologies.com/
@@ -37,19 +42,9 @@ sponsors:
       image: https://2.bp.blogspot.com/-bJ9YXUq64wA/WplS9AdQJPI/AAAAAAAAARU/MXdYVLGkAxIt8zQ3hnLOI3M_4t9sevnqQCLcBGAs/s1600/big-bun.jpg
     - name: Bikanervala
       image: https://4.bp.blogspot.com/-gpTZ9icrapY/WplS5YPAXzI/AAAAAAAAARQ/_mSz8pjhXkkxbOpU8ABp4WGbMqZ8tPhQQCLcBGAs/s1600/bikanervala.png
-
-  past:
-    - name: Bus Yatri
-      image: https://3.bp.blogspot.com/-go0iFP_RozY/Wn7Oq15K6ZI/AAAAAAAAADg/IZE4pta-gMM6aHoQ1Bh4uSdOqXhSxjLZwCLcBGAs/s1600/bus-yatri.png
-    - name: Cuddl App
-      image: https://4.bp.blogspot.com/-hnDw1-XXlb8/Wn7OrT_6O5I/AAAAAAAAADk/saNPoCDtVJ0LTV8frXBjfVfl0_2AnuCKgCLcBGAs/s1600/cuddl-app.png
-    - name: DRDO
-      image: https://3.bp.blogspot.com/-EWMu61xGbfg/Wn7Ore-50CI/AAAAAAAAADo/czA1LFQhXig1yvhpDYDoN2cJVE7vAZoUgCLcBGAs/s1600/drdo.png
-    - name: Fadoo Engineers
-      image: https://2.bp.blogspot.com/-dXCkzQzkG6c/Wn7Or0HSriI/AAAAAAAAADs/spnqRW9qk6Y9uQWSK5cNdpYTbBIbCRIywCLcBGAs/s1600/faadoo-engineers.png
-    - name: Hackerearth
-      image: https://2.bp.blogspot.com/-dnntlwXfiiI/Wn7OsQsbjgI/AAAAAAAAADw/5McEf8xrcugAddF3VE8rbH7ZNRMKkpKHwCLcBGAs/s1600/hackerearth.png
-    - name: Skill Games
-      image: https://2.bp.blogspot.com/-vP6C6EkcT8k/Wn7OsW95_MI/AAAAAAAAAD0/876QglUWoF8wLpWiL6cHQk4qo3mIqEV1wCLcBGAs/s1600/skill-games.jpg
-    - name: Sport Sun
-      image: https://2.bp.blogspot.com/-PZMATxDc43o/Wn7OspYyC1I/AAAAAAAAAD4/ISRaDoD92ywmCClJK2mO6ZXJgMdl1SVNQCLcBGAs/s1600/sport-sun.png
+    - name: Aam Aadmi Pakwaan
+      image: https://1.bp.blogspot.com/-2vMsRJ5hYII/WrqWyqopMNI/AAAAAAAAAEs/vt5ipV9NCjMfIyAeA4XjjYyMC_Z-QoYPgCLcBGAs/s1600/aam-aadmi.png
+  gaming:
+    - name: Gaming Central
+      image: https://1.bp.blogspot.com/-pd1RttTWi4U/WrqWtc7dbGI/AAAAAAAAAEg/lom_EizH0X4471MqLBN_4vNNJ1tiUgwtACLcBGAs/s1600/coding-blocks.png
+  

@@ -22,6 +22,7 @@ mixin sponsors(title, lst)
     h2.banner-title Thanks for the funds!
 .content
   div
+    +sponsors('Associate Partners', sponsors.associate)
     +sponsors('Media Partners', sponsors.media)
     +sponsors('Knowledge Partners', sponsors.knowledge)
     +sponsors('Technology Partners', sponsors.technology)
@@ -29,8 +30,7 @@ mixin sponsors(title, lst)
     +sponsors('Educational Partners', sponsors.educational)
     +sponsors('Youth Community Partner', sponsors.youth_community)
     +sponsors('Food Partners', sponsors.food)
-    br
-    +sponsors('Our Past Sponsors', sponsors.past)
+    +sponsors('Gaming Partners', sponsors.gaming)
     .section.bg-white
       h2 Interested in sponsoring us?
       h3 Reach us at:
