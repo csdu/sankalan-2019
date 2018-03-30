@@ -101,9 +101,9 @@ spin-a-hack:
     -  The teams would be asked to develop a website/web-app or an android/ios application. They have to present their project to judges for final evaluation.
   details:
     - 'Important: The teams need to bring their own system with the software installed. Internet will be provided.'
-    - You will be given 8 hours from 10am - 6pm to develop your app.
+    - You will be given 8 hours from 12pm - 8pm to develop your app.
     - Theme will be provided on spot.
-    - Registration will be done separately on day 2 of Sankalan. The online ticket is still required.
+    - Registration will be done separately on day 1 of Sankalan. The online ticket is still required.
     - 'Operating System: Any Suitable System.'
     - 'Platform: As per requirement'
 
@@ -191,7 +191,9 @@ turncoat:
     - Two participants will be given the same topic to speak. Alternatively, they will have to speak in favor and against.
     - All qualifying participants will be given the same topic to speak. They would randomly be asked to present their views in contradiction to the previous speaker.
   details:
-    - 'Contact for details: Ramneek, Divya'
+    - 'Contact for details:'
+    - 'Ramneek Kaur: 8800860824 '
+    - 'Divya Gandhi: 9654939934'
 
 jam:
   title: Just A Minute (JAM)
@@ -207,7 +209,7 @@ jam:
 
 technospeak:
   title: Technospeak
-  description: Sankalan 2018 in Association with The Defence Research and Development Organisation (DRDO) presents Workshop on Information Security
+  description: Sankalan 2018 in Association presents Workshop on Information Security
   teamSize: 2
   islive: false
   isover: false
@@ -217,7 +219,7 @@ technospeak:
     - Participants should mail their article to technospeak@ducs.in with subject as ‘Workshop on Information Security’
     - |-
       Subsequently, based on technical review, the authors of the best eight selected articles would be invited to give a presentation of their topics (10-20 minutes) on April 8th, 2018 at Department of Computer Science,University of Delhi.
-  story: We invite the participants to make a presentation on a topic in Security issues in crypto-currency. The participants are expected to write an article on a topic of their choice with in the scope of crypto-currency. The article may be ​based on ​original research or a review article of the work in some area within the domain of security in crypto-currency.
+  story: We invite the participants to make a presentation on a topic in Information Security. The participants are expected to write an article on a topic of their choice with in the scope of Information Security. The article may be ​based on ​original research or a review article of the work in some area within the domain of Information Security.
   details:
     - |-
       Participants should mail their article to <a href="mailto:technospeak@ducs.in">technospeak@ducs.in</a> with subject as <br>‘Workshop on Information Security’
@@ -249,7 +251,8 @@ junkyard-wars:
   isnontech: false
   image: https://4.bp.blogspot.com/-PLK_JfQhM6c/Woma1qA1FeI/AAAAAAAAAJE/8l-V7MfSC3cZOqicTb97-fmqUvWgNMhBgCLcBGAs/s1600/junkyard-wars.png
   rounds:
-  - Audio-Visual questions based on hardware
+  - First round will be MCQ based on hardware
+  - In the second round, there will be Audio-Visual questions based on hardware
   - The qualified teams would compete in the battle of assembling the CPUs.
 
 blind-coding:
