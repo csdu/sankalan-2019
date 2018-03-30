@@ -190,8 +190,7 @@ module.exports = {
     title: 'LAN Den',
     slug: 'events/lan-den/',
     file: 'events-lan-den.pug',
-    image: 'https://2.bp.blogspot.com/-yTfOKtsbkaI/WqENYDl3zaI/AAAAAAAAATo/0jf9wgLGFUwE4Sio_-imCjxVpTeX0EglgCLcBGAs/s1600/ducs-sankalan-lan-den.png',
+    image: 'https://4.bp.blogspot.com/-abBFeM_khGQ/Wr5CzKYQhTI/AAAAAAAAAXU/VGJjrrlSkYgsVkYrVIrzJ55B4_INgPakwCLcBGAs/s1600/ducs-sankalan-lan-den.png',
     description: 'LAN Den at Sankalan 2018. Prepare yourself for one of the most awaited LAN gaming event. There\'s no place for Weaklings! You might just get burnt. So Practice, and get perfect! Or else, Prepare to get HUMILIATED!',
   },
 };
-// https://4.bp.blogspot.com/-M81ci-5H9CM/WqENVZ2nk6I/AAAAAAAAATk/CXgIOU2PKncR4y0bZfsKCqBoMUrpg2tiQCLcBGAs/s1600/ducs-sankalan-spin-a-hack.png
