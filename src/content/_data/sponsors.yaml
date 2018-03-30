@@ -21,6 +21,7 @@ sponsors:
     - name: DU Updates
       image: https://3.bp.blogspot.com/-XsNtLUCUNiY/Wpk_gEAnZFI/AAAAAAAAAPs/4wU84AFtLeA-xZ_930PusB1W8QIP8Iw4ACLcBGAs/s1600/du-updates.jpg
     - name: FestPav
+      link: http://festpav.com/fest/view/12628/Sankalan_2018_Technical_Fest_in_Delhi_-Department_of_Computer_Science,_University_of_Delhi
       image: https://1.bp.blogspot.com/-cze2zR1TCDA/Wpk_hJUDeQI/AAAAAAAAAP0/qhS36hw3vakMYDP1sUefTsMBXtXE_u6zwCLcBGAs/s1600/festpav.png
     - name: OH Campus
       image: https://4.bp.blogspot.com/-FCJd_Pec8CI/Wpk_iDQutPI/AAAAAAAAAQE/dVtASLKmXC4MjZxxVfdPubcnUunDVuZXgCLcBGAs/s1600/oh-campus.png
@@ -47,3 +48,6 @@ sponsors:
   gaming:
     - name: Gaming Central
       image: https://1.bp.blogspot.com/-pd1RttTWi4U/WrqWtc7dbGI/AAAAAAAAAEg/lom_EizH0X4471MqLBN_4vNNJ1tiUgwtACLcBGAs/s1600/coding-blocks.png
+  amusement:
+    - name: Mojoland
+      image: https://2.bp.blogspot.com/-DIliiwRgaug/Wr5Tyx2vA6I/AAAAAAAAAFw/iODzlvEMIXwzcPGh52dxtKrS3bxMiEubACLcBGAs/s1600/mojo-land.jpg
