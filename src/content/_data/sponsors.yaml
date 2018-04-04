@@ -5,11 +5,15 @@ sponsors:
   educational:
     - name: Fadoo Engineers
       image: https://3.bp.blogspot.com/-WCoakAxzrbA/Wpk_gZJ4yTI/AAAAAAAAAPw/89gAa2ken-ERHLSzz6Eah04ppzMo58-tACLcBGAs/s1600/fadoo-engineers.png
-  knowledge:
+    - name: Coding Blocks
+      image: https://4.bp.blogspot.com/-zrLkJhdfiD4/WsTevSgBd8I/AAAAAAAAAGY/FqSUA5SjNd0iDBJsBj7VuPcZ4CsQV5P2ACLcBGAs/s1600/coding-blocks.png
+ knowledge:
     - name: Codechef
       image: https://1.bp.blogspot.com/-3jNcgCc2P7Y/WplS93GYnxI/AAAAAAAAARc/IJrgQ3NOUlEUffNUpp04p8cCCPxhAD9cgCLcBGAs/s1600/codechef.png
     - name: BookBhook
       image: https://2.bp.blogspot.com/-x4mWW7bv9qM/WplS5Ub2rCI/AAAAAAAAARM/AuWTFhOYfFwIcarTRgmqWMxtmutANpnawCLcBGAs/s1600/bookbhook.png
+    - name: Aptron
+      image: https://3.bp.blogspot.com/-Cql1thhG__4/WsTlsr1hjfI/AAAAAAAAAHY/-1oLoZrVRrAlZh4qECPHBF75Nt5uSJIQwCLcBGAs/s1600/aptron.png
   youth_community:
     - name: The Education Tree
       image: https://1.bp.blogspot.com/-kGZ-_P-wWU8/WplS-ivbzhI/AAAAAAAAARg/6MmGlrJfvoMXy3wjSmTxk-nulX9_sAd-QCLcBGAs/s1600/the-education-tree.jpg
@@ -27,6 +31,8 @@ sponsors:
       image: https://4.bp.blogspot.com/-FCJd_Pec8CI/Wpk_iDQutPI/AAAAAAAAAQE/dVtASLKmXC4MjZxxVfdPubcnUunDVuZXgCLcBGAs/s1600/oh-campus.png
     - name: University Express
       image: https://3.bp.blogspot.com/-wuhlsZLO-oY/WrqWv8f14sI/AAAAAAAAAEk/P9ZGsj7GkuMcMOIK2xpN7K_Xw7v2lpyPQCLcBGAs/s1600/university-express.png
+    - name: Kwakall
+      image: https://4.bp.blogspot.com/-yk4LYRorKeA/WsTeLrFUooI/AAAAAAAAAGQ/yNAHm3j_3EgTqMCNJC7B5YhwrAzCEbI1ACLcBGAs/s1600/Kwakall.PNG
   technology:
     - name: i3indya Technologies
       link: http://www.i3indyatechnologies.com/
@@ -51,3 +57,14 @@ sponsors:
   amusement:
     - name: Mojoland
       image: https://2.bp.blogspot.com/-DIliiwRgaug/Wr5Tyx2vA6I/AAAAAAAAAFw/iODzlvEMIXwzcPGh52dxtKrS3bxMiEubACLcBGAs/s1600/mojo-land.jpg
+  sampling:
+    - name: Free Stand
+      image: https://2.bp.blogspot.com/-A0Tl1vqUf2Y/WsTfO8KY5kI/AAAAAAAAAGg/3CQLT0RoLJE3G5Ggt3VwqAiMqAFeEQ8pACLcBGAs/s1600/free-stand.jpeg
+  beauty:
+    - name: VLCC
+      image: https://3.bp.blogspot.com/-hE4RuyQES-4/WsTfuX1jPpI/AAAAAAAAAGo/bh1jN03IVAMxDlbam31EBQYT_6kcFTRNgCLcBGAs/s1600/vlcc.jpg
+  gift:
+    - name: Solitairz Affair
+      image: https://3.bp.blogspot.com/-1HI_5BQuBI8/WsTgWADEAhI/AAAAAAAAAG0/C_uvgHUSmdgH5nEqwX4Aub2KvAPaMr9kwCLcBGAs/s1600/solitairz-affair.png
+    - name: The Souled Store
+      image: https://1.bp.blogspot.com/-JMH8CgkyLEw/WsTgddErreI/AAAAAAAAAG4/fBfbB_VpqbgoLDa6zu8XL0JxIyv0-2mywCLcBGAs/s1600/the-souled-store.jpg
