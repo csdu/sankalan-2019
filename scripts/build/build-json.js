@@ -1,7 +1,7 @@
 const { outputJson } = require('fs-extra');
 const { getSavePath } = require('./utils');
 
-const basename = '/sankalan';
+const basename = '/sankalan/2018';
 
 const savePath = slug => getSavePath(slug, 'json');
 

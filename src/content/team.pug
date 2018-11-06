@@ -6,7 +6,7 @@ mixin credit(type, key)
         strong #{type}#{type ? ':' : ''}
       p #{p.name}
     div.avatar
-      - const image = (p.image && p.image.replace('/s1600/', '/w56-h56-p/')) || `${assets.$}/images/www/one.svg`;
+      - const image = (p.image && p.image.replace('/s1600/', '/w56-h56-p/')) || `${assets.$}/images/one.svg`;
       if p.url
         a(href=p.url, target="_blank" rel="noopener" title=`${p.name} @ ${p.url}` data-id=`team-${key}`)
           img.avatar(src=image alt=p.name)
@@ -14,7 +14,7 @@ mixin credit(type, key)
         img.avatar(src=image alt=p.name title=p.name)
       if p.url
         - const img = p.url.includes('github.com') ? 'github-icon.svg' : 'fb-icon-white.svg';
-        img.link(src=`${assets.$}/images/www/${img}`)
+        img.link(src=`${assets.$}/images/${img}`)
 
 .banner
   .banner-content
@@ -57,5 +57,5 @@ mixin credit(type, key)
       +credit('', 'ajay-kumar')
       +credit('', 'radha-verma')
     br
-    
+
     p As this list gets too long, we would like to thank all other people who contributed in Sankalan 2018.

@@ -23,9 +23,7 @@ const getSavePath = (slug, ext) =>
   });
 
 
-const basepath = isProduction
-  ? 'https://cdn.ducs.in'
-  : 'http://localhost:8080/assets';
+const basepath = '/sankalan/2018/assets';
 // convert normal asset filenames to hashed asset paths
 const getMappedAssets = (assets) => {
   const mappedAssets = {};
@@ -33,7 +31,7 @@ const getMappedAssets = (assets) => {
     const type = path.extname(f) === '.js'
       ? 'js'
       : 'css'; // for css and sass extname
-    mappedAssets[f] = `${basepath}/${type}/www/${assets[f]}`;
+    mappedAssets[f] = `${basepath}/${type}/${assets[f]}`;
     return f;
   });
   mappedAssets.$ = basepath;

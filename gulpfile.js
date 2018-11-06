@@ -23,7 +23,7 @@ const isProduction = process.env.NODE_ENV === 'production';
 const paths = {
   sass: {
     src: `${srcDir}/sass/**/*.sass`,
-    dest: `${distDir}/assets/css/www`,
+    dest: `${distDir}/assets/css`,
   },
   js: {
     src: [
@@ -31,15 +31,15 @@ const paths = {
       'canvas.js',
       'router.js',
     ].map(f => `${srcDir}/js/${f}`),
-    dest: `${distDir}/assets/js/www`,
+    dest: `${distDir}/assets/js`,
   },
   images: {
     src: `${srcDir}/images/**/*`,
-    dest: `${distDir}/assets/images/www`,
+    dest: `${distDir}/assets/images`,
   },
   fonts: {
     src: `${srcDir}/fonts/**/*`,
-    dest: `${distDir}/assets/fonts/www`,
+    dest: `${distDir}/assets/fonts`,
   },
   assetManifest,
 };
@@ -83,8 +83,8 @@ const options = {
 
 const cleanDist = () =>
   gulp.src([
-    `${distDir}/assets/`,
-    `${distDir}/sankalan/`,
+    `${distDir}/sankalan/2018/assets/`,
+    `${distDir}/sankalan/2018/`,
     paths.assetManifest,
   ], {
     read: false,

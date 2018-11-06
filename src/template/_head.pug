@@ -1,6 +1,6 @@
 - const $title = `${page.title}${page.title ? ' // ' : ''}Sankalan 2018`;
 - const $description = page.description || `Sankalan is the annual tech fest of Dept Of Computer Science, University of Delhi (DUCS).`;
-- const url = `https://www.ducs.in/sankalan/${page.slug}`;
+- const url = `https://csdu.github.io/sankalan/2018/${page.slug}`;
 - const $defaultImage = 'https://4.bp.blogspot.com/-4zkCYLMsZXM/Wp5bqvKQhYI/AAAAAAAAAS4/p9MDu1PwHKM-Agp-FLrS1bqqvSRuRXcCQCLcBGAs/s1600/sankalan-2018.png';
 
 title #{$title}
@@ -16,15 +16,15 @@ meta(property="og:description" content=$description)
 meta(property="og:image" content=(page.image || $defaultImage))
 meta(property="fb:app_id" content="211826412729565")
 
-link(rel="apple-touch-icon" sizes="60x60" href=`${assets.$}/images/www/favicon/apple-icon-60x60.png`)
-link(rel="apple-touch-icon" sizes="72x72" href=`${assets.$}/images/www/favicon/apple-icon-72x72.png`)
-link(rel="apple-touch-icon" sizes="120x120" href=`${assets.$}/images/www/favicon/apple-icon-120x120.png`)
-link(rel="apple-touch-icon" sizes="144x144" href=`${assets.$}/images/www/favicon/apple-icon-144x144.png`)
-link(rel="apple-touch-icon" sizes="180x180" href=`${assets.$}/images/www/favicon/apple-icon-180x180.png`)
-link(rel="icon" type="image/png" sizes="192x192"  href=`${assets.$}/images/www/favicon/android-icon-192x192.png`)
-link(rel="icon" type="image/x-icon" href=`${assets.$}/images/www/favicon/favicon.ico`)
-link(rel="icon" type="image/png" sizes="32x32" href=`${assets.$}/images/www/favicon/favicon-32x32.png`)
-link(rel="icon" type="image/png" sizes="96x96" href=`${assets.$}/images/www/favicon/favicon-96x96.png`)
+link(rel="apple-touch-icon" sizes="60x60" href=`${assets.$}/images/favicon/apple-icon-60x60.png`)
+link(rel="apple-touch-icon" sizes="72x72" href=`${assets.$}/images/favicon/apple-icon-72x72.png`)
+link(rel="apple-touch-icon" sizes="120x120" href=`${assets.$}/images/favicon/apple-icon-120x120.png`)
+link(rel="apple-touch-icon" sizes="144x144" href=`${assets.$}/images/favicon/apple-icon-144x144.png`)
+link(rel="apple-touch-icon" sizes="180x180" href=`${assets.$}/images/favicon/apple-icon-180x180.png`)
+link(rel="icon" type="image/png" sizes="192x192"  href=`${assets.$}/images/favicon/android-icon-192x192.png`)
+link(rel="icon" type="image/x-icon" href=`${assets.$}/images/favicon/favicon.ico`)
+link(rel="icon" type="image/png" sizes="32x32" href=`${assets.$}/images/favicon/favicon-32x32.png`)
+link(rel="icon" type="image/png" sizes="96x96" href=`${assets.$}/images/favicon/favicon-96x96.png`)
 
 style
   include _critical.css
