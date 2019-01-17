@@ -12,11 +12,13 @@ Requirements: Node JS (v8.8+), NPM (v5.6) and some npm static website hosting mo
 
 ``` bash
 # clone repo
-git clone https://github.com/sidvishnoi/sankalan-2018.git
+git clone https://github.com/csdu/sankalan-2018.git
 cd sankalan-2018
 
 # install dependencies
 npm i
+
+echo {} >> src/templates/assets.json
 
 # create a dev build
 npm run build:dev
@@ -35,12 +37,12 @@ If you need to test the website in some other device, make sure you edit the `ba
 
 I'll archive this repository when the fest is done. So make sure you give your edits before that. (Would be meaningless otherwise)
 
-1. Fork and clone the repository.
-2. Make edits.
+1. Fork and clone your own version of repository.
+2. Make edits. (See [Contribution](CONTRIBUTING.md) guide for more detailed information)
 3. Preview your edits by running the `npm run build:dev` script.
 4. Submit a pull request.
 
-Also, please report any issues you face in website or the build process.
+Also, please report any issues you face in website or the build process. 
 
 # Deployment
 
