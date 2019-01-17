@@ -1,8 +1,6 @@
-# Sankalan 2018
+# Sankalan 2019
 
-This repository contains the source code for Sankalan 2018 website (https://www.ducs.in/sankalan/).
-
-See also: https://github.com/sidvishnoi/dashboard.ducs.in
+This repository contains the source code for Sankalan 2019 website (https://www.ducs.in/sankalan/).
 
 Sankalan is the annual tech fest of Dept Of Computer Science, University of Delhi (DUCS).
 
@@ -12,8 +10,8 @@ Requirements: Node JS (v8.8+), NPM (v5.6) and some npm static website hosting mo
 
 ``` bash
 # clone repo
-git clone https://github.com/csdu/sankalan-2018.git
-cd sankalan-2018
+git clone https://github.com/csdu/sankalan-2019.git
+cd sankalan-2019
 
 # install dependencies
 npm i
@@ -88,4 +86,4 @@ exports.handler = (event, context, callback) => {
 
 # Copyright
 
-The website is designed by Sudhanshu Vishnoi (https://github.com/sidvishnoi) for Sankalan 2018 - the annual tech fest of DUCS. Copyright. Give credits if you use any part of it any where.
+The website is designed by Sudhanshu Vishnoi (https://github.com/sidvishnoi) for Sankalan 2019 - the annual tech fest of DUCS. Copyright. Give credits if you use any part of it any where.

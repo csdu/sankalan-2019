@@ -1,7 +1,7 @@
 //- used to display list of events on events/ page
 mixin events($key)
   - const event = events[$key]
-  - const permalink = `/sankalan/2018/events/${$key}/`
+  - const permalink = `/sankalan/2019/events/${$key}/`
   .module(class={"event-live": event.islive, "event-over": event.isover, "event-nt": event.isnontech, "event-fl": event.isfunlearn})
     div.module--half
       if event.image

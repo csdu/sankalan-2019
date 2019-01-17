@@ -1,13 +1,13 @@
 const { outputJson } = require('fs-extra');
 const { getSavePath } = require('./utils');
 
-const basename = '/sankalan/2018';
+const basename = '/sankalan/2019';
 
 const savePath = slug => getSavePath(slug, 'json');
 
 const createJson = (page, content) => ({
   slug: page.slug,
-  title: `${page.title + (page.title ? ' // ' : ' ')}Sankalan 2018`,
+  title: `${page.title + (page.title ? ' // ' : ' ')}Sankalan 2019`,
   link: `${basename}/${page.slug}`,
   content,
 });

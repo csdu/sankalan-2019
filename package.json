@@ -1,13 +1,13 @@
 {
-  "name": "sankalan-2018",
+  "name": "sankalan-2019",
   "version": "1.0.0",
   "description": "Sankalan is the annual tech fest of Dept Of Computer Science, University of Delhi (DUCS).",
   "main": "gulpfile.js",
   "dependencies": {},
-  "homepage": "https://www.ducs.in/sankalan/2018/",
+  "homepage": "https://www.ducs.in/sankalan/2019/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sidvishnoi/sankalan-2018.git"
+    "url": "https://github.com/sidvishnoi/sankalan-2019.git"
   },
   "devDependencies": {
     "async": "^2.6.0",
