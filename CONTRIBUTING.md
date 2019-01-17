@@ -15,7 +15,7 @@ To Add an new Event page, follow these steps one by one:
 
 Open `/src/content/_data/events.yaml` in your editor. Edit this file to add new event's information. Append the event's information and Take a look at generalised schema for each event:
 
-> **NOTE:** Indentation matters in YAML, make sure you properly indent using 2 spaces (*not tabs*) or use a code editor. 
+> **NOTE:** Indentation matters in YAML, make sure you properly indent using 2 spaces (*not tabs*) or use a sophisticated code editor (if you're still using Notepad++ or gedit).
 
 ```yaml
 dummy-event:  # this is the key which is needed to contruct event page 
@@ -38,13 +38,17 @@ dummy-event:  # this is the key which is needed to contruct event page
     - But here can be multiple Rounds (if needed).
 ```
 
+Please refer to YAML [docs](https://yaml.org/start.html) for syntax.
+
 #### Step 2: Create a event's description page using `pug`
 Create a new file in `/src/content` directory,  name this file as `events-<event-name>.pug` _(kebab-cased)_ with the following contents:
 ```pug
 include _mixins/eventPage
 +eventPage(events['event-yaml-key']) 
 ```
-Make sure you replace the `event-yaml-key` with the event key, that you specified in Step 1. For example: for the example we used in step 1, it should be `dummy-event`.
+Make sure you replace the `event-yaml-key` with the event key, that you specified in _Step 1_. 
+
+>**Example:** According to the example we used in _Step 1_, it should be `dummy-event`.
 
 #### Step 3: Add Event's Page meta information to `pages.js`.
 
