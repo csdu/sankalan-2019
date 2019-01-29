@@ -23,7 +23,7 @@ const getSavePath = (slug, ext) =>
   });
 
 
-const basepath = '/sankalan/2019/assets';
+const basepath = '/sankalan/assets';
 // convert normal asset filenames to hashed asset paths
 const getMappedAssets = (assets) => {
   const mappedAssets = {};

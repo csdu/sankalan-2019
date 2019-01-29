@@ -4,7 +4,7 @@ const cwd = process.cwd();
 
 module.exports = {
   src: path.join(cwd, './src'),
-  dest: path.join(cwd, './dist/sankalan/2019'),
-  destSankalan: path.join(cwd, './dist/sankalan/2019'),
+  dest: path.join(cwd, './dist'),
+  destSankalan: path.join(cwd, './dist'),
   assetManifest: path.resolve(cwd, './src/template/assets.json'),
 };
