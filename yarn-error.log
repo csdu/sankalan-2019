@@ -24,7 +24,7 @@ npm manifest:
     "description": "Sankalan is the annual tech fest of Dept Of Computer Science, University of Delhi (DUCS).",
     "main": "gulpfile.js",
     "dependencies": {},
-    "homepage": "https://www.ducs.in/sankalan/2019/",
+    "homepage": "https://www.ducs.in/sankalan/",
     "repository": {
       "type": "git",
       "url": "https://github.com/sidvishnoi/sankalan-2019.git"

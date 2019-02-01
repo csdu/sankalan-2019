@@ -22,7 +22,7 @@ console.log(`%c${pprint.ct}`, pprint.st);
 console.log(`%c${'\u00a0'.repeat(1)}https://github.com/sidvishnoi/sankalan-2019${'\u00a0'.repeat(2)}`, 'color: yellow;padding:4px;background:#000');
 
 const isFrontPage = () =>
-  window.location.pathname.replace('index.html', '') === '/sankalan/2019/';
+  window.location.pathname.replace('index.html', '') === '/sankalan/';
 
 if (isFrontPage()) {
   document.body.classList.add('is-front-page');
