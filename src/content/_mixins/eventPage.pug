@@ -40,6 +40,6 @@ mixin eventPage(ev)
           each p in ev.details || []
             li !{p}
       if ev.reg !== 0
-        a.button(rel="noopener" href="https://dashboard.ducs.in/sankalan/register/" data-id=`register-${ev.title.toLowerCase().replace(/ /g, '-')}`) Register
+        a.button(rel="noopener" href="/sankalan/register/" data-id=`register-${ev.title.toLowerCase().replace(/ /g, '-')}`) Register
       if ev.fbpage
         a.button(href=ev.fbpage data-id=`fb-ev-${ev.title.toLowerCase().replace(/ /g, '-')}`) Facebook Event Page
