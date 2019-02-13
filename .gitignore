@@ -1,6 +1,8 @@
-dist/
+build_local/
+build_production/
 node_modules
 package-lock.json
 src/template/assets.json
 scripts/deploy/*.txt
-yarn.-error.log
+yarn-error.log
+vendor/
