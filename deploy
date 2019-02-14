@@ -4,10 +4,10 @@
 set -e
 
 # build
-npm run build
+npm run production
 
 # navigate into the build output directory
-cd dist
+cd build production
 
 git init
 git add -A

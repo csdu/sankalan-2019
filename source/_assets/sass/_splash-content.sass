@@ -1,0 +1,88 @@
+.splash-content
+  align-items: center
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  padding: 2vw
+  text-align: center
+  color: #fff
+  opacity: 1
+  transition: opacity 0.5s $anim-cubic
+  z-index: 50
+
+  .title
+    font-weight: 900
+    text-transform: uppercase
+    font-family: $font-bold
+    letter-spacing: 5px
+    font-size: 36px
+    .logo
+      display: block
+      height: 160px
+      width: 160px
+      margin: auto
+      fill: $color-tl
+
+  .text
+    font-weight: 500
+    max-width: 700px
+    text-shadow: none
+    padding: 5px
+    margin: 1vh auto
+
+.content-nav
+  display: block
+  width: 100%
+  font-family: $font-bold
+  letter-spacing: 1px
+
+  li
+    text-transform: uppercase
+    margin-bottom: 5px
+
+    a
+      font-weight: 900
+      display: inline-block
+
+    &:nth-child(1) a
+      transform: rotate(-1deg)
+      margin: 2vh
+      font-size: 2.5rem !important
+      font-size: calc(18px + 1vw) !important
+
+    &:nth-child(2) a
+      transform: rotate(2deg)
+      font-size: 2.2rem !important
+      font-size: calc(14px + 1vw) !important
+      color: $color-bl
+
+    &:nth-child(3) a
+      transform: rotate(-2deg)
+      font-size: 2rem !important
+      font-size: calc(13px + 1vw) !important
+      color: $color-br
+
+    &:nth-child(4) a
+      transform: rotate(1deg)
+      font-size: 1.7rem !important
+      font-size: calc(11px + 1vw) !important
+      color: $color-tr
+
+  li:nth-child(n+2) a
+    transition: transform 0.2s
+
+    &:hover
+      transform: scale(1.05)
+      text-decoration: underline
+
+.splash-logo-text
+  padding: 0 !important
+  display: inline-block
+  font-size: calc(24px + 3vw) !important
+  &:after
+    top: -10px !important
+    right: 0px !important
+
+#splash-date
+  font-size: calc(13px + 1vw)
+  font-weight: bold

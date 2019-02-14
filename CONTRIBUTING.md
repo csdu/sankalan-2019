@@ -1,5 +1,9 @@
+
 # Contribution Guide
 You can contribute to this website's content, or fix a design issue or a bug, by forking this repository and follow the build instructions to get it running.
+
+> ### NOTE
+> This guide needs to be updated.
 
 What kind of content you can add?
 - Add new event page ([how?](#add-new-event)).
