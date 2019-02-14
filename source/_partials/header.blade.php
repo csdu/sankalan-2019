@@ -1,5 +1,5 @@
 <header class="site-header">
-    <a class="logo xhr" href='{{ $page->baseUrl }}/' data-id='header'>
+    <a class="logo-text xhr" href='{{ $page->baseUrl }}/' data-id='header'>
       <h1>Sankalan</h1>
     </a>
     <a class='menu-toggle xhr' href='{{ $page->baseUrl }}/' data-id='menu-toggle'>Menu</a>

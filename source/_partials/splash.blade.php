@@ -10,7 +10,7 @@
             <div>
                 <div class="title">
                     @include('_svg.sankalan-logo', ['classes' => 'logo'])
-                    <h1 class="splash-logo-text">Sankalan</h1>
+                    <h1 class="splash-logo-text logo-text">Sankalan</h1>
                 </div>
                 <div class="text">
                     <p id="splash-date"><span title="Saturday, March 9th, 2019">March 9, 2019</span>&nbsp;&mdash;&nbsp;<span title="Sunday, March 10th, 2019">March 10, 2019</span></p>

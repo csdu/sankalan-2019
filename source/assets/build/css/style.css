@@ -432,7 +432,7 @@ h4 {
   background-size: 32px;
 }
 
-.splash-logo-text {
+.logo-text {
   font-family: "Russo One", "Arial Black", sans-serif;
   letter-spacing: 3px;
   font-size: 1.5em;
@@ -441,7 +441,7 @@ h4 {
   text-transform: uppercase;
 }
 
-.splash-logo-text:after {
+.logo-text:after {
   content: "2019";
   position: absolute;
   right: 1.4em;
