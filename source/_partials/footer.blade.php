@@ -36,7 +36,7 @@
 </footer>
 <script>
     function loadJs(a){const b=document.createElement('script');b.src=a,b.setAttribute('async','true'),document.documentElement.firstChild.appendChild(b)};function loadCSS(a){const b=document.createElement('link');b.href=a,b.setAttribute('rel','stylesheet'),document.documentElement.firstChild.appendChild(b)};
-    loadCSS("{{ mix('css/style.css', 'assets/build') }}");
+    loadCSS("{{ $page->baseUrl }}{{mix('css/style.css', 'assets/build') }}");
     loadCSS("https://fonts.googleapis.com/css?family=Fira+Mono|Russo+One");
-    loadJs("{{ mix('js/bundle.js', 'assets/build') }}");
+    loadJs("{{ $page->baseUrl }}{{ mix('js/bundle.js', 'assets/build') }}");
 </script>
