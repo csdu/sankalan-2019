@@ -1,6 +1,6 @@
 ---
 extends: _layouts.event
-section: null
+section: event-details
 title: Spin-a-Hack
 quote:
     text: Come,Code,Develop!!
@@ -14,11 +14,10 @@ teamSize: 2
 lang: js
 rounds:
     -  The teams would be asked to develop a website/web-app or an android/ios application. They have to present their project to judges for final evaluation.
-details:
-    - 'Important: The teams need to bring their own system with the software installed. Internet will be provided.'
-    - You will be given 8 hours from 12pm - 8pm to develop your app.
-    - Theme will be provided on spot.
-    - Registration will be done separately on day 1 of Sankalan. The online ticket is still required.
-    - 'Operating System: Any Suitable System.'
-    - 'Platform: As per requirement'
 ---
+- Important: The teams need to bring their own system with the software installed. Internet will be provided.
+- You will be given 8 hours from 12pm - 8pm to develop your app.
+- Theme will be provided on spot.
+- Registration will be done separately on day 1 of Sankalan. The online ticket is still required.
+- Operating System: Any Suitable System.
+- Platform: As per requirement

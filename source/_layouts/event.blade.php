@@ -58,14 +58,10 @@
             </div>
         @endif
         <h3>Further Details</h3>
-        @if(!$page->details)
-          <p>Nothing more mentioned yet. Check back soon</p> 
+        @hasSection('event-details')
+            @yield('event-details')
         @else
-          <ul>
-            @foreach($page->details as $detail)
-                <li>{!! $detail !!}</li>
-            @endforeach
-          </ul>
+            <p>Nothing more mentioned yet. Check back soon</p> 
         @endif
 
         @if($page->reg !== 0)

@@ -16,6 +16,5 @@ teamSize: 2
 lang: py
 rounds:
 - Multiple Choice Questions testing the logical and quantitative ability of participants.
-- |-
-    The qualifying teams would be given a set of puzzles to solve.
+- The qualifying teams would be given a set of puzzles to solve.
 ---

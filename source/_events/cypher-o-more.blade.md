@@ -1,6 +1,6 @@
 ---
 extends: _layouts.event
-section: null
+section: event-details
 title: Cypher-o-more
 quote:
     text: 'There are two types of encryption: one that will prevent your sister from reading your diary and one that will prevent your government.'
@@ -17,7 +17,6 @@ image: https://1.bp.blogspot.com/-EqzbwhrlQFk/WonkMX73ODI/AAAAAAAAAJs/ZIhUNsuy-H
 rounds:
     - For prelims, you have to answer a set of MCQ's related to cryptology, cryptography, and cryptanalysis.
     - For the final round, you have to shake up your brain to find the message in a coded story.
-details:
-    - Challenge the cryptographer in you and win exciting prizes.
-    - So, put on your Sherlock vibes and get ready to explore the field of computer security.
 ---
+- Challenge the cryptographer in you and win exciting prizes.
+- So, put on your Sherlock vibes and get ready to explore the field of computer security.

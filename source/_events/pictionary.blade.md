@@ -1,6 +1,6 @@
 ---
 extends: _layouts.event
-section: null
+section: event-details
 title: Pictionary
 quote:
     text: |-
@@ -16,11 +16,10 @@ isover: false
 isnontech: true
 isfunlearn: true
 image: https://4.bp.blogspot.com/-Kwu49LImCF4/WonkLxGFgzI/AAAAAAAAAJo/4LRVuBFVbcwHMOaoedDSVKcDyhIdZb5rACLcBGAs/s1600/pictionary.png
-details:
-    - It is a non-technical event that will be held for the entire 2 days.
-    - People who wish to play can deposit a minimal amount of Rs 10 for every new time.
-    - You will be given a word from any domain, and will be required to explain that, by drawing anything related to the same on the board, to the audience in a time span of 2 minutes.
-    - Prompting or adopting any illegal means can lead to disqualification.
-    - So, let the artist inside you play and win exciting PRIZES.
-    - 'Registration fee: Rs. 10/-'
 ---
+- It is a non-technical event that will be held for the entire 2 days.
+- People who wish to play can deposit a minimal amount of Rs 10 for every new time.
+- You will be given a word from any domain, and will be required to explain that, by drawing anything related to the same on the board, to the audience in a time span of 2 minutes.
+- Prompting or adopting any illegal means can lead to disqualification.
+- So, let the artist inside you play and win exciting PRIZES.
+- Registration fee: **&#x20B9;10/-**

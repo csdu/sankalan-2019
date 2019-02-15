@@ -1,6 +1,6 @@
 ---
 extends: _layouts.event
-section: null
+section: event-details
 title: Beg Borrow Steal
 quote:
     text: You can plead, you can use your charm or else you can steal.
@@ -13,13 +13,10 @@ isover: false
 isnontech: true
 isfunlearn: true
 image: https://1.bp.blogspot.com/-9wr_pDuE460/Womaz-bs0LI/AAAAAAAAAJA/punpkTmWIhUBZmrz7ikvvaCVVoIlbgFCgCLcBGAs/s1600/beg-borrow-steal.png
-details:
-    - |-
-        <strong>Rules follow:</strong>
-        <ol>
-            <li>Participants have to either beg, borrow or steal the items that are enlisted and provided to them</li>
-            <li>Participants have to get themselves registered before the commencement of the event.</li>
-            <li>After the completion of the task the participants are required to report to the coordinators for evaluation.</li>
-            <li>Participants will be judged on first come, first serve basis and also the items they were able to collect.</li>
-        </ol>
 ---
+
+- **Rules follow**:
+    1. Participants have to either beg, borrow or steal the items that are enlisted and provided to them
+    2. Participants have to get themselves registered before the commencement of the event
+    After the completion of the task the participants are required to report to the coordinators for evaluation
+    3. Participants will be judged on first come, first serve basis and also the items they were able to collect

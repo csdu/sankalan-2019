@@ -1,6 +1,6 @@
 ---
 extends: _layouts.event
-section: null
+section: event-details
 title: DUCS Coding Cup
 quote:
     text: If debugging is the process of removing software bugs, then programming must be the process of putting them in.
@@ -16,7 +16,6 @@ teamSize: 1
 lang: cpp
 rounds:
     - The students will have to solve the coding questions online.
-details:
-    - This will be a day event.
-    - 'You can solve the coding questions in any language C/C++/Java/Python'
 ---
+- This will be a day event.
+- 'You can solve the coding questions in any language C/C++/Java/Python'

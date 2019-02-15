@@ -1,6 +1,6 @@
 ---
 extends: _layouts.event
-section: null
+section: event-details
 title: SELECT * FROM BRAIN
 quote:
     text: Select, Ignite, Fire...Prove that you have the answer to all queries.!!!
@@ -15,9 +15,7 @@ teamSize: 2
 lang: sql
 rounds:
 - Multiple-choice questions based on standard SQL, PL/SQL, XQuery and DBMS concepts.
-- |-
-    The teams qualifying would be given a set of queries, that would have to be solved using SQL.
-details:
-- 'Operating System: Windows 10'
-- 'Platform: MySQL Workbench'
+- The teams qualifying would be given a set of queries, that would have to be solved using SQL.
 ---
+- Operating System: Windows 10
+- Platform: MySQL Workbench
