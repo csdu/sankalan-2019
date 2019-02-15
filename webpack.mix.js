@@ -26,7 +26,9 @@ mix.scripts([
     ], 'source/assets/build/js/bundle.js')
     .sass('source/_assets/sass/style.sass', 'css')
     .tailwind()
-    .purgeCss()
+    .purgeCss({
+        folders: ['source'],
+    })
     .options({
         processCssUrls: false,
     }).version();
