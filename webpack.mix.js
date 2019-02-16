@@ -1,7 +1,7 @@
 let mix = require('laravel-mix');
 require('laravel-mix-purgecss');
-require('laravel-mix-tailwind');
 let build = require('./tasks/build.js');
+let baseUrl = mix.inProduction() ? '/sankalan/' : '/';
 
 mix.disableSuccessNotifications();
 mix.setPublicPath('source/assets/build');
@@ -25,10 +25,22 @@ mix.scripts([
         'source/_assets/js/header.js',
     ], 'source/assets/build/js/bundle.js')
     .sass('source/_assets/sass/style.sass', 'css')
-    .tailwind()
     .purgeCss({
         folders: ['source'],
     })
     .options({
         processCssUrls: false,
+        postCss: [
+            require('autoprefixer')({
+                browsers: 'last 40 versions'
+            }),
+            require('postcss-url')({
+                url: function(asset) {
+                    if(asset.url[0] == '/') {
+                        return baseUrl + asset.relativePath
+                    }
+                    return asset.url;
+                }
+            })
+        ]
     }).version();
