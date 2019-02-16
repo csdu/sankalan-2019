@@ -1243,3 +1243,6 @@ footer ul li img {
     display: none;
   }
 }
+.text-center {
+  text-align: center;
+}
