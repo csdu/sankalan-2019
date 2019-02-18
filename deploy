@@ -13,6 +13,6 @@ git init
 git add -A
 git commit -m 'deploy'
 
-git push -f git@github.com:csdu/sankalan master:gh-pages
+git push -f root@sankalan.ducs.in:/var/repos/sankalan.git master
 
 cd -
