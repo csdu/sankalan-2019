@@ -11,7 +11,7 @@
 
 <div class="content">
     <div class="section" style="color:#fff;background-color: rgba(0,0,0,0.5)">
-        <h2>The Panel</h2>
+        {{-- <h2>The Panel</h2>
         <div class="credits">
             @include('_partials.people-credit', [
                 'type' => 'President', 
@@ -67,7 +67,7 @@
             @include('_partials.people-credit', ['key' => 'ajay-kumar'])
             @include('_partials.people-credit', ['key' => 'radha-verma'])
         </div>
-        <br>
+        <br> --}}
     </div>
 </div>
 @endsection
