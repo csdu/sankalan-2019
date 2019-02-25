@@ -1,1 +1,226 @@
-class Background{constructor(t){this.canvas=t,this.canvas.style.background="#000",this.ctx=t.getContext("2d"),this.polylines=[],this.frameCount=0;const i=.125*(2*Math.PI);this.ANGLES=[i,-i,Math.PI-i,Math.PI+i],this.NUM_LINES=10,this.NUM_SEGMENT=8,this.SEGMENT_LENGTH=120,this.RESET_FACTOR=5}static createRgbString(t){return`rgb(${t.r},${t.g},${t.b})`}static randomInt(t){return Math.floor(Math.random()*t)}buildLine(t){const i=t||{};return i.color={},i.color.r=this.constructor.randomInt(192),i.color.g=this.constructor.randomInt(128),i.color.b=this.constructor.randomInt(256),i.points=[],i}nextAngle(){const t=this.constructor.randomInt(this.ANGLES.length);return this.ANGLES[t]}getNextPoint(t,i,n){const s=n||{};t.angle=this.nextAngle(t.angle),s.x=t.points[i-1].x+Math.cos(t.angle)*this.SEGMENT_LENGTH,s.y=t.points[i-1].y+Math.sin(t.angle)*this.SEGMENT_LENGTH,t.points.push(s)}initPolyLine(t){t.points.push({x:this.constructor.randomInt(this.canvas.width),y:this.constructor.randomInt(this.canvas.height)});for(let i=1;i<this.NUM_SEGMENT;i+=1)this.getNextPoint(t,i);return t}drawLine(t){this.ctx.strokeStyle=this.constructor.createRgbString(t.color);for(let i=1;i<t.points.length;i+=1)this.ctx.beginPath(),this.ctx.moveTo(t.points[i-1].x,t.points[i-1].y),this.ctx.lineTo(t.points[i].x,t.points[i].y),this.ctx.stroke()}isPointInside(t){return t.y>0&&t.y<this.canvas.height&&t.x<this.canvas.width&&t.x>0}resetLine(t){const i=this.polylines.indexOf(t),n=this.polylines.splice(i,1)[0],s=this.buildLine(n),o=this.initPolyLine(s);this.polylines.push(o)}moveLine(t){for(let i=0;i<t.points.length;i+=1)t.points[i].y+=.01;0===t.points.filter(t=>this.isPointInside(t)).length&&this.resetLine(t)}move(){for(const t of this.polylines)this.moveLine(t)}shiftPoint(t){const i=t.points.shift();this.getNextPoint(t,t.points.length,i)}animate(){this.canvas.width=this.canvas.width,this.move();for(const t of this.polylines)this.drawLine(t);if(this.frameCount%this.RESET_FACTOR==0){this.frameCount=0;for(const t of this.polylines)this.shiftPoint(t)}return this.frameCount+=1,window.requestAnimationFrame(this.anim)}resize(){this.canvas.width=window.innerWidth,this.canvas.height=window.innerHeight}init(){for(let t=0;t<this.NUM_LINES;t+=1){const t=this.buildLine();this.polylines.push(t)}for(let t=0,i=this.polylines.length;t<i;t+=1)this.initPolyLine(this.polylines[t]);this.anim=this.animate.bind(this),this.resize(),this.animate(),window.addEventListener("resize",this.resize)}}const $canvas=document.getElementById("canvas"),bg=new Background($canvas);function gtag(){dataLayer.push(arguments)}bg.init(),window.dataLayer=window.dataLayer||[];const GA_TRACKING_ID="UA-113942220-1";isFrontPage()&&document.body.classList.add("is-front-page");
+/* eslint no-param-reassign: ["error", {
+  "props": true,
+  "ignorePropertyModificationsFor": ["line"],
+}] */
+
+class Background {
+  constructor(canvas) {
+    this.canvas = canvas;
+    this.canvas.style.background = '#000';
+    this.ctx = canvas.getContext('2d');
+    this.polylines = [];
+    this.frameCount = 0;
+
+    const TAU = Math.PI * 2;
+    const ISO_ANGLE = TAU * (45 / 360);
+    this.ANGLES = [ISO_ANGLE, -ISO_ANGLE, Math.PI - ISO_ANGLE, Math.PI + ISO_ANGLE];
+    this.NUM_LINES = 10;
+    this.NUM_SEGMENT = 8;
+    this.SEGMENT_LENGTH = 120;
+    this.RESET_FACTOR = 5;
+  }
+
+  // convert {r,g,b} to rgba string
+  static createRgbString(color) {
+    return `rgb(${color.r},${color.g},${color.b})`;
+  }
+
+  // random integer in range [0, m)
+  static randomInt(m) {
+    return Math.floor(Math.random() * m);
+  }
+
+  /**
+   * Build or reset a line with a random color and empty points.
+   */
+  buildLine(line) {
+    const obj = line || {};
+    obj.color = {};
+    obj.color.r = this.constructor.randomInt(3 * 64);
+    obj.color.g = this.constructor.randomInt(2 * 64);
+    obj.color.b = this.constructor.randomInt(4 * 64);
+    obj.points = [];
+    return obj;
+  }
+
+  /**
+   * Random isometric angle
+   */
+  nextAngle() {
+    const idx = this.constructor.randomInt(this.ANGLES.length);
+    return this.ANGLES[idx];
+  }
+
+
+  /**
+  * Next point is a random point within four angles from the start.
+  * @param line the array of points to add to.
+  * @param i the last index to start from
+  * @param point the default starting point.
+  */
+  getNextPoint(line, i, point) {
+    const nextPoint = point || {};
+    line.angle = this.nextAngle(line.angle);
+    nextPoint.x = line.points[i - 1].x + (Math.cos(line.angle) * this.SEGMENT_LENGTH);
+    nextPoint.y = line.points[i - 1].y + (Math.sin(line.angle) * this.SEGMENT_LENGTH);
+    line.points.push(nextPoint);
+  }
+
+  /**
+   * Init a polyline
+   */
+  initPolyLine(line) {
+    line.points.push({
+      x: this.constructor.randomInt(this.canvas.width),
+      y: this.constructor.randomInt(this.canvas.height),
+    });
+    for (let i = 1; i < this.NUM_SEGMENT; i += 1) {
+      this.getNextPoint(line, i);
+    }
+    return line;
+  }
+
+  /**
+   * Draw a line on the canvas.
+   */
+  drawLine(line) {
+    this.ctx.strokeStyle = this.constructor.createRgbString(line.color);
+    for (let i = 1; i < line.points.length; i += 1) {
+      this.ctx.beginPath();
+      this.ctx.moveTo(line.points[i - 1].x, line.points[i - 1].y);
+      this.ctx.lineTo(line.points[i].x, line.points[i].y);
+      this.ctx.stroke();
+    }
+  }
+
+  /**
+   * check if point is inside the canvas region
+   */
+  isPointInside(point) {
+    return (point.y > 0
+      && point.y < this.canvas.height
+      && point.x < this.canvas.width
+      && point.x > 0);
+  }
+
+  // reset a line
+  resetLine(line) {
+    const idx = this.polylines.indexOf(line);
+    const removedLine = this.polylines.splice(idx, 1)[0];
+    const newLine = this.buildLine(removedLine); // reset the line
+    const newPolyline = this.initPolyLine(newLine);
+    this.polylines.push(newPolyline);
+  }
+
+  /**
+   * make a line move down
+   */
+  moveLine(line) {
+    for (let i = 0; i < line.points.length; i += 1) {
+      line.points[i].y += 0.01;
+    }
+    // check if point is out of view
+    const pointsInside = line.points.filter(l => this.isPointInside(l));
+
+    // if line has no point in view, reset it
+    if (pointsInside.length === 0) {
+      this.resetLine(line);
+    }
+  }
+
+  /**
+   * Makes the lines go down.
+   */
+  move() {
+    for (const line of this.polylines) {
+      this.moveLine(line);
+    }
+  }
+
+  /**
+  * Removes first point from the line and add a new one.
+  */
+  shiftPoint(line) {
+    const firstPoint = line.points.shift();
+    this.getNextPoint(line, line.points.length, firstPoint);
+  }
+
+  /**
+   * starts animation
+   */
+  animate() {
+    this.canvas.width = this.canvas.width; // clear canvas
+
+    // draw
+    this.move();
+    for (const line of this.polylines) {
+      this.drawLine(line);
+    }
+
+    if (this.frameCount % this.RESET_FACTOR === 0) {
+      this.frameCount = 0;
+      for (const line of this.polylines) {
+        this.shiftPoint(line);
+      }
+    }
+    this.frameCount += 1;
+    return window.requestAnimationFrame(this.anim);
+  }
+
+  /**
+   * Resize canvas to viewport dimensions.
+   */
+  resize() {
+    this.canvas.width = window.innerWidth;
+    this.canvas.height = window.innerHeight;
+  }
+
+  init() {
+    for (let i = 0; i < this.NUM_LINES; i += 1) {
+      const line = this.buildLine();
+      this.polylines.push(line);
+    }
+    for (let i = 0, l = this.polylines.length; i < l; i += 1) {
+      this.initPolyLine(this.polylines[i]);
+    }
+    // .forEach(this.initPolyLine);
+    this.anim = this.animate.bind(this);
+    this.resize();
+    this.animate();
+    window.addEventListener('resize', this.resize);
+  }
+}
+
+const $canvas = document.getElementById('canvas');
+const bg = new Background($canvas);
+bg.init();
+
+/**
+ * @preserve
+ * Developed by Sudhanshu Vishnoi
+ * (https://github.com/sidvishnoi)
+ * Copyright 2019
+ */
+
+window.dataLayer = window.dataLayer || [];
+function gtag() {
+  dataLayer.push(arguments);
+}
+const GA_TRACKING_ID = 'UA-113942220-1';
+
+// // print that status message in console :D
+// const pprint = {
+//   ct: `${'\u00a0'.repeat(13)}Hey you, Hackerman!${'\u00a0'.repeat(16)}
+// ${'\u00a0'.repeat(2)}I see you are interested in the source code.${'\u00a0'.repeat(2)}
+// ${'\u00a0'.repeat(13)}Let me help you :)${'\u00a0'.repeat(17)}`,
+//   st: 'background: #bada55;color:#000;font-weight: bold;',
+// };
+// console.log(`%c${pprint.ct}`, pprint.st);
+// console.log(`%c${'\u00a0'.repeat(1)}https://github.com/sidvishnoi/sankalan-2019${'\u00a0'.repeat(2)}`, 'color: yellow;padding:4px;background:#000');
+
+// const isFrontPage = () =>
+//   window.location.pathname.replace('index.html', '') === '/sankalan/';
+
+if (isFrontPage()) {
+  document.body.classList.add('is-front-page');
+}

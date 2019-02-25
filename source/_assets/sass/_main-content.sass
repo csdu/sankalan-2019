@@ -133,10 +133,10 @@ a.button
     top: 2px
     box-shadow: (-8px) -7px 0px 0px darken($color-tl, 10)
 
-.event-live, .event-over, .event-nt
+.event-tag
   position: relative
 
-.event-nt:before, .event-live:after, .event-over:after, .event-fl:before
+.event-tag::before
   display: block
   position: absolute
   top: 0
@@ -148,20 +148,6 @@ a.button
   text-shadow: none
   letter-spacing: 1px
 
-.event-live::after
-  content: "LIVE NOW!"
-  background: red
-
-.event-over:after
-  content: "EVENT ENDED"
-  background: #333
-
-.event-nt:before, .event-fl:before
-  content: "NON TECHNICAL"
+.event-tag::before
+  content: attr(data-tag)
   background: $color-bl
-  left: 0
-  right: auto
-
-.event-fl:before
-  content: "FUN LEARN"
-  background: $color-br

@@ -14,6 +14,7 @@ isnontech: false
 image: https://3.bp.blogspot.com/-bY19CKknUoo/WoVRerlmAhI/AAAAAAAAAHU/lTovyNPlH58NRjvGysNRTuLhwLL7mebYACLcBGAs/s1600/algoholics.png
 teamSize: 2
 lang: cpp
+tag: Algorithms
 rounds:
     - Multiple-choice based questions testing the participant’s algorithmic competency.
     - |-
