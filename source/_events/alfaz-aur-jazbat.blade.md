@@ -24,6 +24,8 @@ rounds:
         Winners will get a <b>chance to be featured</b> on India's <b>most subscribed</b> poetry and storytelling YouTube channel - <b><a href="https://www.youtube.com/channel/UCeMecwNIJrd_kyw_6fKgmqw">THE SOCIAL HOUSE</a> </b>, along with other <b>perks</b>.
 
 ---
+It is said that everything and anything can be achieved with words, so grab this opportunity to express your emotions with the power of your words. Express your jazbaat with your alfaaz.
+<br>
 Sankalan'19 in association with [THE SOCIAL HOUSE](https://www.youtube.com/channel/UCeMecwNIJrd_kyw_6fKgmqw) presents **Alfaz aur Jazbat** - A Poetry and Storytelling competition on **9th March, 2019** at **12 p.m.** at Department of Computer Science, University of Delhi.
 <br>
 <br>
