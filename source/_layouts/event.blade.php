@@ -1,13 +1,5 @@
 @extends('_layouts.master')
 @section('title', "$page->title | ")
-@php
-    $classes = collect([
-        "event-live" => $event->islive, 
-        "event-over" => $event->isover, 
-        "event-nt" => $event->isnontech, 
-        "event-fl" => $event->isfunlearn    
-    ])->filter()->keys()->implode(' ');
-@endphp
 @section('content')
 <div class="banner {{ $classes }}">
     <div class="banner-content" style="min-height: 250px;min-height: calc(256px + 3em);">

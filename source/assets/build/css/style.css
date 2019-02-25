@@ -852,33 +852,23 @@ a.button:hover, a.button:active, a.button:focus {
 .event-tile {
   margin: 1rem;
   position: relative;
-  min-width: 340px;
-  max-width: 360px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  min-width: 280px;
+  max-width: 320px;
+  min-height: 320px;
+  background-color: #eeb81d;
 }
-.event-tile .event-bg {
+.event-tile .event-bg-link {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+.event-tile .event-bg-link img {
   width: 100%;
-}
-.event-tile .event-desc {
-  letter-spacing: 0.05em;
-  line-height: 1.5;
-}
-.event-tile .event-overlay {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 1rem;
-  flex-direction: column;
-  justify-content: flex-end;
-  color: #fff;
-}
-.event-tile .event-overlay .event-title {
-  font-size: 1.5rem;
 }
 
 .event-quote {
