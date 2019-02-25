@@ -84,16 +84,22 @@ These rules apply to everyone attending. They can be changed without notice.
 
 <br><br><br>   
 
-**Registration fees:RS 50 per person per game**
-**Registration time: 9:30 am to 11 am**
-<br>
-For further information contact:
-- FIFA :- Arshad(+919868742518)
-          Hemant(+918607080798)
-- PUBG :- Tushar (+918800833074)
-          Jayant (+918950253252)
-- CS   :- Ashish(+919650900343)
-          Tanuj(+919560268926)
-- NFS  :- Mayank (+919458627251)
-          Rohit(+919599112681)
+##### Registration Fees: 50&#x20B9; per person,  for every game
+##### Registration Time: 9:30 am to 11 am
 
+<div markdown="1" style="margin-top:1.5rem;">
+For further information contact:
+
+- **FIFA**: <br> 
+    Arshad(+919868742518) <br>
+    Hemant(+918607080798) <br>
+- **PUBG**: <br> 
+    Tushar (+918800833074) <br>
+    Jayant (+918950253252) <br>
+- **CS**: <br> 
+    Ashish(+919650900343) <br>
+    Tanuj(+919560268926) <br>
+- **NFS**: <br> 
+    Mayank (+919458627251) <br>
+    Rohit(+919599112681) <br>
+</div>
