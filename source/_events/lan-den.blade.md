@@ -27,19 +27,6 @@ These rules apply to everyone attending. They can be changed without notice.
 
 ### DAY 1
 
-**Mini Militia**
-- Mini Militia is a multi player army shooting game. One can combat with up to 6 players via online gaming and up to 12 players with the local Wi-Fi hotspot. You can shoot with various guns during the battle. If you are a shooting game addict then Mini militia is the best solution for you
-- Rules:
-    1. It will be a team event.Each team will comprise of only 3 members and team will not change throughout the event.In absence of any participant team will have to play with remaining members only
-    2. All participants must bring their own fully charged mobile phones
-    Hacked APK's are not allowed. Any participant found with such APK's will be immediately disqualified
-    3.Participants will install the game provided by us
-    Matches will take place on one of the following four locations: Outpost, High Tower, Catacombs and No Escape
-    4. A trial of three minutes will be provided to check the functioning of controls
-    Use of shield and committing suicide and storing items is NOT allowed
-    
-<br>
-
 **FIFA 17**
 - FIFA, also known as FIFA Football or FIFA Soccer, is a series of association football video games or football simulator, released annually by Electronic Arts under the EA Sports label.
 - Rules:
@@ -52,6 +39,9 @@ These rules apply to everyone attending. They can be changed without notice.
     7. Any discrepancy committed results player debarred for the competition
     8. Coordinators decision will be final, no argument will be entertained
     9. Rules can be changed, modified on the day of competition
+
+    <br>
+**PUBG MOBILE**
 
 <br><br><br>
 
@@ -94,8 +84,22 @@ These rules apply to everyone attending. They can be changed without notice.
 
 <br><br><br>   
 
-**Registration time: 9:30 am to 11 am**
+##### Registration Fees: 50&#x20B9; per person,  for every game
+##### Registration Time: 9:30 am to 11 am
 
+<div markdown="1" style="margin-top:1.5rem;">
 For further information contact:
-- Mohit Chauhan - 8527234624
-- Rishabh Joshi - 9560201250
+
+- **FIFA**: <br> 
+    Arshad(+919868742518) <br>
+    Hemant(+918607080798) <br>
+- **PUBG**: <br> 
+    Tushar (+918800833074) <br>
+    Jayant (+918950253252) <br>
+- **CS**: <br> 
+    Ashish(+919650900343) <br>
+    Tanuj(+919560268926) <br>
+- **NFS**: <br> 
+    Mayank (+919458627251) <br>
+    Rohit(+919599112681) <br>
+</div>

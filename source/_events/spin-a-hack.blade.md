@@ -5,7 +5,9 @@ title: Spin-a-Hack
 quote:
     text: Come,Code,Develop!!
 description:  |-
-    Create history with us in the field of Web Development/Android/IOS App Development by showcasing your innovations in this mini-hackathon.
+    Logic will get you from A to B. Imagination will take you everywhere. So, get ready to bring your rubies on the rail.
+    <br>Dig your creativity to bring out the developer’s gems within you. Boost your creativity to get Sankalan schatz.
+
 islive: false
 isover: false
 isnontech: false
@@ -13,11 +15,18 @@ image: https://3.bp.blogspot.com/-LWzpbIA2Y3c/WqELzqifcrI/AAAAAAAAATU/881Q-fEhco
 teamSize: 2
 lang: js
 rounds:
-    -  The teams would be asked to develop a website/web-app or an android/ios application. They have to present their project to judges for final evaluation.
+    -  Multiple-choice questions based on internet, Web Servers, Web Development, HTML, CSS &JavaScript and PHP.
+    -  The qualifying teams would be asked to develop a website/template as asked and present their project to judges for final evaluation.
+
 ---
-- Important: The teams need to bring their own system with the software installed. Internet will be provided.
-- You will be given 8 hours from 12pm - 8pm to develop your app.
-- Theme will be provided on spot.
-- Registration will be done separately on day 1 of Sankalan. The online ticket is still required.
-- Operating System: Any Suitable System.
+- Team Size: 2
+- Operating System: Any Suitable System
 - Platform: As per requirement
+- **Instruction/Rules:**
+    - Code will be judged on the basis of their completeness and stability.
+    - Decision made by judges will be final.
+    - Theme will be provided on spot.
+    - You will be given 3 hours to develop your web app.
+    - Important: The teams need to bring their own system with the software installed. If any team is not able to bring their own laptops then a system will be provided to them but they need to install their required softwares on their own. Internet will be provided to all the teams.
+
+
