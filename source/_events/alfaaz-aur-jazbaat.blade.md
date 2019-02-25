@@ -9,7 +9,7 @@ description: |-
     तो चलो ज़रा आपको सुनते हैं,\n
     अब अल्फ़ाजो में तुम्हारे जज़्बात परखते हैं |\n 
 
-image: assets/images/events/alfaz-aur-jazbat.png
+image: assets/images/events/alfaaz-aur-jazbaat.png
 islive: false
 isnontech: true
 isover: false
@@ -26,7 +26,7 @@ rounds:
 ---
 It is said that everything and anything can be achieved with words, so grab this opportunity to express your emotions with the power of your words. Express your jazbaat with your alfaaz.
 <br>
-Sankalan'19 in association with [THE SOCIAL HOUSE](https://www.youtube.com/channel/UCeMecwNIJrd_kyw_6fKgmqw) presents **Alfaz aur Jazbat** - A Poetry and Storytelling competition on **9th March, 2019** at **12 p.m.** at Department of Computer Science, University of Delhi.
+Sankalan'19 in association with [THE SOCIAL HOUSE](https://www.youtube.com/channel/UCeMecwNIJrd_kyw_6fKgmqw) presents **Alfaaz aur Jazbaat** - A Poetry and Storytelling competition on **9th March, 2019** at **12 p.m.** at Department of Computer Science, University of Delhi.
 <br>
 <br>
 <br>
