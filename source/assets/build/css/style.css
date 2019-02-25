@@ -858,6 +858,10 @@ a.button:hover, a.button:active, a.button:focus {
 .event-tile .event-bg {
   width: 100%;
 }
+.event-tile .event-desc {
+  letter-spacing: 0.05em;
+  line-height: 1.5;
+}
 .event-tile .event-overlay {
   position: absolute;
   left: 0;
@@ -870,8 +874,7 @@ a.button:hover, a.button:active, a.button:focus {
   display: flex;
   padding: 1rem;
   flex-direction: column;
-  justify-content: space-around;
-  background: rgba(0, 0, 0, 0.7);
+  justify-content: flex-end;
   color: #fff;
 }
 .event-tile .event-overlay .event-title {
