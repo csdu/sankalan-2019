@@ -2,13 +2,25 @@
 extends: _layouts.event
 section: event-details
 title: Code Auction
+quote:
+    text: Auction speaks louder than words 
 description: |-
-    Think you got the knack for bidding? Trust your instincts and play with our money to earn money for you!
-    Sankalan is back and this time with a brand new challenge, Code Auction.
+    Rob the maximum score 
+    <br>Play smart and  think before you bid more. 
+    <br>Trust your instincts.
+    <br>Be the new AMBANI . 
+    <br>Leave your opponent  wondering, Where is all the money? !?
+
 teamSize: 4
 rounds:
-    - A set of 40 IT based questions will be given to each team of 4 and a time of 20 minutes to solve them.
-    - '6 teams with maximum score in round #1 will be chosen for the second round - Auction! See details below.'
+    - This is an elimination round.
+     <br>This round consist of 30 mcqs.
+     <br>Duration : 30 minutes.
+    - Shortlisted teams will be assigned money aacording to their scores.
+        <br>At the time of bidding only one member will be allowed to sit bid 
+        <br>After completion, the second member of the team  has to answer the questions purchased by his/her team mate.
+        <br>Score will be given for each correct answer.
+
 image: https://2.bp.blogspot.com/-eaPDqgn5EzE/Womaudz362I/AAAAAAAAAI4/rUMNWiBG48gvtvgF6aNeTsD5b0iyCUcvgCLcBGAs/s1600/code-auction.png
 islive: false
 isnontech: false

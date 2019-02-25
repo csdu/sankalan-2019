@@ -3,11 +3,9 @@ extends: _layouts.event
 section: null
 title: Brain Spark
 quote:
-    text: You can make anything happen if you put your mind to it.
-    by: Lori Greiner
+    text: BRAINSPARK – Does your gray matter?
 description:  |-
-    We'll judge your logical and quantitative abilities.
-    And then we give you freaking cool puzzles to solve!
+    Let’s see if you have one tenth the knowledge of what “Dashanan Ravana” had, because that is exactly what is needed here. Let your brain do the workout now.  We don’t want you to dig your scientific, commercial, literary or general knowledge. All we want you to do is learn how Chacha Chaudhary operated! Because,“<i>Chacha Chaudhary ka dimaag computer se bhi tez chalta hai</i>”! Sankalan’19 invites the lightening of your brains to DUCS.
 islive: false
 isover: false
 isnontech: false
@@ -15,6 +13,7 @@ image: https://1.bp.blogspot.com/-5feqS1uuawg/WoVRepo4KDI/AAAAAAAAAHQ/zelvdL_KDQ
 teamSize: 2
 lang: py
 rounds:
-- Multiple Choice Questions testing the logical and quantitative ability of participants.
-- The qualifying teams would be given a set of puzzles to solve.
+- Let light fall on your brain as you face 30 MCQs checking your quantitative aptitude etc. in the first round.
+- For the next and final round, we allow you to brainstorm like kids having a grown up’s brain to solve some very “basic” puzzles and riddles!
+
 ---

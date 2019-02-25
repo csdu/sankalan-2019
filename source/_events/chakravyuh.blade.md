@@ -6,8 +6,14 @@ quote:
     text: The secret impresses no one. The trick you use it for is everything
     by: The Prestige
 description: |-
-     This is an online treasure hunt event. At each level, a question will be posed and hints may be given.
-     A participant must answer correctly to advance to the next level.
+    Ready to step in?
+    <br>Ready to dive in? 
+    <br>The much awaited, most engaging, and surely most addictive event of Sankalan is close..
+    <br><b>चक्रव्यूह</b>
+    <br>The game which tests your knowledge about literally everything, your skills of finding out the path to the right answer, your power of making connections and of course your perseverance. 
+    <br>From Sherlock Holmes to ब्योमकेश बख्शी
+    <br>Live like a detective, find the truth.
+
 islive: false
 isover: true
 isnontech: true

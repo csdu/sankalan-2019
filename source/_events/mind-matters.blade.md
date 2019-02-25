@@ -1,9 +1,18 @@
 ---
 extends: _layouts.event
-section: null
+section: event-details
 title: Mind Matters
+quote:
+    text: Unlock your knowledge at the speed of light
 description:  |-
-    Think you’re Mr. Know-it-All of the silicon world? Come and participate in this event, test your knowledge, let the world know that and walk away as a champion.
+    Now the time has come, 
+    <br>To showcase all that you have. 
+    <br>Calm your senses, 
+    <br>And bring out the best in you.
+    <br>It’s time to use your intelligence, 
+    <br>And be as rapid as you can, 
+    <br>To be the man of the match!
+
 islive: false
 isover: false
 isnontech: false
@@ -11,6 +20,7 @@ image: https://4.bp.blogspot.com/-IFBpmSjDgog/WoVRjdqw57I/AAAAAAAAAHo/zhgk8OA3Ci
 teamSize: 2
 lang: py
 rounds:
-    - Multiple-choice questions based on Computer Science and IT world.
-    - The qualifying teams would compete in the Event's Main Quiz.
+    -  Preliminary round which consists of Multiple-choice questions based on Computer Science and IT world.
+    -  Final round in which the qualifying teams would compete in the Event's Main Quiz.
 ---
+- Team size: Lone wolf or Dual Warriors

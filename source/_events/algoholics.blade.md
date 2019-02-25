@@ -3,11 +3,9 @@ extends: _layouts.event
 section: null
 title: Algoholics
 quote:
-    text: An algorithm must be seen to be believed.
-    by: Donald Knuth
+    text: Be high on problems
 description: |-
-    Multiple-choice based questions testing the participant’s algorithmic competency.
-    ...then solve set of problems overnight to develop algorithms.
+    Test your acumen, intelligence and problem solving capabilities with. Enough with the lemons, let solutions and prizes cure your hangover this time.
 islive: false
 isover: false
 isnontech: false
@@ -16,8 +14,8 @@ teamSize: 2
 lang: cpp
 tag: Algorithms
 rounds:
-    - Multiple-choice based questions testing the participant’s algorithmic competency.
-    - |-
-        The qualifying teams would be given a set of problems to develop an algorithm/pseudo-code on.
-        The problems are to be solved overnight at their own places and next day they have to present their solution to judges for evaluation.
+    - This is an eliminating round.
+      <br> Consists of 30 mcqs to be solved in 30 minutes.
+    - Shortlisted teams will be provided with a real world problem that they have to solve overnight. 
+      <br>No real coding is required just an approach and time complexity of all the solutions.
 ---

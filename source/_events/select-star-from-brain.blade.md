@@ -3,10 +3,9 @@ extends: _layouts.event
 section: event-details
 title: SELECT * FROM BRAIN
 quote:
-    text: Select, Ignite, Fire...Prove that you have the answer to all queries.!!!
+    text: It's time to flex your DBMS muscles with some SQL exercises!!!
 description:  |-
-    Multiple-choice questions based on standard SQL, XQuery and DBMS concepts.
-    ...then solve queries using SQL.
+    Writing a right query, which is fast and readable at the same time, is an art only few can master!!<br> This is THE opportunity to show off your db skills and collect prizes.
 islive: false
 isover: false
 isnontech: false
@@ -14,8 +13,11 @@ image: https://4.bp.blogspot.com/-ou5iUtuASSw/WoVRkPqTJsI/AAAAAAAAAHs/VYZdvCZvBY
 teamSize: 2
 lang: sql
 rounds:
-- Multiple-choice questions based on standard SQL, PL/SQL, XQuery and DBMS concepts.
-- The teams qualifying would be given a set of queries, that would have to be solved using SQL.
+- 20 multiple-choice questions and 1 crossword puzzle from standard SQL, DBMS and RDBMS concepts.
+ <br><br> Duration: 1 hour
+
+
+- Qualified teams will be provided with a database and a set of queries that would have to be executed on     MySql Workbench.
+  <br><br> Duration: 2 hours
 ---
-- Operating System: Windows 10
-- Platform: MySQL Workbench
+- Maximum 2 members in each team.
