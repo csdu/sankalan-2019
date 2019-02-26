@@ -819,16 +819,14 @@ a.button:hover, a.button:active, a.button:focus {
   box-shadow: -8px -7px 0px 0px #c9990f;
 }
 
-.event-tag {
+.event-tag, .event-ended-tag {
   position: relative;
 }
 
-.event-tag::before {
-  content: attr(data-tag);
+.event-tag::before, .event-ended-tag::after {
+  top: 0;
   display: block;
   position: absolute;
-  top: 0;
-  left: 0;
   color: #fff;
   padding: 4px;
   font-size: 14px;
@@ -836,8 +834,19 @@ a.button:hover, a.button:active, a.button:focus {
   text-transform: uppercase;
   text-shadow: none;
   letter-spacing: 1px;
-  background: #086396;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+}
+
+.event-ended-tag::after {
+  content: "ended";
+  right: 0;
+  background: #cc0000;
+}
+
+.event-tag::before {
+  content: attr(data-tag);
+  left: 0;
+  background: #086396;
 }
 
 .event-tiles {

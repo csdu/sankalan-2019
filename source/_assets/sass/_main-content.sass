@@ -133,21 +133,29 @@ a.button
     top: 2px
     box-shadow: (-8px) -7px 0px 0px darken($color-tl, 10)
 
-.event-tag
+.event-tag, .event-ended-tag
   position: relative
+
+.event-tag::before, .event-ended-tag::after
+    top: 0
+    display: block
+    position: absolute
+    color: #fff
+    padding: 4px
+    font-size: 14px
+    font-family: $font-sans
+    text-transform: uppercase
+    text-shadow: none
+    letter-spacing: 1px
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3)
+
+
+.event-ended-tag::after
+  content: 'ended'
+  right: 0
+  background: darken(#f00, 10%)
 
 .event-tag::before
   content: attr(data-tag)
-  display: block
-  position: absolute
-  top: 0
   left: 0
-  color: #fff
-  padding: 4px
-  font-size: 14px
-  font-family: $font-sans
-  text-transform: uppercase
-  text-shadow: none
-  letter-spacing: 1px
   background: darken($color-bl, 10%)
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3)

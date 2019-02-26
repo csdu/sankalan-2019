@@ -17,7 +17,7 @@ description:  |-
 
 tag: programming
 islive: false
-isover: false
+isover: true
 isnontech: false
 image: /assets/images/events/coding-cup.png
 teamSize: 1

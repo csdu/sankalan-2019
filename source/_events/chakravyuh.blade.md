@@ -15,7 +15,7 @@ description: |-
     <br>Live like a detective, find the truth.
 
 islive: false
-isover: true
+isover: false
 isnontech: true
 tag: Aptitude
 reg: 0
