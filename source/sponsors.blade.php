@@ -6,7 +6,7 @@
 </style>
 @endpush
 @php
-    $mobile = '9990395650';
+    $mobile = '9650361897';
     $email = 'sponsor@ducs.in';
 @endphp
 @section('content')
