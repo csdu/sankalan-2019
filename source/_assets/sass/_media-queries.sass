@@ -41,16 +41,13 @@
     padding: 1em
 
 @media screen and (max-width: 640px + 200px + 4 * 16px)
-  .banner-content
-    .image
-      position: relative
-      text-align: center
-      width: 100%
-      max-width: 100%
-      padding: 1em
-
-    p
-      max-width: 100%
+  .banner 
+    flex-direction: column
+  .banner-image
+    max-width: 100%
+    width: 100%
+    text-align: center
+    
 
   // from _team
   .credits .credit
@@ -97,6 +94,8 @@
       font-size: 12px
 
   // from _main-content
+  .section
+    padding: 3vw 6vw
   .content
     h2
       font-size: 1.5em

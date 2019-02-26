@@ -613,6 +613,19 @@ li.nav-item a:hover:after {
   max-width: 1530px;
   text-shadow: 1px 1px #000;
   color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+}
+
+.banner-image {
+  padding: 1.5em;
+}
+.banner-image img {
+  max-width: 320px;
+  min-width: 280px;
 }
 
 .banner-content {
@@ -623,20 +636,12 @@ li.nav-item a:hover:after {
   transition: transform 0.8s ease;
   transition: transform 0.8s ease, -webkit-transform 0.8s ease;
   position: relative;
+  flex-grow: 1;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   flex-direction: column;
-}
-.banner-content .image {
-  position: absolute;
-  max-width: 240px;
-  right: 1em;
-  top: 0;
-}
-.banner-content .image img {
-  max-width: 100%;
 }
 .banner-content .banner-text {
   display: -webkit-box;
@@ -646,12 +651,10 @@ li.nav-item a:hover:after {
   flex-direction: column;
   justify-content: center;
 }
-.banner-content p {
+.banner-content .banner-text p {
   font-size: 22px;
-  font-size: -webkit-calc(12px + 1vw);
-  font-size: calc(12px + 1vw);
-  max-width: -webkit-calc(100% - 256px - 2em);
-  max-width: calc(100% - 256px - 2em);
+  font-size: -webkit-calc(16px + .5vw);
+  font-size: calc(16px + .5vw);
 }
 
 .banner-subtitle {
@@ -687,7 +690,7 @@ li.nav-item a:hover:after {
 }
 
 .section {
-  padding: 3vw;
+  padding: 2rem 6rem;
 }
 
 .bg-white {
@@ -1157,15 +1160,14 @@ footer ul li img {
   }
 }
 @media screen and (max-width: 904px) {
-  .banner-content .image {
-    position: relative;
-    text-align: center;
-    width: 100%;
-    max-width: 100%;
-    padding: 1em;
+  .banner {
+    flex-direction: column;
   }
-  .banner-content p {
+
+  .banner-image {
     max-width: 100%;
+    width: 100%;
+    text-align: center;
   }
 
   .credits .credit {
@@ -1212,6 +1214,10 @@ footer ul li img {
   }
   footer p {
     font-size: 12px;
+  }
+
+  .section {
+    padding: 3vw 6vw;
   }
 
   .content h2 {

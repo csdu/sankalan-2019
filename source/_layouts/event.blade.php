@@ -4,9 +4,6 @@
 <div class="banner {{ $classes }}">
     <div class="banner-content" style="min-height: 250px;min-height: calc(256px + 3em);">
         <h2 class="banner-title event-title">{{ $page->title }}</h2>
-        <div class="image">
-            <img src="{{ str_replace('/s1600/', '/w256/', $page->image) }}" alt="{{ $page->title }}"/>
-        </div>
         <div class="banner-text">
             @if($page->quote)
             <blockquote class="event-quote">
@@ -20,6 +17,9 @@
                 {!! str_replace('\n', '</p><p>', $page->description) !!}
             </p> 
         </div>
+    </div>
+    <div class="banner-image">
+        <img src="{{ $page->image }}" alt="{{ $page->title }}" />
     </div>
 </div>
 <div class="content">
