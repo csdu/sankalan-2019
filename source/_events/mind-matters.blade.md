@@ -16,7 +16,7 @@ description:  |-
 islive: false
 isover: false
 isnontech: false
-image: https://4.bp.blogspot.com/-IFBpmSjDgog/WoVRjdqw57I/AAAAAAAAAHo/zhgk8OA3CiopeSZKq-jqW7M1ZYev5VjxACLcBGAs/s1600/mind-matters.png
+image: /assets/images/events/mind-matters.png
 teamSize: 2
 lang: py
 rounds:

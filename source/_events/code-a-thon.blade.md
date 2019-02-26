@@ -14,7 +14,7 @@ description:  |-
 islive: false
 isover: false
 isnontech: false
-image: https://4.bp.blogspot.com/-feSXeUWRQDo/WoVRg2_DLxI/AAAAAAAAAHc/kCOcZBKHNzYb_47XjgO5tONEr2IZ-O3IwCLcBGAs/s1600/codeathon.png
+image: /assets/images/events/codeathon.png
 teamSize: 2
 lang: cpp
 rounds:

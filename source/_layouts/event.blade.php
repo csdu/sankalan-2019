@@ -10,7 +10,7 @@
         <div class="banner-text">
             @if($page->quote)
             <blockquote class="event-quote">
-                <p>&ldquo;{!! $page->quote['text'] !!}&rdquo;</p>
+                <p>&ldquo;{!! str_replace("\n", "<br>", $page->quote['text']) !!}&rdquo;</p>
                 @if(array_key_exists('by', $page->quote))
                 <span>&mdash; {{ $page->quote['by'] }}</span>
                 @endif
@@ -31,9 +31,11 @@
             </div>
         @endif
         @if($page->rounds)
+            @if(in_array($page->lang, ['cpp', 'js', 'py', 'sql']))
             <div class="event-info">
                 @include('_partials.events-info.' . ($page->lang ?? 'py'), ['teamSize' => $page->teamSize])
             </div>
+            @endif
             @foreach($page->rounds as $index => $round)
             <div class="event-round">
                 <h3>Round #{{ $index + 1 }}</h3>

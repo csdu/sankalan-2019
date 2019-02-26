@@ -9,12 +9,13 @@ description:  |-
 islive: false
 isover: false
 isnontech: false
-image: https://4.bp.blogspot.com/-ou5iUtuASSw/WoVRkPqTJsI/AAAAAAAAAHs/VYZdvCZvBYsn2ehBvceu1OxaxjM2xsgYgCLcBGAs/s1600/selectfrombrain.png
+image: /assets/images/events/select-star-from-brain.png
 teamSize: 2
 lang: sql
 rounds:
-- 20 multiple-choice questions and 1 crossword puzzle from standard SQL, DBMS and RDBMS concepts.
- <br><br> Duration: 1 hour
+- |-
+    20 multiple-choice questions and 1 crossword puzzle from standard SQL, DBMS and RDBMS concepts.
+    <br><br> Duration: 1 hour
 
 
 - Qualified teams will be provided with a database and a set of queries that would have to be executed on     MySql Workbench.

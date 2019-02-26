@@ -11,7 +11,7 @@ description:  |-
 islive: false
 isover: false
 isnontech: false
-image: https://3.bp.blogspot.com/-LWzpbIA2Y3c/WqELzqifcrI/AAAAAAAAATU/881Q-fEhcokD7LhO69Ov-q_2fzCZ5tFKgCLcBGAs/s1600/spin-a-hack.jpg
+image: /assets/images/events/spin-a-hack.png
 teamSize: 2
 lang: js
 rounds:

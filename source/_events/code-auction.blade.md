@@ -21,7 +21,7 @@ rounds:
         <br>After completion, the second member of the team  has to answer the questions purchased by his/her team mate.
         <br>Score will be given for each correct answer.
 
-image: https://2.bp.blogspot.com/-eaPDqgn5EzE/Womaudz362I/AAAAAAAAAI4/rUMNWiBG48gvtvgF6aNeTsD5b0iyCUcvgCLcBGAs/s1600/code-auction.png
+image: /assets/images/events/code-auction.png
 islive: false
 isnontech: false
 isover: false

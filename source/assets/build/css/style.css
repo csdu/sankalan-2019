@@ -631,11 +631,12 @@ li.nav-item a:hover:after {
 }
 .banner-content .image {
   position: absolute;
+  max-width: 240px;
   right: 1em;
   top: 0;
 }
 .banner-content .image img {
-  min-width: 200px;
+  max-width: 100%;
 }
 .banner-content .banner-text {
   display: -webkit-box;
@@ -1160,6 +1161,8 @@ footer ul li img {
   .banner-content .image {
     position: relative;
     text-align: center;
+    width: 100%;
+    max-width: 100%;
     padding: 1em;
   }
   .banner-content p {

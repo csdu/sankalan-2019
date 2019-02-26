@@ -11,7 +11,7 @@ lang: cpp
 islive: false
 isover: false
 isnontech: false
-image: https://1.bp.blogspot.com/-EqzbwhrlQFk/WonkMX73ODI/AAAAAAAAAJs/ZIhUNsuy-HgUcF1sLxZ9Ur7R-ZuiiBSqACLcBGAs/s1600/cypher-o-more.png
+image: /assets/images/events/cypher-o-more.png
 rounds:
     - The prelims test the cryptic knowledge of the geek in you as you answer a set of MCQs related to cryptography, cryptanalysis and cryptology.
     - For the finals, we expect you to turn into Karamchand and find the message we encode in a text.

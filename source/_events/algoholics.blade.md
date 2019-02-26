@@ -9,7 +9,7 @@ description: |-
 islive: false
 isover: false
 isnontech: false
-image: https://3.bp.blogspot.com/-bY19CKknUoo/WoVRerlmAhI/AAAAAAAAAHU/lTovyNPlH58NRjvGysNRTuLhwLL7mebYACLcBGAs/s1600/algoholics.png
+image: /assets/images/events/algoholics.png
 teamSize: 2
 lang: cpp
 tag: Algorithms

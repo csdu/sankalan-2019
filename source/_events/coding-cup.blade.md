@@ -18,7 +18,7 @@ description:  |-
 islive: false
 isover: false
 isnontech: false
-image: https://2.bp.blogspot.com/-AAzgDBMmMpo/Wq5fLEJ0kaI/AAAAAAAAAUY/HKkexnGE8JEosnF3aFJ2Djqt4Y8Xo_irwCLcBGAs/s1600/coding-cup.png
+image: /assets/images/events/coding-cup.png
 teamSize: 1
 lang: cpp
 rounds:

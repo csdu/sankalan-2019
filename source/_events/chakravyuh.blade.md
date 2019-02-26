@@ -18,7 +18,7 @@ islive: false
 isover: true
 isnontech: true
 reg: 0
-image: https://2.bp.blogspot.com/-dpr_vYF9G8s/WoVRfZdNXsI/AAAAAAAAAHY/O3SA3fCNxL8ZVuboCASMJyIW-oqQjMJvQCLcBGAs/s1600/chakravyuh.png
+image: /assets/images/events/chakravyuh.png
 story: |-
     Have you ever experienced a virtual adventure? Do you really have something to go for a quest of your life to bring the clues out the world’s most complicated system –world wide web?
     If you and your browser can dive into the virtual world, then pull up your surfing skills and be ready to engage in competitive one-upmanship to create the ultimate artificial illusion.

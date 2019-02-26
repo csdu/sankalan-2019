@@ -18,7 +18,7 @@ teamSize:  2
 islive: false
 isover: false
 isnontech: true
-image: https://3.bp.blogspot.com/-_r8WVoTZH9I/WoVRhTomeyI/AAAAAAAAAHg/4bGHHHRDxPALR9hDXpwDfaLbMGrlEif1ACLcBGAs/s1600/jam.png
+image: /assets/images/events/jam.png
 ---
 - **Instructions :**
     1. You can participate “Solo” or in a “Team of 2”.

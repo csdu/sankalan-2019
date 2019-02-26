@@ -1,7 +1,7 @@
 ---
 extends: _layouts.event
 section: event-details
-title: LAN Den
+title: Ground Zero
 description: |-
     Tired of owning noobs? Have you got what it takes to cross the finish-line? Can you take A-side blindfolded with one hand tied behind your back?
     Then come, take the adrenaline shot with us. Prepare yourself for one of the most awaited LAN gaming event. There's no place for Weaklings! You might just get burnt. So Practice, and get perfect! Or else,Prepare to get HUMILIATED!
@@ -10,7 +10,7 @@ isnontech: true
 isover: false
 quote:
     text: When you encounter your enemies, it means you are heading in the right direction.
-image: https://4.bp.blogspot.com/-AayzHWNxDxM/Wr47GqHbmqI/AAAAAAAAAWw/bzS-xBCwGV0QjPcHaximFGov9kboFDmeACLcBGAs/s1600/lan-den.jpg
+image: /assets/images/events/lan-den.png
 ---
 <br><br>
 ### General Rules:

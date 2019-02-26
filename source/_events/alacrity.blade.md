@@ -5,7 +5,7 @@ title: Alacrity
 description: |-
     A Photography Competition is a platform to showcase your talent. While clicking away just for the sake of photography is a lot of fun, sometimes a competition can help you raise the bar as a photographer.
 story: A Photography Competition is a platform to showcase your talent. While clicking away just for the sake of photography is a lot of fun, sometimes a competition can help you raise the bar as a photographer. Especially when you know your image will be seen by a discerning group of judges, and then possibly displayed alongside those of other winners. So, Sankalan’18 presents to you Alacrity’18, the Photography Competition of DUCS.
-image: https://1.bp.blogspot.com/-bScb6sAl5lQ/WonkQG7_C-I/AAAAAAAAAJw/THWQxRrI9oAjkpKBPcOPXyNDErf7M1r0QCLcBGAs/s1600/alacrity.png
+image: /assets/images/events/alacrity.png
 islive: false
 isnontech: true
 isover: false

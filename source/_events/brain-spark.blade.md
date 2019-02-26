@@ -9,7 +9,7 @@ description:  |-
 islive: false
 isover: false
 isnontech: false
-image: https://1.bp.blogspot.com/-5feqS1uuawg/WoVRepo4KDI/AAAAAAAAAHQ/zelvdL_KDQojTVVJEvx9K0fLzB-IKD9PQCLcBGAs/s1600/brainspark.png
+image: /assets/images/events/brainspark.png
 teamSize: 2
 lang: py
 rounds:
