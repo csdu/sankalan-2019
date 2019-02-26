@@ -1,7 +1,7 @@
 @extends('_layouts.master')
 @section('title', "$page->title | ")
 @section('content')
-<div class="banner {{ $classes }}">
+<div class="banner">
     <div class="banner-content" style="min-height: 250px;min-height: calc(256px + 3em);">
         <h2 class="banner-title event-title">{{ $page->title }}</h2>
         <div class="banner-text">

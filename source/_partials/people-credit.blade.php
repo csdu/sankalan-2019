@@ -3,30 +3,21 @@ $person = $page->getPersonByKey($key);
 @endphp
 
 <div class="credit">
-    <div>
-        @if($type)
-        <p>
-            <strong>{{ $type }}:</strong>
-        </p>
-        @endif
-        <p>{{ $person->name }}</p> 
+    <div class="avatar-container">
+        <img src="{{ $person->image ?? "{$page->baseUrl}/assets/images/one.svg" }}" alt="{{ $person->name }}" class="avatar">
     </div>
-    <div class="avatar">
-        @php
-            $image = $person->image ? str_replace("/s1600/", "/w56-h56-p/", $person->image) : "{$page->baseUrl}/assets/images/one.svg";
-        @endphp
-
-        @if($person->url)
-            <a href="{{ $person->url }}" 
-                target="_blank" rel="noopener" 
-                title="{{$person->name}} @ {{ $person->url }}" 
-                data-id="team-{{ $key }}">
-                <img src="{{ $image }}" alt="{{ $person->name }}" class="avatar">
-            </a>
-            <img class="link" 
-            src="{{ $page->baseUrl }}/assets/images/{{ str_contains($person->url, 'github.com') ? 'github-icon.svg' : 'fb-icon-white.svg' }}">
-        @else
-            <img src="{{ $image }}" alt="{{ $person->image }}" class="avatar">
-        @endif
+    <h4 class="credit-name"> {{ $person->name }} </h4>
+    @if($designation)
+        <h5 class="credit-type">{{ $designation }}</h5>
+    @endif
+    <div class="social-links">
+        @foreach($person->urls as $type => $url)
+        <a href="{{ $url }}" target="_blank" rel="noopener" 
+            title="{{$person->name}} @ {{ $url }}" 
+            data-id="team-{{ $key }}"
+            class="link {{ $type }}">
+            @include('_partials.svg.'.$type, ['classes' => ''])    
+        </a>
+        @endforeach
     </div>
 </div>

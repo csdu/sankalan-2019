@@ -1,43 +1,45 @@
 .credits
-  margin-bottom: 16px
+  margin: 2rem -1rem
   display: flex
   flex-wrap: wrap
-  justify-content: space-between
-  margin: 0 auto 16px
 
   .credit
-    width: 48%
+    margin: 1rem
     display: flex
     padding: 5px
-    justify-content: space-between
+    flex-direction: column
     align-items: center
-
-    &:hover
-      background-color: $color-tl
-      background-image: url($img-pattern)
-      background-size: 25px 25px
-      color: #000
-
-  img
-    height: 16px
-    width: 16px
-
-  .avatar
+    .avatar-container
+      position: relative
+      margin-bottom: 1rem
+      width: 180px
+      height: 180px
+      .social-icon
+        position: absolute
+        right: 10px
+        bottom: 10px
+        width: 25px
+        height: 25px
+    .avatar
+      width: 100%
+      border-radius: 9999px
+  .credit-type
+    text-transform: uppercase
+    font-weight: 500
+    
+  .social-links
     display: flex
-    position: relative
-
+    flex-wrap: wrap
+    margin: 0 -.5rem
+    justify-content: center
     .link
-      position: absolute
-      bottom: -5px
-      right: -5px
-      background: #000
-
-  img.avatar
-    width: 56px
-    height: 56px
-
-  a
-    margin-left: 4px
-    font-weight: bold
-    font-family: $font-bold
-    color: $color-tr
+      margin: .5rem
+      display: inline-block
+      width: 1.2rem
+      color: #fff
+      .facebook:hover
+        color: #49659f
+      .twitter:hover
+        color: #3290f7
+      svg
+        width: 100%

@@ -1064,57 +1064,67 @@ footer ul li img {
 }
 
 .credits {
-  margin-bottom: 16px;
+  margin: 2rem -1rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 0 auto 16px;
 }
 .credits .credit {
-  width: 48%;
+  margin: 1rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   padding: 5px;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
 }
-.credits .credit:hover {
-  background-color: #eeb81d;
-  background-image: url("/assets/images/pattern.svg");
-  background-size: 25px 25px;
-  color: #000;
+.credits .credit .avatar-container {
+  position: relative;
+  margin-bottom: 1rem;
+  width: 180px;
+  height: 180px;
 }
-.credits img {
-  height: 16px;
-  width: 16px;
+.credits .credit .avatar-container .social-icon {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 25px;
+  height: 25px;
 }
-.credits .avatar {
+.credits .credit .avatar {
+  width: 100%;
+  border-radius: 9999px;
+}
+.credits .credit-type {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.credits .social-links {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
+  flex-wrap: wrap;
+  margin: 0 -0.5rem;
+  justify-content: center;
 }
-.credits .avatar .link {
-  position: absolute;
-  bottom: -5px;
-  right: -5px;
-  background: #000;
+.credits .social-links .link {
+  margin: 0.5rem;
+  display: inline-block;
+  width: 1.2rem;
+  color: #fff;
 }
-.credits img.avatar {
-  width: 56px;
-  height: 56px;
+.credits .social-links .link .facebook:hover {
+  color: #49659f;
 }
-.credits a {
-  margin-left: 4px;
-  font-weight: bold;
-  font-family: "Amaranth", "Arial Black", sans-serif;
-  color: #d4499a;
+.credits .social-links .link .twitter:hover {
+  color: #3290f7;
+}
+.credits .social-links .link svg {
+  width: 100%;
 }
 
 @media screen and (max-width: 1000px) {
