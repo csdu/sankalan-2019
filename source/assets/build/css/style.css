@@ -821,21 +821,20 @@ a.button:hover, a.button:active, a.button:focus {
 }
 
 .event-tag::before {
+  content: attr(data-tag);
   display: block;
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
   color: #fff;
   padding: 4px;
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
   text-shadow: none;
   letter-spacing: 1px;
-}
-
-.event-tag::before {
-  content: attr(data-tag);
-  background: #0b83c6;
+  background: #086396;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
 }
 
 .event-tiles {

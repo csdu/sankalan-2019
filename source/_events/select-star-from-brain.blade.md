@@ -9,6 +9,7 @@ description:  |-
 islive: false
 isover: false
 isnontech: false
+tag: databases
 image: /assets/images/events/select-star-from-brain.png
 teamSize: 2
 lang: sql

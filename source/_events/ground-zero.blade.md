@@ -2,6 +2,7 @@
 extends: _layouts.event
 section: event-details
 title: Ground Zero
+tag: Gaming
 description: |-
     Tired of owning noobs? Have you got what it takes to cross the finish-line? Can you take A-side blindfolded with one hand tied behind your back?
     Then come, take the adrenaline shot with us. Prepare yourself for one of the most awaited LAN gaming event. There's no place for Weaklings! You might just get burnt. So Practice, and get perfect! Or else,Prepare to get HUMILIATED!

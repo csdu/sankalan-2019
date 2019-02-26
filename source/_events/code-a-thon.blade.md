@@ -14,6 +14,7 @@ description:  |-
 islive: false
 isover: false
 isnontech: false
+tag: Programming
 image: /assets/images/events/codeathon.png
 teamSize: 2
 lang: cpp

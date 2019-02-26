@@ -9,6 +9,7 @@ description:  |-
 islive: false
 isover: false
 isnontech: false
+tag: Aptitude
 image: /assets/images/events/brainspark.png
 teamSize: 2
 lang: py

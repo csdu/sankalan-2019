@@ -17,6 +17,7 @@ description: |-
 islive: false
 isover: true
 isnontech: true
+tag: Aptitude
 reg: 0
 image: /assets/images/events/chakravyuh.png
 story: |-

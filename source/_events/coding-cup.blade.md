@@ -15,6 +15,7 @@ description:  |-
 
     <br>Participate in the coding contest to win exciting Cash Prizes, CodeChef laddus and Certificates! 💰
 
+tag: programming
 islive: false
 isover: false
 isnontech: false

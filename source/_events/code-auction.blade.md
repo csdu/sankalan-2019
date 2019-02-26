@@ -21,6 +21,7 @@ rounds:
         <br>After completion, the second member of the team  has to answer the questions purchased by his/her team mate.
         <br>Score will be given for each correct answer.
 
+tag: programming
 image: /assets/images/events/code-auction.png
 islive: false
 isnontech: false

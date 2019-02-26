@@ -11,6 +11,7 @@ lang: cpp
 islive: false
 isover: false
 isnontech: false
+tag: Cryptography
 image: /assets/images/events/cypher-o-more.png
 rounds:
     - The prelims test the cryptic knowledge of the geek in you as you answer a set of MCQs related to cryptography, cryptanalysis and cryptology.

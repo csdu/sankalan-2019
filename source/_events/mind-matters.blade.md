@@ -18,6 +18,7 @@ isover: false
 isnontech: false
 image: /assets/images/events/mind-matters.png
 teamSize: 2
+tag: aptitude
 lang: py
 rounds:
     -  Preliminary round which consists of Multiple-choice questions based on Computer Science and IT world.

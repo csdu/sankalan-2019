@@ -4,7 +4,7 @@ section: event-details
 title: Just A Minute (JAM)
 quote:  
     text:  Just do it
-
+tag: Fun
 description: |-
     Hello Frands!!  yeh bik gai hai sankalan gormint.
     <br>Issi Baat pe Jam Nagarpaalika ke farman padlo!

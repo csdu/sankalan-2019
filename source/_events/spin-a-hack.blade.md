@@ -11,6 +11,7 @@ description:  |-
 islive: false
 isover: false
 isnontech: false
+tag: Web Development
 image: /assets/images/events/spin-a-hack.png
 teamSize: 2
 lang: js
