@@ -5,13 +5,10 @@ title: Mind Matters
 quote:
     text: Unlock your knowledge at the speed of light
 description:  |-
-    Now the time has come, 
-    <br>To showcase all that you have. 
-    <br>Calm your senses, 
-    <br>And bring out the best in you.
-    <br>It’s time to use your intelligence, 
-    <br>And be as rapid as you can, 
-    <br>To be the man of the match!
+    Now the time has come, to showcase all that you have. 
+    Calm your senses, and bring out the best in you.
+    It’s time to use your intelligence, And be as rapid as you can, 
+    To be the man of the match!
 
 islive: false
 isover: false

@@ -343,7 +343,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   width: 100vw;
   z-index: 10;
-  background-image: url("/assets/images/pattern.svg");
+  background-image: url("/assetsimagespattern.svg");
   background-size: 25px 25px;
 }
 
@@ -430,7 +430,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 5px;
   width: 32px;
   height: 32px;
-  background: url("/assets/images/nav-icon.svg") center no-repeat;
+  background: url("/assetsimagesnav-icon.svg") center no-repeat;
   background-size: 32px;
 }
 
@@ -527,7 +527,7 @@ li.nav-item a:before {
   left: 0;
   top: 0;
   background-size: 100% auto;
-  background-image: url("/assets/images/one.svg");
+  background-image: url("/assetsimagesone.svg");
   background-repeat: no-repeat;
 }
 li.nav-item a:hover {
@@ -943,7 +943,7 @@ a.button:hover, a.button:active, a.button:focus {
 }
 
 .event-round {
-  background-image: url("/assets/images/pattern.svg");
+  background-image: url("/assetsimagespattern.svg");
   background-size: 20px;
   display: inline-block;
   flex-grow: 1;

@@ -2,7 +2,7 @@
   const teamSize = {{$teamSize}};
 
   if (team.isWinner()) {
-    const prize = team.getPrize();
+    const prize = event.getPrize();
     team.receive(prize);
   }
 </pre>

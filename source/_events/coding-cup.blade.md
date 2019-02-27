@@ -3,17 +3,14 @@ extends: _layouts.event
 section: event-details
 title: DUCS Coding Cup
 quote:
-    text: If debugging is the process of removing software bugs, then programming must be the process of putting them in.
-    by: Edsger Dijkstra
+    text: If debugging is the process of removing software bugs, then programming must be the process of putting them in. - Edsger Dijkstra
 description:  |-
     Do you have what it takes to solve problems?
-    <br>Do you have the power to think, create, and execute?
+    Do you have the power to think, create, and execute?
+    To all the students out there, it's time to showcase your programming skills! 
+    Grab this amazing opportunity!
 
-    <br>To all the undergraduate students out there,
-    <br>It's time to showcase your programming skills!
-    <br>Grab this amazing opportunity!
-
-    <br>Participate in the coding contest to win exciting Cash Prizes, CodeChef laddus and Certificates! 💰
+    Participate in the coding contest to win exciting Cash Prizes, CodeChef laddus and Certificates! 💰
 
 tag: programming
 islive: false
@@ -23,10 +20,10 @@ image: /assets/images/events/coding-cup.png
 teamSize: 1
 lang: cpp
 rounds:
-    - The students will have to solve the coding questions online.
+    - The students will have to solve the coding questions online on codechef.
 ---
 - One cash prize of Rs.1500/- and certificate to DU Undergraduate student.
-- One cash prize of Rs.1500/- and certificate to Non-DU Undergraduate student
+- One cash prize of Rs.1500/- and certificate to Non-DU Undergraduate/Masters student
 - CodeChef laddus 250 each to top 3 winners.
 - **Rules Follow :**
     1. Given a set of problems are to be solved and submitted in duration of 4 hours.

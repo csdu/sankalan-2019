@@ -2,7 +2,7 @@
   unsigned int teamSize = {{ $teamSize }};
 
   if (isWinner(team)) {
-    Prize prize = getPrize(team);
+    Prize prize = event.getPrize();
     sendPrize(team, prize);
   }
 </pre>

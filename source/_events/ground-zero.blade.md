@@ -4,18 +4,24 @@ section: event-details
 title: Ground Zero
 tag: Gaming
 description: |-
-    Tired of owning noobs? Have you got what it takes to cross the finish-line? Can you take A-side blindfolded with one hand tied behind your back?
-    Then come, take the adrenaline shot with us. Prepare yourself for one of the most awaited LAN gaming event. There's no place for Weaklings! You might just get burnt. So Practice, and get perfect! Or else,Prepare to get HUMILIATED!
+    Tired of owning noobs? 
+    Have you got what it takes to cross the finish-line? 
+    Can you take A-side blindfolded with one hand tied behind your back?
+    Then come, take the adrenaline shot with us. 
+    Prepare yourself for one of the most awaited LAN gaming event. 
+    There's no place for Weaklings! You might just get burnt. 
+    So Practice, and get perfect! Or else,Prepare to get HUMILIATED!
 islive: false
 isnontech: true
 isover: false
 quote:
     text: When you encounter your enemies, it means you are heading in the right direction.
-image: /assets/images/events/ground-zero.png
+image: /assets/images/events/lan-den.png
 ---
+<br>
+These rules apply to everyone attending. They can be changed without notice.
 <br><br>
 ### General Rules:
-These rules apply to everyone attending. They can be changed without notice.
 
 1. You are responsible for your actions and equipment. We are not liable for anything that happens to you and your equipment
 2. Do not attempt to steal items from the event or anything else, legal consequences will be there
@@ -26,9 +32,8 @@ These rules apply to everyone attending. They can be changed without notice.
     
 <br><br><br>
 
-### DAY 1
+### FIFA
 
-**FIFA 17**
 - FIFA, also known as FIFA Football or FIFA Soccer, is a series of association football video games or football simulator, released annually by Electronic Arts under the EA Sports label.
 - Rules:
     1. The competition will be on fifa 17. Matches will be played 1 on 1
@@ -41,13 +46,12 @@ These rules apply to everyone attending. They can be changed without notice.
     8. Coordinators decision will be final, no argument will be entertained
     9. Rules can be changed, modified on the day of competition
 
-<br><br><br><br>
+<br><br>
 
-### DAY 2
+### COUNTER STRIKE 1.6
 
-**COUNTER STRIKE 1.6**
 - Counter-Strike is the most popular online team shooter in history, and for good reason. More than a decade on it is still the best and the most entertaining game of its type, has the best scenarios, and is the best place for gamers to really show their mouse skills.
-- For the uninitiated, Counter-Strike is a first-person shooter where two teams must face each other to achieve a set objective. These two teams are split into terrorists and anti-terrorist strike teams, and must fight against each other to place, or deactivate, bombs or keep ,or rescue hostages, respectively.
+- For the uninitiated, Counter-Strike is a first-person shooter where two teams must face each other to achieve a set objective. These two teams are split into terrorists and anti-terrorist strike teams, and must fight against each other to place, or deactivate, bombs or keep, or rescue hostages, respectively.
 - Rules:
     1. 1st round will be knife round
     2. For the knife round. The winner of the knife round picks the side they want to play first (CT  or T
@@ -68,9 +72,10 @@ These rules apply to everyone attending. They can be changed without notice.
     9. Under no circumstances silent plants are allowed; whether accidentally or intentionally
     10. If any of the members is absent then no replacement will be allowed and teams will have to compete with the remaining members
 
-<br>
+<br><br>
 
-**NFS Most Wanted**
+### NFS Most Wanted
+
 - Need For Speed Most Wanted is a multiplayer car racing game, where the player selects one car and races against a time limit or other racers to reach a destination. The game provides players with three game modes. The Quick Race mode allows the player to select a car and an event and immediately start racing. The available cars and events are unlocked as the player progresses through the storyline in the Career mode
 - Rules:
     1. Game Type will be Circuit or Sprint
@@ -80,24 +85,22 @@ These rules apply to everyone attending. They can be changed without notice.
     5. Each player will be given the same car
     6. Players will be provided with the standard keyboard and mouse. Controllers or Steering Wheel are _NOT_ allowed
 
-<br><br><br>   
+<br><br>
 
-##### Registration Fees: 50&#x20B9; per person,  for every game
-##### Registration Time: 9:30 am to 11 am
+### Registration Fees: 50&#x20B9; per person,  for every game
+
+### Registration Time: 9:30 am to 11 am
 
 <div markdown="1" style="margin-top:1.5rem;">
-For further information contact:
+For further information contact: <br><br>
 
 - **FIFA**: <br> 
-    Arshad(+919868742518) <br>
-    Hemant(+918607080798) <br>
-- **PUBG**: <br> 
-    Tushar (+918800833074) <br>
-    Jayant (+918950253252) <br>
+    Arshad ( [+919868742518](tel:+919868742518) ) <br>
+    Hemant ( [+918607080798](tel:+918607080798) ) <br><br>
 - **CS**: <br> 
-    Ashish(+919650900343) <br>
-    Tanuj(+919560268926) <br>
+    Ashish ( [+919650900343](tel:+919650900343) ) <br>
+    Tanuj ( [+919560268926](tel:+919560268926) ) <br><br>
 - **NFS**: <br> 
-    Mayank (+919458627251) <br>
-    Rohit(+919599112681) <br>
+    Mayank ( [+919458627251](tel:+919458627251) ) <br>
+    Rohit ( [+919599112681](tel:+919599112681) ) <br><br>
 </div>

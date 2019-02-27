@@ -14,7 +14,7 @@
             </blockquote>
             @endif
             <p>
-                {!! str_replace("\n", '</p><p>', $page->description) !!}
+                {!! str_replace("\n", '<br>', $page->description) !!}
             </p> 
         </div>
     </div>
@@ -55,7 +55,7 @@
         @hasSection('event-details')
             @yield('event-details')
         @else
-            <p>Nothing more mentioned yet. Check back soon</p> 
+            <p>Nothing more to see here.</p> 
         @endif
 
         @if($page->reg !== 0)
