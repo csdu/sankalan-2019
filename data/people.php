@@ -92,7 +92,7 @@ return [
         "image" => "/assets/images/people/manan-mehta.jpg",
         "email" => "manan.mca18.du@gmail.com",
         "urls" => [
-            'facebook' : "https://www.facebook.com/connect2manan"
+            'facebook' => "https://www.facebook.com/connect2manan"
         ],
     ],
 
@@ -101,8 +101,8 @@ return [
         "image" => "/assets/images/people/tanya-dua.jpg",
         "email" => "tanyad.mcs18.du@gmail.com",
         "urls" => [
-            'linkedin' : "https://www.linkedin.com/in/tanya-dua/",
-            'facebook' : "https://www.facebook.com/profile.php?id=100009469358852"
+            'linkedin' => "https://www.linkedin.com/in/tanya-dua/",
+            'facebook' => "https://www.facebook.com/profile.php?id=100009469358852"
         ],
     ],
 
