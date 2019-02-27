@@ -14,7 +14,7 @@
             </blockquote>
             @endif
             <p>
-                {!! str_replace('\n', '</p><p>', $page->description) !!}
+                {!! str_replace("\n", '</p><p>', $page->description) !!}
             </p> 
         </div>
     </div>

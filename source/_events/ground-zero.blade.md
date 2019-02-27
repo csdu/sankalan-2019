@@ -11,7 +11,7 @@ isnontech: true
 isover: false
 quote:
     text: When you encounter your enemies, it means you are heading in the right direction.
-image: /assets/images/events/lan-den.png
+image: /assets/images/events/ground-zero.png
 ---
 <br><br>
 ### General Rules:
@@ -41,10 +41,7 @@ These rules apply to everyone attending. They can be changed without notice.
     8. Coordinators decision will be final, no argument will be entertained
     9. Rules can be changed, modified on the day of competition
 
-    <br>
-**PUBG MOBILE**
-
-<br><br><br>
+<br><br><br><br>
 
 ### DAY 2
 

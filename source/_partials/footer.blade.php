@@ -25,10 +25,7 @@
     </nav>
     <div class="copyright">
         <p>
-            Copyright &copy; 2019. Made with &hearts; by&nbsp;
-            <a href='https://github.com/sidvishnoi' data-id="footer-dev">
-            <span style="white-space: nowrap"> Sudhanshu Vishnoi </span>.
-            </a>
+            Copyright &copy; Sankalan 2019.
         </p> 
         <p> Meet the <a class="xhr" href='{{ $page->baseUrl }}/team/' data-id='footer-team'> Sankalan Team</a>. </p>
         <p>Delhi University Computer Science Society (DUCSS)</p>

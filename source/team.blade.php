@@ -19,53 +19,64 @@
             ])
             @include('_partials.people-credit', [ 
                 'designation' => 'Vice President', 
-                'key' => 'random' 
+                'key' => 'mohit-kandpal' 
             ])
             @include('_partials.people-credit', [ 
                 'designation' => 'General Secretary', 
-                'key' => 'random' 
+                'key' => 'mohammed-sayeed' 
             ])
             @include('_partials.people-credit', [ 
                 'designation' => 'Joint Secretary', 
-                'key' => 'random' 
+                'key' => 'harshul-kumar' 
             ])
             @include('_partials.people-credit', [ 
                 'designation' => 'Treasurer', 
-                'key' => 'random' 
+                'key' => 'ajay-kumar' 
             ])
         </div>
         
         <h3>Developer Team</h3>
         <div class="credits">
             @include('_partials.people-credit', [
-                'designation' => 'Web Developer', 
+                'designation' => 'Lead Developer', 
                 'key' => 'ruman-saleem',
+            ])
+            @include('_partials.people-credit', [
+                'key' => 'sahil-nishal',
+            ])
+            @include('_partials.people-credit', [
+                'key' => 'vikash-prajapati',
+            ])
+            @include('_partials.people-credit', [
+                'key' => 'megha-sundriyal',
+            ])
+            @include('_partials.people-credit', [
+                'key' => 'abhishek-sen',
+            ])
+            @include('_partials.people-credit', [
+                'key' => 'abhishek-kansal',
+            ])
+            @include('_partials.people-credit', [
+                'key' => 'anuradha-aggarwal',
             ])
         </div>
         <br>
         <h3>Graphic Designers</h3>
         <div class="credits">
-            @include('_partials.people-credit', ['key' => 'random'])
-            @include('_partials.people-credit', ['key' => 'random'])
-            @include('_partials.people-credit', ['key' => 'random'])
-            @include('_partials.people-credit', ['key' => 'random'])
-            @include('_partials.people-credit', ['key' => 'random'])
+            @include('_partials.people-credit', ['key' => 'nitin-thakur'])
+            @include('_partials.people-credit', ['key' => 'manan-mehta'])
+            @include('_partials.people-credit', ['key' => 'sunidhi'])
+            @include('_partials.people-credit', ['key' => 'tanya-dua'])
+            @include('_partials.people-credit', ['key' => 'jayant-dhawan'])
         </div>
-        <br>
-        <h3>Content Managers</h3>
-        <div class="credits">
-            @include('_partials.people-credit', ['key' => 'random'])
-            @include('_partials.people-credit', ['key' => 'random'])
-            @include('_partials.people-credit', ['key' => 'random'])
-        </div>
+
         <br>
         <h3>Sponsorship Team</h3> 
         <div class="credits">
-            @include('_partials.people-credit', ['key' => 'random'])
-            @include('_partials.people-credit', ['key' => 'random'])
-            @include('_partials.people-credit', ['key' => 'random'])
-            @include('_partials.people-credit', ['key' => 'random'])
-            @include('_partials.people-credit', ['key' => 'random'])
+            @include('_partials.people-credit', ['key' => 'anjali-bansal'])
+            @include('_partials.people-credit', ['key' => 'rajni-dabas'])
+            @include('_partials.people-credit', ['key' => 'atul-mittal'])
+            @include('_partials.people-credit', ['key' => 'jayant-dhawan'])
         </div>
     </div>
 </div>
