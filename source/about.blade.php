@@ -20,7 +20,7 @@
         </p>
         <p>
             The word Sankalan means compilation; compilation of knowledge, talent, ideas, spirit and most importantly, codes! With a slew of technical and non-technical events on the menu, Sankalan is a geek feast. The developers get engaged with coding marathon
-            Code-a-thon, Web and the Android app development competition Spin-a-Hack and many more. With Mind Matters for the quiz masters, Techno Speak for the nerds and LAN Gaming for the gamers, Sankalan has it all! So this April, get set and be prepared
+            Code-a-thon, Web development competition Spin-a-Web and many more. With Mind Matters for the quiz masters, Techno Speak for the nerds and LAN Gaming for the gamers, Sankalan has it all! So this March, get set and be prepared
             to celebrate technology with Sankalan’ 2019.
         </p>
         <p>
