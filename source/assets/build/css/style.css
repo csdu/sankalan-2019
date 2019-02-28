@@ -720,27 +720,12 @@ li.nav-item a:hover:after {
   padding: 20px 40px;
   max-width: 1160px;
   background: #fafafa;
+  margin: auto;
 }
 .module + .module {
   margin-top: 2em;
 }
-
-.module:nth-child(3n+3) {
-  margin-right: auto;
-  background: #fafafa;
-}
-
-.module:nth-child(3n+1) {
-  margin-left: auto;
-  background: #eee;
-}
-
-.module:nth-child(2n+3) {
-  margin-left: auto;
-  margin-right: auto;
-  background: #fdfdfd;
-}
-.module:nth-child(2n+3) .module--half:nth-child(2) {
+.module .module--half:nth-child(2) {
   order: -1;
 }
 
