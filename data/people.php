@@ -4,12 +4,7 @@ return [
         "name" => 'Mohit Kandpal',
         "image" => "/assets/images/people/mohit-kandpal.jpg",
         "email" => "",
-        "urls" => [
-            'github'=>'jdfbvd', 
-            'linkedin' => '',
-            'facebook' => '',
-            'twitter' => ''
-        ],
+        "urls" => [],
     ],
 
     "mohammed-sayeed" => [
@@ -186,7 +181,8 @@ return [
         "image" => "/assets/images/people/ruman-saleem.jpg",
         "urls" => [
             "twitter" => "https://www.twitter.com/zruman",
-            "github" => "https://www.github.com/rumansaleem"
+            "github" => "https://www.github.com/rumansaleem",
+            "linkedin" => "https://www.linkedin.com/in/ruman-saleem-3947ba122",
         ]
     ],
     
