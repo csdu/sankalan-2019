@@ -1,5 +1,10 @@
 @extends('_layouts.master')
 @section('title', 'Register | ')
+@push('styles')
+<script>
+    window.location.replace("https://sankalan-portal.ducs.in");
+</script>
+@endpush
 @section('content')
 <div class="banner">
     <div class="banner-content">

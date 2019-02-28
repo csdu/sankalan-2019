@@ -8,7 +8,7 @@
                 <a class="xhr" href='{{ $page->baseUrl }}/terms/' data-id='footer-terms'>Terms</a>
             </li>
             <li>
-                <a href='{{ $page->baseUrl }}#' data-id='footer-dashboard'>Dashboard</a>
+                <a href='{{ $page->baseUrl }}/register' data-id='footer-dashboard'>Register</a>
             </li>
             <li class="social" itemscope itemtype="http://schema.org/Organization">
                 <link itemprop="url" href="https://csdu.github.io/sankalan/"/>
