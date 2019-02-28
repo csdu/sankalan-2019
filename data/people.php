@@ -176,7 +176,8 @@ return [
         "urls" => [
             'facebook' => "https://www.facebook.com/jatin69",
             'github' => "https://github.com/jatin69",
-            'twitter' => "https://twitter.com/jatinrohilla69"
+            'twitter' => "https://twitter.com/jatinrohilla69",
+            'linkedin' => "https://www.linkedin.com/in/jatinrohilla/"
         ],
     ],
 

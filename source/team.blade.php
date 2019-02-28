@@ -5,7 +5,7 @@
     <div class="banner-content">
         <h1 class="banner-subtitle"></h1>
         <h2 class="banner-title">Our Team</h2> 
-        <p>Sankalan won't be possible without its passionate team.</p>
+        <p>Sankalan would not have been possible without its passionate team.</p>
     </div>
 </div>
 
