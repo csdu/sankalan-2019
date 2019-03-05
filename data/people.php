@@ -3,13 +3,15 @@ return [
     "mohit-kandpal" => [
         "name" => 'Mohit Kandpal',
         "image" => "/assets/images/people/mohit-kandpal.jpg",
-        "email" => "",
-        "urls" => [],
+        "email" => "mohit.mcs17.du@gmail.com",
+        "urls" => [
+            'facebook' => "https://www.facebook.com/mohit.kandpal.50309",
+        ],
     ],
 
-    "mohammed-sayeed" => [
+    "mohammad-sayeed" => [
         "name" => "Mohammad Sayeed",
-        "image" => "/assets/images/people/mohammed-sayeed.jpg",
+        "image" => "/assets/images/people/mohammad-sayeed.jpg",
         "email" => "sayeed.mcs17.du@gmail.com",
         "urls" => [
             'facebook' => "https://facebook.com/mohd.sayeed.786",
@@ -33,8 +35,11 @@ return [
     "ajay-kumar" => [
         "name" => "Ajay Kumar",
         "image" => "/assets/images/people/ajay-kumar.jpg",
-        "email" => "",
-        "urls" => [],
+        "email" => "ajay.mca17.du@gmail.com",
+        "urls" => [
+            'facebook' => 'https://www.facebook.com/aaryanchiku',
+            'linkedin' => 'https://www.linkedin.com/in/ajay-kumar-720323167/',
+        ],
     ],
 
     "anjali-bansal" => [
@@ -52,8 +57,10 @@ return [
     "rajni-dabas" => [
         "name" => "Rajni Dabas",
         "image" => "/assets/images/people/rajni-dabas.jpg",
-        "email" => "",
-        "urls" => [],
+        "email" => "rajni.mcs17.du@gmail.com",
+        "urls" => [
+            'facebook' => 'https://www.facebook.com/rajni.dabas.5',
+        ],
     ],
 
     "atul-mittal" => [
@@ -66,6 +73,17 @@ return [
     "jayant-dhawan" => [
         "name" => "Jayant Dhawan",
         "image" => "/assets/images/people/jayant-dhawan.jpg",
+        "email" => "jayant.mca17.du@gmail.com",
+        "urls" => [
+            'twitter' => "https://twitter.com/jayant_dhawan",
+            'github' => "https://github.com/jayant-dhawan",
+            'facebook' => "https://www.facebook.com/jayantdhawan1"
+        ],
+    ],
+
+    "nitin-thakur" => [
+        "name" => "Nitin Thakur",
+        "image" => "/assets/images/people/nitin-thakur.jpg",
         "email" => "nitin.mcs18.du@gmail.com",
         "urls" => [
             'twitter' => "https://twitter.com/Ni3sama",
@@ -73,13 +91,6 @@ return [
             'github' => "https://github.com/ni3sama",
             'facebook' => "https://www.facebook.com/ni3sama"
         ],
-    ],
-
-    "nitin-thakur" => [
-        "name" => "Nitin Thakur",
-        "image" => "/assets/images/people/nitin-thakur.jpg",
-        "email" => "",
-        "urls" => [],
     ],
 
     "manan-mehta" => [
@@ -115,7 +126,6 @@ return [
         "urls" => [
             'facebook' => "https://www.facebook.com/SuitWithTie",
             'github' => "https://github.com/abhishekSen999",
-
         ],
     ],
 
@@ -160,8 +170,11 @@ return [
     "vikash-prajapati" => [
         "name" => "Vikash Prajapati",
         "image" => "/assets/images/people/vikash-prajapati.jpg",
-        "email" => "",
-        "urls" => [],
+        "email" => "vikash.mca18.du@gmail.com",
+        "urls" => [
+            'github' => 'https://www.github.com/vikashprajapati',
+            'linkedin' => 'https://www.linkedin.com/in/vikash-41abb8101/'
+        ],
     ],
 
     "jatin-rohilla" => [

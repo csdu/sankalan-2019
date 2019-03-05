@@ -23,7 +23,7 @@
             ])
             @include('_partials.people-credit', [ 
                 'designation' => 'General Secretary', 
-                'key' => 'mohammed-sayeed' 
+                'key' => 'mohammad-sayeed' 
             ])
             @include('_partials.people-credit', [ 
                 'designation' => 'Joint Secretary', 
@@ -67,7 +67,6 @@
             @include('_partials.people-credit', ['key' => 'manan-mehta'])
             @include('_partials.people-credit', ['key' => 'sunidhi'])
             @include('_partials.people-credit', ['key' => 'tanya-dua'])
-            @include('_partials.people-credit', ['key' => 'jayant-dhawan'])
         </div>
 
         <br>
