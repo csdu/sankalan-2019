@@ -8,7 +8,7 @@
 <meta property="og:type" content="website"/>
 <meta property="og:title" content="{{ $page->title }}"/>
 <meta property="og:description" content="{{ $page->description }}"/>
-<meta property="og:image" content="{{$page->image ?? 'https://placehold.it/200' }}"/>
+<meta property="og:image" content="{{$page->image ?? '/assets/images/favicon/apple-icon-180x180.png' }}"/>
 <meta property="fb:app_id" content="211826412729565"/>
 
 <link rel="apple-touch-icon" sizes="60x60" href="{{ $page->baseUrl }}/assets/images/favicon/apple-icon-60x60.png"/>
