@@ -6,7 +6,7 @@
         <h1 class="banner-subtitle">Events</h1>
         <h2 class="banner-title">Something for everyone!</h2>
         <p>
-            We have {{ $page->getTechEventsCount($events) }} technical events as well as {{ $page->getNonTechEventsCount($events) }} non-technical events.
+            We have {{ $page->getTechEventsCount($events) }} technical events as well as {{ $page->getNonTechEventsCount($events) + 1 }} non-technical events.
         </p>
     </div>
 </div>
@@ -16,6 +16,11 @@
             @foreach($events as $event)
                 @include('_partials.event', compact('event'))
             @endforeach
+            <div class="event-tile event-tag" data-tag="Gaming">
+                <a href="https://pubg.ducs.in" class="xhr event-bg-link" data-id="events-pubg-mobile">
+                    <img class="event-bg" src="/assets/images/events/pubg-mobile.jpg" alt="PUBG Mobile"/>
+                </a>
+            </div>
         </div>
     </div>
 </div>
