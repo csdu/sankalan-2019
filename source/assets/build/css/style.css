@@ -9,7 +9,7 @@ html {
 
 body {
   overflow-x: hidden;
-  overflow-y: scroll;
+  overflow-y: auto;
   width: 100%;
   height: 100%;
   color: #000;
@@ -128,7 +128,7 @@ h1, h2, h3, h4, h5, h6 {
 .splash-wrapper .splash {
   height: 100vh;
   width: 100%;
-  overflow: hidden;
+  overflow: auto;
 }
 .splash-wrapper .splash > div {
   left: 0;
