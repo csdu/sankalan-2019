@@ -65,7 +65,7 @@
         <div class="credits">
             @include('_partials.people-credit', ['key' => 'nitin-thakur'])
             @include('_partials.people-credit', ['key' => 'manan-mehta'])
-            @include('_partials.people-credit', ['key' => 'sunidhi'])
+            @include('_partials.people-credit', ['key' => 'sunidhi-sharma'])
             @include('_partials.people-credit', ['key' => 'tanya-dua'])
         </div>
 

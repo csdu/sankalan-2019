@@ -66,8 +66,10 @@ return [
     "atul-mittal" => [
         "name" => "Atul Mittal",
         "image" => "/assets/images/people/atul-mittal.jpg",
-        "email" => "",
-        "urls" => [],
+        "email" => "atul.mcs17.du@gmail.com",
+        "urls" => [
+            'linkedin' => "https://www.linkedin.com/in/atul-mittal/"
+        ],
     ],
 
     "jayant-dhawan" => [
@@ -112,11 +114,14 @@ return [
         ],
     ],
 
-    "sunidhi" => [
-        "name" => "Sunidhi",
-        "image" => "/assets/images/people/sunidhi.jpg",
-        "email" => "",
-        "urls" => [],
+    "sunidhi-sharma" => [
+        "name" => "Sunidhi Sharma",
+        "image" => "/assets/images/people/sunidhi-sharma.jpg",
+        "email" => "sunidhi.mca18.du@gmail.com",
+        "urls" => [
+            'facebook' => "https://www.facebook.com/sunisharam",
+            'github' => "https://github.com/sunidhisharma9",
+        ],
     ],
 
     "abhishek-sen" => [
