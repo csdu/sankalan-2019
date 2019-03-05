@@ -1036,13 +1036,20 @@ footer ul li img {
   align-items: center;
   justify-content: center;
 }
-.sponsors img {
-  margin: 2px;
-  padding: 4px;
-  border: 1px solid #fff;
+.sponsors .sponsor {
+  text-align: center;
+  margin: 0.5rem;
+  padding: 1rem;
+  border: 1px solid transparent;
+  min-width: 240px;
+  width: 33.33%;
 }
-.sponsors img:hover {
-  border-color: #eee;
+.sponsors .sponsor.large {
+  width: 100%;
+  min-width: 280px;
+}
+.sponsors .sponsor:hover {
+  border-color: #aaa;
 }
 
 .contact {

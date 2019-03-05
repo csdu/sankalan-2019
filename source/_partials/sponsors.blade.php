@@ -1,8 +1,7 @@
 <div>
-    @foreach($page->sponsors as $category => $sponsors)
+    @foreach($page->sponsors as $sponsors_list)
         @include('_partials.sponsors-list', [
-            'title' => title_case(str_replace("_"," ","{$category} partner")),
-            'sponsors' => $sponsors,
+            'sponsors_list' => $sponsors_list,
         ])
     @endforeach
 </div>
