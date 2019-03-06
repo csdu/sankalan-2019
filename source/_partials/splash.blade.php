@@ -18,9 +18,12 @@
                 </div>
                 <nav class="content-nav">
                     <ul>
-                    <li><a class="button xhr" href="{{ $page->baseUrl }}/register/" style="text-shadow: none; color: #000;" data-id="register-main">Register</a></li>
-                    <li><a class="xhr" href="{{ $page->baseUrl }}/team/" data-id="ct-nav-meet-the-team">Meet the team</a></li>
-                    <li><a class="xhr" href="{{ $page->baseUrl }}/contact/" data-id="ct-nav-need-help?">Need help?</a></li>
+                        <li>
+                            <a class="button xhr" href="{{ $page->baseUrl }}/register/" style="text-shadow: none; color: #000;" data-id="register-main">Register</a>
+                        </li>
+                        <li><a class="xhr" target="_blank" href="{{ $page->baseUrl }}/assets/downloads/schedule.pdf" data-id="ct-nav-schedule">Schedule</a></li>
+                        <li><a class="xhr" href="{{ $page->baseUrl }}/team/" data-id="ct-nav-meet-the-team">Meet the team</a></li>
+                        <li><a class="xhr" href="{{ $page->baseUrl }}/contact/" data-id="ct-nav-need-help?">Need help?</a></li>
                     </ul>
                 </nav>
             </div>
