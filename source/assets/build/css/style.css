@@ -506,7 +506,7 @@ li.nav-item a {
   font-size: calc(10px + 0.8vw);
   padding: 1vw 0.6vw 1.2vw 4vw;
   color: #fff;
-  transition: color 0.5s 0.8s, letter-spacing 0.2s;
+  transition: letter-spacing 0.2s;
 }
 li.nav-item a:after {
   bottom: -webkit-calc(50% - 2px - .5em);
