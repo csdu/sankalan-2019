@@ -25,6 +25,7 @@ mix.scripts([
         'source/_assets/js/header.js',
     ], 'source/assets/build/js/bundle.js')
     .sass('source/_assets/sass/style.sass', 'css')
+    .sass('source/_assets/sass/critical.sass', 'css')
     .purgeCss({
         folders: ['source'],
     })
