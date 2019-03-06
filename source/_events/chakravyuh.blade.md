@@ -14,7 +14,7 @@ description: |-
     From Sherlock Holmes to ब्योमकेश बख्शी, Live like a detective, find the truth.
 
 islive: false
-isover: false
+isover: true
 isnontech: true
 tag: Aptitude
 reg: 0

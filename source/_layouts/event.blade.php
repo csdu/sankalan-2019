@@ -59,7 +59,7 @@
         @endif
 
         @if($page->reg !== 0)
-        <a class="button" rel="noopener" href="{{ $page->baseUrl }}/register/" data-id="register-{{ str_slug($page->title) }}">Register</a>
+        <a class="button" rel="noopener" href="{{ $page->register ? $page->register : "{$page->baseUrl}/register/" }}" data-id="register-{{ str_slug($page->title) }}">Register</a>
         @endif
         @if($page->fbpage)
           <a class="button" href="{{ $page->fbpage }}" data-id="fb-ev-{{ str_slug($page->title) }}">Facebook Event Page</a>

@@ -17,6 +17,7 @@ isover: false
 quote:
     text: When you encounter your enemies, it means you are heading in the right direction.
 image: /assets/images/events/ground-zero.png
+register: https://bit.ly/ducs-ground-zero
 ---
 <br>
 These rules apply to everyone attending. They can be changed without notice.
