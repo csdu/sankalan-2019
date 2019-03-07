@@ -76,6 +76,9 @@
             @include('_partials.people-credit', ['key' => 'rajni-dabas'])
             @include('_partials.people-credit', ['key' => 'atul-mittal'])
             @include('_partials.people-credit', ['key' => 'jayant-dhawan'])
+            @include('_partials.people-credit', ['key' => 'pranav-gurditta'])
+            @include('_partials.people-credit', ['key' => 'rishav-kohli'])
+            @include('_partials.people-credit', ['key' => 'tanuj-rohilla'])
         </div>
     </div>
 </div>

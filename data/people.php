@@ -187,10 +187,41 @@ return [
         "image" => "/assets/images/people/jatin-rohilla.jpg",
         "email" => 'jatin.mca17.du@gmail.com',
         "urls" => [
-            'facebook' => "https://www.facebook.com/jatin69",
+            'facebook' => "https://www.facebook.com/jatinrohilla69",
             'github' => "https://github.com/jatin69",
             'twitter' => "https://twitter.com/jatinrohilla69",
             'linkedin' => "https://www.linkedin.com/in/jatinrohilla/"
+        ],
+    ],
+
+    'tanuj-rohilla' => [
+        "name" => "Tanuj Rohilla",
+        "image" => "/assets/images/people/tanuj-rohilla.jpg",
+        "urls" => [
+            "facebook" => "https://www.facebook.com/tanujrohilla97",
+            "github" => "https://github.com/TanujRohilla",
+            "twitter" => "https://twitter.com/rohilla_tanuj",
+            "linkedin" => "https://www.linkedin.com/in/tanuj-rohilla-1ba55613b/",
+        ],
+    ],
+
+    'rishav-kohli' => [
+        "name" => "Rishav Kohli",
+        "image" => "/assets/images/people/rishav-kohli.jpg",
+        "urls" => [
+            "facebook" => "https://www.facebook.com/rishav.kohli.167",
+            "github" => "https://github.com/rishavkohli",
+            "linkedin" => "https://www.linkedin.com/in/rishav-kohli-671434171",
+        ],
+    ],
+
+    'pranav-gurditta' => [
+        "name" => "Pranav Gurditta",
+        "image" => "/assets/images/people/pranav-gurditta.jpg",
+        "urls" => [
+            "facebook" => "https://www.facebook.com/pranavgurditta",
+            "github" => "https://www.github.com/pranavgurditta",
+            "linkedin" => "https://in.linkedin.com/in/pranav-gurditta-8884b4110",
         ],
     ],
 
