@@ -18,7 +18,7 @@
             @endforeach
             <div class="event-tile event-tag" data-tag="Gaming">
                 <a href="https://pubg.ducs.in" class="xhr event-bg-link" data-id="events-pubg-mobile">
-                    <img class="event-bg" src="/assets/images/events/pubg-mobile.jpg" alt="PUBG Mobile"/>
+                <img class="event-bg" src="{{ $page->baseUrl }}/assets/images/events/pubg-mobile.jpg" alt="PUBG Mobile"/>
                 </a>
             </div>
         </div>

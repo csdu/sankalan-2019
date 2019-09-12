@@ -1,7 +1,7 @@
 let mix = require('laravel-mix');
 require('laravel-mix-purgecss');
 let build = require('./tasks/build.js');
-let baseUrl = mix.inProduction() ? '/' : '/';
+let baseUrl = mix.inProduction() ? '/sankalan/' : '/';
 
 mix.disableSuccessNotifications();
 mix.setPublicPath('source/assets/build');
